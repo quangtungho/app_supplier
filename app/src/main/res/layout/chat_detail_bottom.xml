@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <merge>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_8dp"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/btn_search_employee"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ripple_animation_linear"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_8dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp48"
+                        android:layout_height="@dimen/dp48"
+                        android:contentDescription="@string/default_image"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_search_message" />
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_employee"
+                        android:textColor="@color/gray_text_title"
+                        android:textSize="@dimen/font_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ripple_animation_linear"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_8dp">
+
+                    <ImageView
+                        android:id="@+id/add_members"
+                        android:layout_width="@dimen/dp48"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/default_image"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_group_add_member_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_member"
+                        android:textColor="@color/gray_text_title"
+                        android:textSize="@dimen/font_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnArchive"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ripple_animation_linear"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_8dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp48"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/default_image"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_search_kho" />
+
+                    <TextView
+                        android:id="@+id/tv_btn_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/archive"
+                        android:textColor="@color/gray_text_title"
+                        android:textSize="@dimen/font_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </merge>
+</layout>

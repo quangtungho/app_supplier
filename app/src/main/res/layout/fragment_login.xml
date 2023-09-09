@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/loginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/size_40"
+        tools:viewBindingIgnore="true">
+
+        <ImageView
+            android:layout_width="@dimen/dp250"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp24"
+            android:contentDescription="@string/default_image"
+            android:src="@drawable/techres_sologan_main_white_colors" />
+
+        <vn.techres.supplier.view.TechResTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_for_login_all_supplier"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+
+        <LinearLayout
+            android:id="@+id/areaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp24"
+            android:background="@drawable/bg_border_white_5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtResName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawableStart="@drawable/ic_mp_webview_home_light"
+                    android:drawablePadding="@dimen/dp16"
+                    android:hint="Tên NCC"
+                    android:maxLength="52"
+                    android:inputType="text"
+                    android:padding="@dimen/dp16"
+                    android:textSize="@dimen/font_normal"
+                    tools:ignore="Autofill,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imgClearRes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp16"
+                    android:background="@drawable/ic_ipt_clear"
+                    android:contentDescription="@string/default_image"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/account"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_user_line_24"
+                    android:drawablePadding="@dimen/dp16"
+                    android:hint="@string/account"
+                    android:maxLength="10"
+                    android:inputType="text"
+                    android:padding="@dimen/dp16"
+                    android:textSize="@dimen/font_normal" />
+
+                <ImageView
+                    android:id="@+id/imgClearAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp16"
+                    android:background="@drawable/ic_ipt_clear"
+                    android:contentDescription="@string/default_image"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawableStart="@drawable/ic_bottom_sheet_menu_privacy_only_me"
+                    android:drawablePadding="@dimen/dp16"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword"
+                    android:maxLength="32"
+                    android:padding="@dimen/dp16"
+                    android:textSize="@dimen/font_normal"
+                    tools:ignore="Autofill" />
+
+                <ImageView
+                    android:id="@+id/imgVisibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp16"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_hide_line_24"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <vn.techres.supplier.view.TechResTextView
+            android:id="@+id/btnForgotPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingVertical="@dimen/dp16"
+            android:text="@string/forgot_pass"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.kusu.loadingbutton.LoadingButton
+                android:id="@+id/btnLogin"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_40"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_animation_linear"
+                android:paddingLeft="@dimen/margin_8dp"
+                android:paddingRight="@dimen/margin_8dp"
+                android:text="@string/login"
+                android:textColor="@color/main_bg"
+                android:visibility="visible"
+                app:lb_buttonColor="@color/white"
+                app:lb_isShadowEnable="false"
+                app:lb_loaderColor="@color/main_bg" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

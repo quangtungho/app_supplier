@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <merge>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/main_bg"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp"
+                    android:background="@drawable/ripple_animation_button_back_header"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/stencils_ic_head_back_white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnAvatar"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imvAvatar"
+                    android:layout_width="@dimen/size_40"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/default_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo_techres" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@id/tvTitle"
+                        style="@style/AutoTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/tvCountMember"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:id="@+id/toolbar_action_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ripple_animation_button_back_header"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_header_list" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/toolbar_action_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_header_search"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:id="@+id/toolbar_action_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ripple_animation_button_back_header"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_header_add_member_white" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </merge>
+</layout>

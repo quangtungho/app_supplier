@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.employeemanager.TabEmployeeOnFragment">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/seachStaff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:layout_marginEnd="12.0dip"
+                android:background="@drawable/shape_search_oder"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:theme="@style/SearchView"
+                app:closeIcon="@drawable/stencils_ic_head_close_black"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="Tìm kiếm nhân viên..."
+                app:searchIcon="@drawable/ic_loupe" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:background="@color/grey_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_8dp"
+                tools:ignore="MissingConstraints">
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txt_all_emloyee"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/txtMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp8"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rclEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_8dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/linearDataNull"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp100"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/img_data_null" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="@string/mess_data_employee_null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCreate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:layout_margin="@dimen/dp8"
+                android:background="@drawable/bg_radius_dp5_orange"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="@dimen/dp16"
+                    android:layout_height="@dimen/dp16"
+                    android:layout_marginEnd="@dimen/margin_4dp"
+                    android:src="@drawable/icon_plus_white"
+                    tools:ignore="ContentDescription" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:viewBindingIgnore="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_80"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dp24"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/techres_sologan_main_blue_color"
+                    android:contentDescription="@string/default_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtPin"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/size_40"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_white_stroke_grey_5dp"
+                        android:drawableStart="@drawable/ic_call_numpad_normal"
+                        android:drawablePadding="@dimen/dp16"
+                        android:gravity="center_vertical"
+                        android:hint="Nhập mã xác nhận"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingStart="@dimen/dp16"
+                        android:paddingEnd="@dimen/dp16"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_normal"
+                        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
+
+                    <vn.techres.supplier.view.CountdownView
+                        android:id="@+id/cv_password_forget_countdown"
+                        style="@style/CountdownViewStyle" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10">
+
+                    <EditText
+                        android:id="@+id/edtPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_40"
+                        android:background="@drawable/border_white_stroke_grey_5dp"
+                        android:drawableStart="@drawable/ic_bottom_sheet_menu_privacy_only_me"
+                        android:drawablePadding="@dimen/dp16"
+                        android:gravity="center_vertical"
+                        android:hint="Nhập mật khẩu mới "
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:paddingStart="@dimen/dp16"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_line_table"
+                        android:textSize="@dimen/font_normal"
+                        tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+                    <ImageView
+                        android:id="@+id/imgVisibilityPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp16"
+                        android:contentDescription="@string/default_image"
+                        android:src="@drawable/ic_unhide_line_24"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10">
+
+                    <EditText
+                        android:id="@+id/edtConfirmPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_40"
+                        android:background="@drawable/border_white_stroke_grey_5dp"
+                        android:drawableStart="@drawable/ic_bottom_sheet_menu_privacy_only_me"
+                        android:drawablePadding="@dimen/dp16"
+                        android:gravity="center_vertical"
+                        android:hint="Nhập lại mật khẩu mới"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:paddingStart="@dimen/dp16"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_line_table"
+                        android:textSize="@dimen/font_normal"
+                        tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+                    <ImageView
+                        android:id="@+id/imgVisibilityConfirmPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp16"
+                        android:contentDescription="@string/default_image"
+                        android:src="@drawable/ic_unhide_line_24"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="@dimen/dp250"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/border_button_gray_color"
+                    android:enabled="false"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="Xác nhận"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText,ButtonStyle" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/loading"
+                layout="@layout/layout_loading_data" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>
+

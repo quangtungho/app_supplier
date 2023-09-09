@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:maxAcceleration="10.0"
+            motion:onTouchUp="autoComplete"
+            motion:touchAnchorId="@+id/linearMenubutton" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start" />
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/rlProfile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:alpha="0"
+            motion:layout_constraintBottom_toBottomOf="@+id/linearPhoneEmailAccountMenu"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/linearPhoneEmailAccountMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="@+id/rlProfile"
+            motion:layout_constraintStart_toStartOf="@+id/rlProfile"
+            motion:layout_constraintTop_toBottomOf="@+id/nameUserAccountmenu" />
+        <Constraint
+            android:id="@+id/rlHeaderEnd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:alpha="1"
+            motion:layout_constraintBottom_toBottomOf="@+id/linearAvatar"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/linearAvatar"
+            android:layout_width="@dimen/icon_size64_main"
+            android:layout_height="@dimen/icon_size64_main"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/rlHeaderEnd"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/rlHeaderEnd"
+            motion:transitionEasing="linear" />
+        <Constraint
+            android:id="@+id/nameUserAccountmenu"
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/linearAvatar"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/linearAvatar"
+            motion:layout_constraintTop_toTopOf="@+id/linearAvatar" />
+        <Constraint
+            android:id="@+id/linearMenubutton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            motion:layout_constraintTop_toBottomOf="@+id/rlHeaderEnd"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" />
+
+    </ConstraintSet>
+</MotionScene>

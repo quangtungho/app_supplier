@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_bg"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/px4"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/txtNumberCount"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/grey_bg"
+                android:gravity="center"
+                android:padding="@dimen/padding_5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="@dimen/px4"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/txtNameMaterial"
+                android:layout_width="@dimen/dp130"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/grey_bg"
+                android:gravity="start"
+                android:padding="@dimen/padding_5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="@dimen/px4"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <Spinner
+                android:id="@+id/spinnerUnits"
+                style="@style/Widget.AppCompat.Spinner"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/grey_bg"
+                android:spinnerMode="dropdown" />
+
+            <View
+                android:layout_width="@dimen/px4"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/txtQuantity"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5dp"
+                android:background="@drawable/corners_white_20dp"
+                android:gravity="center"
+                android:padding="@dimen/padding_5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="@dimen/px4"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/txtPrice"
+                android:layout_width="@dimen/dp110"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5dp"
+                android:background="@drawable/corners_white_20dp"
+                android:gravity="center"
+                android:padding="@dimen/padding_5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="@dimen/px4"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/txtTotalMoney"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/grey_bg"
+                android:gravity="center"
+                android:padding="@dimen/padding_5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="@dimen/px4"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/txtNote"
+                android:layout_width="@dimen/dp140"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5dp"
+                android:background="@drawable/corners_white_20dp"
+                android:padding="@dimen/padding_5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="@dimen/px4"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dp100"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5dp"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/lnEditAndBack"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:background="@drawable/bg_oval"
+                    android:backgroundTint="@color/color_main"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_5dp"
+                    android:visibility="gone"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp13"
+                        android:layout_height="@dimen/dp13"
+                        android:src="@drawable/icon_pencil_white"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnDeleteOrRestore"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/bg_oval"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_5dp"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/imgDeleteOrRestore"
+                        android:layout_width="@dimen/dp16"
+                        android:layout_height="@dimen/dp16"
+                        android:src="@drawable/picture_icon_delete"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/px4"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px4"
+            android:background="@color/white" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/time"
+            layout="@layout/item_time_header_message" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/px4"
+            android:layout_marginStart="@dimen/dp16"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ctlAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints,RtlSymmetry">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imvAvatar"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:contentDescription="@string/default_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user_placeholder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/margin_8dp"
+                tools:ignore="RtlSymmetry,UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/px4">
+
+                    <TextView
+                        android:id="@+id/nameMedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_name_user_chat"
+                        android:paddingLeft="@dimen/margin_8dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="@dimen/margin_8dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="@dimen/text_size_12" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/lnText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_chat_group_left"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_8dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imvTypeFile"
+                                        android:layout_width="24dp"
+                                        android:layout_height="32dp"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/default_image"
+                                        android:src="@drawable/icon_file_word"
+                                        tools:ignore="TooDeepLayout" />
+
+                                    <vn.techres.supplier.view.TechResTextView
+                                        android:id="@+id/tvNameFile"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="@dimen/margin_8dp"
+                                        android:autoLink="web"
+                                        android:clickable="false"
+                                        android:duplicateParentState="true"
+                                        android:focusable="false"
+                                        android:inputType="textMultiLine"
+                                        android:lineSpacingExtra="2.0dip"
+                                        android:maxWidth="200dp"
+                                        android:minWidth="50dp"
+                                        android:singleLine="false"
+                                        android:textColor="@color/black"
+                                        android:textColorLink="@color/colorLink"
+                                        android:textSize="@dimen/font_normal"
+                                        tools:ignore="TextViewEdits" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="@dimen/dp16">
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/tvOpen"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/bg_avatar_option_menu"
+                                            android:gravity="center"
+                                            android:paddingStart="@dimen/margin_12dp"
+                                            android:paddingTop="2dp"
+                                            android:paddingEnd="@dimen/margin_12dp"
+                                            android:paddingBottom="2dp"
+                                            android:text="@string/open"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/font_normal" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_8dp">
+
+                                    <vn.techres.supplier.view.TechResTextView
+                                        android:id="@+id/tvTypeFile"
+                                        android:layout_width="@dimen/dp150"
+                                        android:scrollHorizontally="true"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:singleLine="true"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:clickable="false"
+                                        android:duplicateParentState="true"
+                                        android:gravity="center"
+                                        android:textColor="@color/gray_text_title"
+                                        android:textSize="@dimen/text_size_12"
+                                        app:textAllCaps="true" />
+
+                                    <vn.techres.supplier.view.TechResTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="3dp"
+                                        android:layout_marginEnd="3dp"
+                                        android:clickable="false"
+                                        android:duplicateParentState="true"
+                                        android:gravity="center"
+                                        android:text="@string/dot"
+                                        android:textColor="@color/text_gray"
+                                        android:textSize="@dimen/text_size_10" />
+
+                                    <vn.techres.supplier.view.TechResTextView
+                                        android:id="@+id/tvSizeFile"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:clickable="false"
+                                        android:duplicateParentState="true"
+                                        android:gravity="center"
+                                        android:textColor="@color/gray_text_title"
+                                        android:textSize="12sp"
+                                        tools:ignore="RtlHardcoded" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvTime"
+                                        style="@style/chat_time_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="false"
+                                        android:minWidth="@dimen/text_size_12"
+                                        android:textColor="@color/color_time_chat"
+                                        android:textSize="@dimen/text_size_12" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/lnText"
+                            android:layout_alignBottom="@+id/lnText"
+                            android:layout_marginBottom="-10dp">
+
+                            <include
+                                android:id="@+id/reaction"
+                                layout="@layout/item_reaction_icon_message" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

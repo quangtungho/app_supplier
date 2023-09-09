@@ -1,0 +1,263 @@
+<resources>
+
+    <style name="LightTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/orange_1</item>
+        <item name="colorPrimaryDark">@color/orange_1</item>
+        <item name="colorAccent">@color/main_bg</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/common_window_background</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">#FF981E</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+    <!-- 验证码按钮样式 -->
+    <style name="CountdownViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/countdown_selector</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">Gửi lại</item>
+        <item name="android:textColor">@drawable/countdown_color_selector</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ProgressBarCircleNormal">
+        <item name="android:indeterminateDrawable">@drawable/progress_material</item>
+    </style>
+
+    <style name="CircularProgress">
+        <item name="colorAccent">@color/main_bg</item>
+    </style>
+
+    <style name="ChatMessage" />
+
+    <style name="AutoTextView">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ChatMessage.SettingTextPrimary" parent="@style/ChatMessage">
+        <item name="android:textSize">@dimen/LargeTextSize</item>
+    </style>
+
+    <style name="chat_time_style">
+        <item name="android:textColor">#ffa6abad</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/main_bg_header</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@style/animation_translucent_translate</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="animation_translucent_translate" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="BaseNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="TvTitle">
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="ToolbarColoredBackArrow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogShow">
+        <item name="android:windowEnterAnimation">@anim/show_dialog</item>
+        <item name="android:windowExitAnimation">@anim/hide_dialog</item>
+    </style>
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">5sp</item>
+    </style>
+
+    <style name="SearchView" parent="@style/Widget.AppCompat.SearchView">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="dialog_exit">
+        <item name="android:windowEnterAnimation">@anim/in_translate_top</item>
+        <item name="android:windowExitAnimation">@anim/out_translate_top</item>
+    </style>
+
+    <style name="toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp50</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="TvCaptionSmall">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="LinkTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bg_btn_postfeed</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="LinkSubTitle">
+        <item name="android:maxLines">4</item>
+    </style>
+
+    <style name="picture.white.style" parent="BaseNoActionBarTheme">
+        <!-- Customize your theme here. -->
+        <!--标题栏背景色-->
+        <item name="colorPrimary">@color/orange_1</item>
+        <!--状态栏背景色-->
+        <item name="colorPrimaryDark">@color/orange_1</item>
+        <item name="colorAccent">@color/main_bg</item>
+        <!--是否改变图片列表界面状态栏字体颜色为黑色-->
+        <item name="picture.statusFontColor">true</item>
+        <!--返回键图标-->
+        <item name="picture.leftBack.icon">@drawable/ic_back_arrow</item>
+        <!--标题下拉箭头-->
+        <item name="picture.arrow_down.icon">@drawable/ic_orange_arrow_down</item>
+        <!--标题上拉箭头-->
+        <item name="picture.arrow_up.icon">@drawable/ic_orange_arrow_up</item>
+        <!--标题文字颜色-->
+        <item name="picture.title.textColor">@color/app_color_black</item>
+        <!--标题栏右边文字-->
+        <item name="picture.right.textColor">@color/app_color_black</item>
+        <!--图片列表勾选样式-->
+        <item name="picture.checked.style">@drawable/picture_checkbox_selector</item>
+        <!--开启图片列表勾选数字模式,开启的话勾选样式要换-->
+        <item name="picture.style.checkNumMode">false</item>
+        <!--选择图片样式0/9-->
+        <item name="picture.style.numComplete">true</item>
+        <!--图片列表底部背景色-->
+        <item name="picture.bottom.bg">@color/app_color_fa</item>
+        <!--图片列表预览文字颜色-->
+        <item name="picture.preview.textColor">@color/picture_list_sina_text_color</item>
+        <!--图片列表已完成文字颜色-->
+        <item name="picture.complete.textColor">@color/picture_list_sina_text_color</item>
+        <!--图片已选数量圆点背景色-->
+        <item name="picture.num.style">@drawable/picture_num_oval</item>
+        <!--预览界面标题栏背景色-->
+        <item name="picture.ac_preview.title.bg">@color/app_color_white</item>
+        <!--预览界面标题文字颜色-->
+        <item name="picture.ac_preview.title.textColor">@color/app_color_black</item>
+        <!--预览界面已完成文字颜色-->
+        <item name="picture.ac_preview.complete.textColor">@color/picture_list_sina_text_color
+        </item>
+        <!--预览界面底部背景色-->
+        <item name="picture.ac_preview.bottom.bg">@color/picture_color_fa</item>
+        <!--预览界面返回箭头-->
+        <item name="picture.preview.leftBack.icon">@drawable/ic_back_arrow</item>
+        <!--裁剪页面标题背景色-->
+        <item name="picture.crop.toolbar.bg">@color/app_color_white</item>
+        <!--裁剪页面状态栏颜色-->
+        <item name="picture.crop.status.color">@color/app_color_white</item>
+        <!--裁剪页面标题文字颜色-->
+        <item name="picture.crop.title.color">@color/app_color_black</item>
+        <!--相册文件夹列表选中图标-->
+        <item name="picture.folder_checked_dot">@drawable/picture_orange_oval</item>
+        <!--原图勾选样式-->
+        <item name="picture.original.check.style">@drawable/picture_original_checkbox</item>
+        <!--原图字体颜色-->
+        <item name="picture.original.text.color">@color/picture_color_53575e</item>
+        <!--标题栏高度-->
+        <item name="picture.titleBar.height">48dp</item>
+    </style>
+
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <!--        <item name="android:windowFrame">@null</item>-->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="TextViewDefaultDataOrderManager" parent="AutoTextView">
+        <item name="android:layout_height">@dimen/size_50</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:paddingStart">@dimen/dp8</item>
+        <item name="android:paddingEnd">@dimen/dp8</item>
+    </style>
+
+    <style name="ViewDefaultOrderManager" parent="AutoTextView">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:elevation">@dimen/margin_8dp</item>
+        <item name="tabSelectedTextColor">@color/color_main</item>
+        <item name="tabTextColor">@color/gray_text_title</item>
+        <item name="tabIndicator">@drawable/tab_indicator</item>
+        <item name="android:background">@color/white</item>
+        <item name="tabRippleColor">@color/transparent</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="tabIndicatorColor">@color/main_bg</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ImageButtonStyleCustom">
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_gravity">end|center_vertical|center_horizontal|center</item>
+        <item name="android:background">@drawable/ripple_animation_button_back_header</item>
+    </style>
+</resources>

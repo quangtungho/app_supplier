@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp50"
+    android:background="@drawable/bg_radius_dp15"
+    android:elevation="@dimen/dp5">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_main"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <vn.techres.supplier.view.TechResTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/margin_20dp"
+            android:text="@string/dialog_cardimage_profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/linearDialogViewcardimg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size32_main"
+                android:layout_height="@dimen/icon_size32_main"
+                android:layout_marginHorizontal="@dimen/margin_16dp"
+                android:src="@drawable/icon_viewavatar_profile"
+                tools:ignore="ContentDescription" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_view_cardimage_profile"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size32_main"
+                android:layout_height="@dimen/icon_size32_main"
+                android:layout_marginHorizontal="@dimen/margin_16dp"
+                android:src="@drawable/icon_takepic_profile"
+                tools:ignore="ContentDescription" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/dialog_takepic_profile"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size32_main"
+                android:layout_height="@dimen/icon_size32_main"
+                android:layout_marginHorizontal="@dimen/margin_16dp"
+                android:src="@drawable/icon_newpicdevice_profile"
+                tools:ignore="ContentDescription" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/dialog_newpicdevice_profile"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size32_main"
+                android:layout_height="@dimen/icon_size32_main"
+                android:layout_marginHorizontal="@dimen/margin_16dp"
+                android:src="@drawable/icon_newpicprofile_profile"
+                tools:ignore="ContentDescription" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/dialog_newpicprofile_profile"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

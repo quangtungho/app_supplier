@@ -1,0 +1,2 @@
+com/pierfrancescosoffritti/androidyoutubeplayer/BuildConfig.java
+ com.pierfrancescosoffritti.androidyoutubeplayer.BuildConfig

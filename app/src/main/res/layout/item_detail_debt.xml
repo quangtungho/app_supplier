@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/linearDetailDebt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8dp"
+        android:background="@drawable/bg_cardview"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_8dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_view_avatar"
+                android:padding="@dimen/padding_5dp"
+                app:layout_constraintBottom_toTopOf="@+id/nestedscrollContent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/nestedscrollContent">
+
+                <ImageView
+                    android:id="@+id/imgStaff"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:contentDescription="@string/default_image"
+                    android:padding="@dimen/padding_8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/wallet" />
+
+                <TextView
+                    android:id="@+id/payStatus"
+                    android:layout_width="@dimen/dp18"
+                    android:layout_height="@dimen/dp18"
+                    android:layout_alignEnd="@id/imgStaff"
+                    android:layout_alignBottom="@id/imgStaff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_view_avatar">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="@dimen/padding_8dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/txtBranchName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="@dimen/padding_8dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingStart="@dimen/padding_8dp"
+                    android:paddingTop="@dimen/px4"
+                    android:paddingEnd="@dimen/px4"
+                    android:paddingBottom="@dimen/px4"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal"
+                    tools:ignore="RtlSymmetry" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/padding_8dp"
+                        android:paddingTop="@dimen/px4"
+                        android:paddingEnd="@dimen/px4"
+                        android:paddingBottom="@dimen/px4"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="normal"
+                        tools:ignore="RtlSymmetry" />
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/totail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/margin_8dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

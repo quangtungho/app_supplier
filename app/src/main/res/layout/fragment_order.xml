@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="MissingClass">
+
+
+                    <com.kizitonwose.calendarview.CalendarView
+                        android:id="@+id/exSevenCalendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cv_dayViewResource="@layout/item_calendar_day"
+                        app:cv_hasBoundaries="false"
+                        app:cv_inDateStyle="none"
+                        app:cv_maxRowCount="1"
+                        app:cv_orientation="horizontal"
+                        app:cv_outDateStyle="none"
+                        app:cv_scrollMode="continuous" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/grey_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/dp5">
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/txtMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/margin_4dp"
+                            android:gravity="center"
+                            android:text="@string/view_day"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/btnDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/margin_4dp"
+                                android:background="@drawable/bg_item_chat"
+                                android:backgroundTint="@color/white"
+                                android:drawableEnd="@drawable/ic_calendar"
+                                android:drawablePadding="@dimen/padding_8dp"
+                                android:gravity="center"
+                                android:padding="@dimen/dp5"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal"
+                                android:visibility="visible" />
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/btnDateMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_4dp"
+                                android:background="@drawable/bg_item_chat"
+                                android:backgroundTint="@color/white"
+                                android:drawableEnd="@drawable/ic_calendar"
+                                android:drawablePadding="@dimen/padding_8dp"
+                                android:gravity="center"
+                                android:padding="@dimen/dp5"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/btnSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="@dimen/margin_12dp"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:layout_marginEnd="@dimen/margin_12dp"
+                        android:layout_marginBottom="@dimen/dp8"
+                        android:background="@drawable/shape_search_oder"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:theme="@style/SearchView"
+                        app:closeIcon="@drawable/stencils_ic_head_close_black"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@android:color/transparent"
+                        app:queryHint="Tìm kiếm đơn hàng..."
+                        app:searchIcon="@drawable/ic_loupe" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearDataNull"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp100"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp120"
+                            android:src="@drawable/img_data_null"
+                            tools:ignore="ContentDescription" />
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:text="@string/mess_data_order_null" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

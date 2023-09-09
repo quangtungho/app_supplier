@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/constraintLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:ignore="MissingConstraints">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/padding_8dp">
+
+                                <LinearLayout
+
+                                    android:layout_width="@dimen/dp350"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/text_action_post"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/padding_8dp"
+                                        tools:ignore="TooDeepLayout,UselessParent">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/cardViewImg"
+                                            android:layout_width="@dimen/dp50"
+                                            android:layout_height="@dimen/dp50"
+                                            android:visibility="visible"
+                                            app:cardCornerRadius="@dimen/px4"
+                                            tools:ignore="TooDeepLayout">
+
+                                            <ImageView
+                                                android:id="@+id/avatar"
+                                                android:layout_width="@dimen/dp50"
+                                                android:layout_height="@dimen/dp50"
+                                                android:contentDescription="@string/default_image"
+                                                android:scaleType="centerCrop"
+                                                android:src="@drawable/logo_techres"
+                                                android:visibility="visible"
+                                                tools:ignore="TooDeepLayout" />
+                                        </androidx.cardview.widget.CardView>
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/name_restaurant"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="@dimen/margin_8dp"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/text_size_16"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/bg_cardview"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/padding_8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:text="@string/name_brand"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:text="@string/name_branch"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/txtCode"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:text="@string/code_dh_1"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/total_money1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:text="@string/total"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:text="@string/delivery_date"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/txt_discount"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:text="@string/discounts"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/txt_vat"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:text="@string/vat"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/txt_totail_material"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:text="@string/totalmaterial"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/txtTotalMoney2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:text="@string/price_order"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal"
+                                                android:visibility="gone" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/name_brand"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:layout_marginStart="@dimen/margin_8dp"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/name_branch"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:layout_marginStart="@dimen/margin_8dp"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/code"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:layout_marginStart="@dimen/margin_8dp"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/total_money"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:layout_marginStart="@dimen/margin_8dp"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/delivery_date"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:layout_marginStart="@dimen/margin_8dp"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/discount"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:layout_marginStart="@dimen/margin_8dp"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/vat"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:layout_marginStart="@dimen/margin_8dp"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/totalmaterial"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:layout_marginStart="@dimen/margin_8dp"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal" />
+
+                                            <vn.techres.supplier.view.TechResTextView
+                                                android:id="@+id/total_money2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:layout_marginStart="@dimen/margin_8dp"
+                                                android:padding="@dimen/padding_8dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/font_normal"
+                                                android:textStyle="normal"
+                                                android:visibility="gone" />
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_sum_order"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp16"
+                            android:layout_marginTop="@dimen/dp8"
+                            android:layout_marginEnd="@dimen/dp16"
+                            android:layout_marginBottom="@dimen/padding_6dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/padding_8dp"
+                                    android:text="@string/expected_date"
+                                    android:textColor="@color/text_action_post"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="normal" />
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/padding_8dp"
+                                    android:padding="@dimen/padding_8dp"
+                                    android:text="@string/discounts"
+                                    android:textColor="@color/text_action_post"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="normal" />
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/padding_8dp"
+                                    android:gravity="center"
+                                    android:padding="@dimen/padding_8dp"
+                                    android:text="@string/tax"
+                                    android:textColor="@color/text_action_post"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="normal" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:id="@+id/btnDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:background="@drawable/bg_item_chat"
+                                    android:padding="@dimen/padding_8dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="normal" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginTop="@dimen/padding_8dp"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/bg_item_chat"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/edit_discounts"
+                                        android:layout_width="@dimen/dp80"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="end"
+                                        android:background="@color/transparent"
+                                        android:hint="@string/not_data"
+                                        android:inputType="numberDecimal"
+                                        android:maxLength="3"
+                                        android:padding="@dimen/padding_8dp"
+                                        android:text="@string/not_data"
+                                        android:textColor="@color/blue"
+                                        android:textSize="@dimen/font_normal"
+                                        android:textStyle="bold"
+                                        tools:ignore="Autofill" />
+
+                                    <vn.techres.supplier.view.TechResTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="@dimen/margin_8dp"
+                                        android:hint="@string/not_data"
+                                        android:text="@string/unit_discounts"
+                                        android:textColor="@color/blue"
+                                        android:textSize="@dimen/text_size_20"
+                                        android:textStyle="normal" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginTop="@dimen/padding_8dp"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/bg_item_chat"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/edit_tax_vat"
+                                        android:layout_width="@dimen/dp80"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="end"
+                                        android:background="@color/transparent"
+                                        android:hint="@string/not_data"
+                                        android:inputType="numberDecimal"
+                                        android:maxLength="3"
+                                        android:padding="@dimen/padding_8dp"
+                                        android:text="@string/not_data"
+                                        android:textColor="@color/blue"
+                                        android:textSize="@dimen/font_normal"
+                                        android:textStyle="bold"
+                                        tools:ignore="Autofill" />
+
+                                    <vn.techres.supplier.view.TechResTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="@dimen/margin_8dp"
+                                        android:hint="@string/not_data"
+                                        android:text="@string/unit_discounts"
+                                        android:textColor="@color/blue"
+                                        android:textSize="@dimen/text_size_20"
+                                        android:textStyle="normal" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_8dp"
+                                android:visibility="gone">
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/padding_8dp"
+                                    android:text="@string/totail_bill_order"
+                                    android:textColor="@color/black_2" />
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:id="@+id/totail_bill_order"
+                                    android:layout_width="@dimen/dp100"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_8dp"
+                                    android:padding="@dimen/padding_8dp"
+                                    android:textColor="@color/black_2" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_main" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <HorizontalScrollView
+                                android:id="@+id/linearListData"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="none"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayoutOrderRequest"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.5dp"
+                                        android:layout_marginTop="@dimen/margin_8dp"
+                                        android:background="@color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dp50"
+                                        android:background="@color/text_action_post"
+                                        android:orientation="horizontal">
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:layout_width="@dimen/dp40"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:ellipsize="marquee"
+                                            android:gravity="center"
+                                            android:marqueeRepeatLimit="marquee_forever"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:scrollHorizontally="true"
+                                            android:singleLine="true"
+                                            android:text="@string/number_count"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal"
+                                            android:textStyle="normal" />
+
+                                        <View
+                                            android:id="@+id/viewNumberCount"
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white"
+                                            android:visibility="gone" />
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/txtNumberCount"
+                                            android:layout_width="@dimen/dp60"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:gravity="center"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:text="@string/code_material"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal"
+                                            android:visibility="gone" />
+
+                                        <View
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white" />
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:layout_width="@dimen/dp120"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:ellipsize="marquee"
+                                            android:gravity="center"
+                                            android:marqueeRepeatLimit="marquee_forever"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:scrollHorizontally="true"
+                                            android:singleLine="true"
+                                            android:text="@string/txt_material"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal" />
+
+                                        <View
+
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white" />
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:layout_width="@dimen/dp60"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:ellipsize="marquee"
+                                            android:gravity="center"
+                                            android:marqueeRepeatLimit="marquee_forever"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:scrollHorizontally="true"
+                                            android:singleLine="true"
+                                            android:text="@string/units"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal" />
+
+
+                                        <View
+                                            android:id="@+id/view_number_of_orders"
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white" />
+                                        <!--so luong dat-->
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/number_of_orders"
+                                            android:layout_width="@dimen/dp60"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:ellipsize="marquee"
+                                            android:gravity="center"
+                                            android:marqueeRepeatLimit="marquee_forever"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:scrollHorizontally="true"
+                                            android:singleLine="true"
+                                            android:text="@string/orderQuantity"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal" />
+
+                                        <View
+                                            android:id="@+id/view1"
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white" />
+                                        <!--sl giao-->
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/delivering"
+                                            android:layout_width="@dimen/dp60"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:ellipsize="marquee"
+                                            android:gravity="center"
+                                            android:marqueeRepeatLimit="marquee_forever"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:scrollHorizontally="true"
+                                            android:singleLine="true"
+                                            android:text="@string/deliveryQuantity"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal" />
+
+                                        <View
+                                            android:id="@+id/view_returns_order"
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white"
+                                            android:visibility="gone" />
+                                        <!--//sl nhan-->
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/receive"
+                                            android:layout_width="@dimen/dp65"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:ellipsize="marquee"
+                                            android:gravity="center"
+                                            android:marqueeRepeatLimit="marquee_forever"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:scrollHorizontally="true"
+                                            android:singleLine="true"
+                                            android:text="@string/reliveryQuantity"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal"
+                                            android:visibility="gone" />
+
+                                        <View
+                                            android:id="@+id/view_receive_order"
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white"
+                                            android:visibility="gone" />
+
+
+                                        <View
+                                            android:id="@+id/viewFunction"
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white"
+                                            android:visibility="gone"
+                                            tools:ignore="TooManyViews" />
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/function"
+                                            android:layout_width="@dimen/dp60"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:textSize="@dimen/font_normal"
+                                            android:textStyle="normal"
+                                            android:visibility="gone" />
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/txt_returns_order"
+                                            android:layout_width="@dimen/dp70"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:gravity="center"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:text="@string/returnQuantity"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal"
+                                            android:visibility="gone" />
+
+                                        <View
+                                            android:id="@+id/view_total_price"
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white" />
+                                        <!--don gia -->
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/total_price"
+                                            android:layout_width="@dimen/dp90"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:ellipsize="marquee"
+                                            android:gravity="center"
+                                            android:marqueeRepeatLimit="marquee_forever"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:scrollHorizontally="true"
+                                            android:singleLine="true"
+                                            android:text="@string/total_price"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal"
+                                            android:visibility="visible" />
+
+                                        <View
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white"
+                                            tools:ignore="TooManyViews" />
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:id="@+id/txt_total_price"
+                                            android:layout_width="@dimen/dp100"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:gravity="center"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:text="@string/unit_value"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal"
+                                            android:visibility="gone" />
+
+                                        <View
+                                            android:id="@+id/viewNumberPrice"
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white"
+                                            android:visibility="gone"
+                                            tools:ignore="TooManyViews" />
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:layout_width="@dimen/dp90"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:gravity="center"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:text="@string/price_order"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal"
+                                            android:textStyle="normal" />
+
+                                        <View
+                                            android:layout_width="0.5dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white" />
+
+                                        <vn.techres.supplier.view.TechResTextView
+                                            android:layout_width="@dimen/dp130"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/text_action_post"
+                                            android:ellipsize="marquee"
+                                            android:gravity="center"
+                                            android:marqueeRepeatLimit="marquee_forever"
+                                            android:padding="@dimen/padding_5dp"
+                                            android:scrollHorizontally="true"
+                                            android:singleLine="true"
+                                            android:text="@string/date_created"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/font_normal" />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/white" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1">
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/recyclerView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/linear_totail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_8dp"
+                android:gravity="center"
+                android:padding="@dimen/padding_6dp"
+                android:visibility="gone">
+
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_8dp"
+                    android:text="@string/done_order"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_8dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/grey_main" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_6dp">
+
+                <com.kusu.loadingbutton.LoadingButton
+                    android:id="@+id/btnAcceptOrder"
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/padding_12dp"
+                    android:background="@drawable/bg_radius_dp5"
+                    android:backgroundTint="@color/txt_sp"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_12dp"
+                    android:text="@string/btn_cofirm_order"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    tools:ignore="TooManyViews,UselessParent">
+
+                </com.kusu.loadingbutton.LoadingButton>
+
+                <com.kusu.loadingbutton.LoadingButton
+                    android:id="@+id/btnEditOrder"
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_12dp"
+                    android:background="@drawable/bg_radius_dp5"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_12dp"
+                    android:text="@string/btn_edit_order"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    tools:ignore="UselessParent">
+
+                </com.kusu.loadingbutton.LoadingButton>
+
+                <com.kusu.loadingbutton.LoadingButton
+                    android:id="@+id/btnDeleteOrder"
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_12dp"
+                    android:background="@drawable/bg_radius_dp5"
+                    android:backgroundTint="@color/red_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_12dp"
+                    android:text="@string/btn_delete_order"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    tools:ignore="UselessParent">
+
+                </com.kusu.loadingbutton.LoadingButton>
+
+                <com.kusu.loadingbutton.LoadingButton
+                    android:id="@+id/btnDeleteOrder1"
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_12dp"
+                    android:background="@drawable/bg_radius_dp5"
+                    android:backgroundTint="@color/red_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_12dp"
+                    android:text="@string/btn_delete_order1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    tools:ignore="UselessParent">
+
+                </com.kusu.loadingbutton.LoadingButton>
+
+                <com.kusu.loadingbutton.LoadingButton
+                    android:id="@+id/btnRetweetOrder"
+                    android:layout_width="@dimen/size_160"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_12dp"
+                    android:background="@drawable/bg_radius_dp5"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_12dp"
+                    android:text="@string/btn_cofirm_return_order_wahouse"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    tools:ignore="TooManyViews,UselessParent">
+
+
+                </com.kusu.loadingbutton.LoadingButton>
+
+                <com.kusu.loadingbutton.LoadingButton
+                    android:id="@+id/btnRetweetOrder1"
+                    android:layout_width="@dimen/size_160"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_12dp"
+                    android:background="@drawable/bg_radius_dp5"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_12dp"
+                    android:text="@string/btn_cofirm_return_order"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    tools:ignore="TooManyViews,UselessParent">
+
+                </com.kusu.loadingbutton.LoadingButton>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

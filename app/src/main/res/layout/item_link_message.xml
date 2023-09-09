@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rltLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:id="@+id/lnNewFeedLinkPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imvMediaThumbPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/default_image"
+                    android:maxHeight="240dp" />
+            </RelativeLayout>
+
+            <vn.techres.supplier.view.TechResTextViewBold
+                android:id="@+id/tvMediaTitlePost"
+                style="@style/LinkTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_8dp"
+                android:ellipsize="end"
+                android:paddingTop="@dimen/margin_8dp"
+                android:textSize="@dimen/font_size_12" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/tvMediaSubTitlePost"
+                style="@style/LinkSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp8"
+                android:paddingBottom="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp8"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:autoPlay="false"
+            android:paddingBottom="@dimen/dp16"
+            app:showFullScreenButton="true"
+            app:showYouTubeButton="false" />
+
+    </RelativeLayout>
+</layout>

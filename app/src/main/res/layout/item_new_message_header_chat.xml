@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageNoRep"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/ayp_8dp"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/ayp_8dp"
+        android:layout_weight="1"
+        android:background="@color/grey" />
+
+    <vn.techres.supplier.view.TechResTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ayp_8dp"
+        android:text="@string/new_message_no_rep"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/grey" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/ayp_8dp"
+        android:layout_weight="1"
+        android:background="@color/grey" />
+</LinearLayout>

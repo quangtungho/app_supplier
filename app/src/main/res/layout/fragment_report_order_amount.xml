@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.reportmanager.OverViewWareHouseFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_12dp">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/chartBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp240" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:background="@drawable/bg_cardview">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_radius_report"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_8dp"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_9dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ByWeak"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:text="@string/Week"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:text="@string/ByThisMonth"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:text="@string/ByLastMonth"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_8dp"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_9dp">
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/this_week_total_order_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/last_week_total_order_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/this_month_total_order_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/last_month_total_order_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

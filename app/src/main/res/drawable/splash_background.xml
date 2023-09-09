@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <item android:drawable="@color/main_bg" />
+    <item android:bottom="40dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/techres_sologan_main_white_colors" />
+    </item>
+    <item>
+        <bitmap
+            android:gravity="bottom|right|center_vertical|center_horizontal|center"
+            android:src="@drawable/graphic_bottom_wave" />
+    </item>
+</layer-list>

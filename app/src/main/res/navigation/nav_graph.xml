@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="vn.techres.supplier.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="vn.techres.supplier.fragment.forgotpassword.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/accountMenuFragment"
+        android:name="vn.techres.supplier.fragment.navigate.AccountMenuFragment"
+        android:label="fragment_account_menu"
+        tools:layout="@layout/fragment_account_menu" />
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="vn.techres.supplier.fragment.forgotpassword.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="vn.techres.supplier.fragment.forgotpassword.OtpVerificationFragment"
+        android:label="fragment_otp_verification"
+        tools:layout="@layout/fragment_otp_verification" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="vn.techres.supplier.fragment.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="vn.techres.supplier.fragment.navigate.MainFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="vn.techres.supplier.fragment.navigate.OverviewFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_overview" />
+    <fragment
+        android:id="@+id/advSlideWelcomeFragment"
+        android:name="vn.techres.supplier.fragment.slidewelcome.AdvSlideWelcomeFragment"
+        android:label="fragment_adv_slide_welcome"
+        tools:layout="@layout/fragment_adv_slide_welcome" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="vn.techres.supplier.fragment.support.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="vn.techres.supplier.fragment.setting.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="vn.techres.supplier.fragment.setting.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/debtFragment"
+        android:name="vn.techres.supplier.fragment.debtmanager.DebtFragment"
+        android:label="fragment_debt"
+        tools:layout="@layout/fragment_debt" />
+    <fragment
+        android:id="@+id/customerFragment"
+        android:name="vn.techres.supplier.fragment.customermanager.CustomerActiveFragment"
+        android:label="fragment_customer"
+        tools:layout="@layout/fragment_customer" />
+    <fragment
+        android:id="@+id/employeeManagerFragment"
+        android:name="vn.techres.supplier.fragment.employeemanager.EmployeeManagerFragment"
+        android:label="fragment_employee_manager"
+        tools:layout="@layout/fragment_employee_manager" />
+    <fragment
+        android:id="@+id/employeeListFragment"
+        android:name="vn.techres.supplier.fragment.employeemanager.TabEmployeeOnFragment"
+        android:label="fragment_employee_list"
+        tools:layout="@layout/fragment_employee_onandoff" />
+    <fragment
+        android:id="@+id/nationFragment"
+        android:name="vn.techres.supplier.fragment.setting.NationFragment"
+        android:label="fragment_nation"
+        tools:layout="@layout/fragment_nation" />
+    <fragment
+        android:id="@+id/profileAccountFragment"
+        android:name="vn.techres.supplier.fragment.profile.ProfileAccountFragment"
+        android:label="fragment_profile_account"
+        tools:layout="@layout/fragment_profile_account" />
+    <fragment
+        android:id="@+id/moreProfileFragment"
+        android:name="vn.techres.supplier.fragment.profile.MoreProfileAccountFragment"
+        android:label="fragment_more_profile"
+        tools:layout="@layout/fragment_more_profile" />
+    <fragment
+        android:id="@+id/infoProfileFragment"
+        android:name="vn.techres.supplier.fragment.profile.InfoProfileFragment"
+        android:label="fragment_info_profile"
+        tools:layout="@layout/fragment_info_profile" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="vn.techres.supplier.fragment.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/staffOnListFragment"
+        android:name="vn.techres.supplier.fragment.employeemanager.TabEmployeeOnFragment"
+        android:label="fragment_staff_on_list"
+        tools:layout="@layout/fragment_employee_onandoff" />
+    <fragment
+        android:id="@+id/profileCustomerFragment"
+        android:name="vn.techres.supplier.fragment.customermanager.CustomerProfileFragment"
+        android:label="fragment_profile_customer"
+        tools:layout="@layout/fragment_customer_manager" />
+
+    <fragment
+        android:id="@+id/addNewPhotoFragment"
+        android:name="vn.techres.supplier.fragment.profile.AddNewPhotoFragment"
+        android:label="fragment_add_new_photo"
+        tools:layout="@layout/fragment_add_new_photo" />
+    <fragment
+        android:id="@+id/materialUnitsManagerFragment"
+        android:name="vn.techres.supplier.fragment.units.UnitsManagerFragment"
+        android:label="fragment_material_units_manager"
+        tools:layout="@layout/fragment_material_units_manager" />
+    <fragment
+        android:id="@+id/unitsActiceFragment"
+        android:name="vn.techres.supplier.fragment.units.UnitsActiveFragment"
+        android:label="fragment_units_actice"
+        tools:layout="@layout/fragment_units_actice_and_pause" />
+    <fragment
+        android:id="@+id/specificationManagerFragment"
+        android:name="vn.techres.supplier.fragment.specification.SpecificationManagerFragment"
+        android:label="fragment_specification_manager"
+        tools:layout="@layout/fragment_specification_manager" />
+    <fragment
+        android:id="@+id/salesHandbookFragment"
+        android:name="vn.techres.supplier.fragment.restaurantcontactors.BranchFragment"
+        android:label="fragment_sales_handbook"
+        tools:layout="@layout/fragment_branch" />
+    <fragment
+        android:id="@+id/contactorsFragment"
+        android:name="vn.techres.supplier.fragment.restaurantcontactors.ContactorsFragment"
+        android:label="fragment_contactors"
+        tools:layout="@layout/fragment_contactors" />
+
+    <fragment
+        android:id="@+id/materialManagerFragment"
+        android:name="vn.techres.supplier.fragment.materialmanager.MaterialManagerFragment"
+        android:label="fragment_material_manager"
+        tools:layout="@layout/fragment_material_manager" />
+    <fragment
+        android:id="@+id/notificationSettingsFragment"
+        android:name="vn.techres.supplier.fragment.setting.NotificationSettingsFragment"
+        android:label="fragment_notification_settings"
+        tools:layout="@layout/fragment_notification_settings" />
+    <fragment
+        android:id="@+id/settingFingerprintFragment"
+        android:name="vn.techres.supplier.fragment.setting.SettingFingerprintFragment"
+        android:label="fragment_setting_fingerprint"
+        tools:layout="@layout/fragment_setting_fingerprint" />
+    <fragment
+        android:id="@+id/entertainmentFragment"
+        android:name="vn.techres.supplier.fragment.collectionfragment.IntroduceFragment"
+        android:label="fragment_entertainment"
+        tools:layout="@layout/fragment_entertainment" />
+    <fragment
+        android:id="@+id/orderReportFragment"
+        android:name="vn.techres.supplier.fragment.reportmanager.OrderReportFragment"
+        android:label="fragment_order_report"
+        tools:layout="@layout/fragment_order_report" />
+    <fragment
+        android:id="@+id/materialReportFragment"
+        android:name="vn.techres.supplier.fragment.reportmanager.MaterialReportFragment"
+        android:label="fragment_material_report"
+        tools:layout="@layout/fragment_material_report" />
+    <fragment
+        android:id="@+id/categoryReportFragment"
+        android:name="vn.techres.supplier.fragment.reportmanager.CategoryReportFragment"
+        android:label="fragment_category_report"
+        tools:layout="@layout/fragment_category_report" />
+    <fragment
+        android:id="@+id/orderTimeReportFragment"
+        android:name="vn.techres.supplier.fragment.reportmanager.OrderTimeReportFragment"
+        android:label="fragment_order_time_report"
+        tools:layout="@layout/fragment_order_time_report" />
+    <fragment
+        android:id="@+id/orderReportRestaurantFragment"
+        android:name="vn.techres.supplier.fragment.reportmanager.OrderReportByRestaurantFragment"
+        android:label="fragment_order_report_restaurant"
+        tools:layout="@layout/fragment_order_report_by_restaurant" />
+
+    <fragment
+        android:id="@+id/headerSearchFragment"
+        android:name="vn.techres.supplier.fragment.navigate.HeaderSearchFragment"
+        android:label="fragment_header_search"
+        tools:layout="@layout/fragment_header_search" />
+    <fragment
+        android:id="@+id/warehouseReportFragment"
+        android:name="vn.techres.supplier.fragment.inventorymanagement.WareHouseFragment"
+        android:label="fragment_warehouse_report"
+        tools:layout="@layout/fragment_warehouse_report" />
+    <fragment
+        android:id="@+id/qrCodeFragment"
+        android:name="vn.techres.supplier.fragment.navigate.QrCodeFragment"
+        android:label="fragment_qr_code"
+        tools:layout="@layout/fragment_qr_code" />
+
+    <fragment
+        android:id="@+id/orderManagerFragment"
+        android:name="vn.techres.supplier.fragment.ordermanager.OrderManagerFragment"
+        android:label="fragment_order_manager"
+        tools:layout="@layout/fragment_order_manager" />
+    <fragment
+        android:id="@+id/orderBillFragment"
+        android:name="vn.techres.supplier.fragment.ordermanager.OrderBillFragment"
+        android:label="fragment_order_bill"
+        tools:layout="@layout/fragment_order" />
+    <fragment
+        android:id="@+id/createWareHouseFragment"
+        android:name="vn.techres.supplier.fragment.inventorymanagement.CreateWareHouseFragment"
+        android:label="fragment_create_ware_house"
+        tools:layout="@layout/fragment_create_ware_house" />
+
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:label="fragment_order_detail"
+        tools:layout="@layout/fragment_order_detail" />
+    <fragment
+        android:id="@+id/overViewWareHouseFragment"
+        android:name="vn.techres.supplier.fragment.reportmanager.OverViewWareHouseFragment"
+        android:label="fragment_over_view_ware_house"
+        tools:layout="@layout/fragment_over_view_ware_house" />
+    <fragment
+        android:id="@+id/editWareHouseFragment"
+        android:name="vn.techres.supplier.fragment.inventorymanagement.DetailWareHouseFragment"
+        android:label="fragment_edit_ware_house"
+        tools:layout="@layout/fragment_detail_ware_house" />
+
+    <fragment
+        android:id="@+id/customerManagerrFragment"
+        android:name="vn.techres.supplier.fragment.customermanager.CustomerActiveFragment"
+        android:label="fragment_customer_managerr"
+        tools:layout="@layout/fragment_customer_managerr" />
+    <fragment
+        android:id="@+id/debtRestaurantFragment"
+        android:name="vn.techres.supplier.fragment.restaurantcontactors.DebtRestaurantFragment"
+        android:label="fragment_debt_restaurant"
+        tools:layout="@layout/fragment_debt_restaurant" />
+    <fragment
+        android:id="@+id/groupOrderFragment"
+        android:name="vn.techres.supplier.fragment.chatmanager.GroupOrderFragment"
+        android:label="fragment_group_order"
+        tools:layout="@layout/fragment_group_order" />
+
+    <fragment
+        android:id="@+id/mediaGroupFragment"
+        android:name="vn.techres.supplier.fragment.chatmanager.archivemain.MediaGroupFragment"
+        android:label="fragment_media_group2" />
+    <fragment
+        android:id="@+id/videoGroupFragment"
+        android:name="vn.techres.supplier.fragment.chatmanager.archivemain.VideoGroupFragment"
+        android:label="fragment_video_group"
+        tools:layout="@layout/fragment_video_group" />
+    <fragment
+        android:id="@+id/linkFragment"
+        android:name="vn.techres.supplier.fragment.chatmanager.archivemain.LinkFragment"
+        android:label="fragment_link" />
+    <fragment
+        android:id="@+id/phonebookFragment"
+        android:name="vn.techres.supplier.fragment.chatmanager.PhonebookFragment"
+        android:label="fragment_phonebook"
+        tools:layout="@layout/fragment_phonebook" />
+    <fragment
+        android:id="@+id/orderRestaurantFragment"
+        android:name="vn.techres.supplier.fragment.ordermanager.OrderProcessingFragment"
+        android:label="fragment_order_restaurant"
+        tools:layout="@layout/fragment_order_restaurant" />
+    <fragment
+        android:id="@+id/debtReceivableFragment"
+        android:name="vn.techres.supplier.fragment.debtmanager.DebtReceivableFragment"
+        android:label="fragment_debt_receivable"
+        tools:layout="@layout/fragment_debt_to_pay" />
+    <fragment
+        android:id="@+id/debtToPayFragment"
+        android:name="vn.techres.supplier.fragment.debtmanager.DebtToPayFragment"
+        android:label="fragment_debt_to_pay"
+        tools:layout="@layout/fragment_debt_to_pay" />
+    <fragment
+        android:id="@+id/debtReportFragment"
+        android:name="vn.techres.supplier.fragment.reportmanager.DebtReportFragment"
+        android:label="fragment_debt_report"
+        tools:layout="@layout/fragment_debt_report" />
+    <fragment
+        android:id="@+id/genusItemsFragment"
+        android:name="vn.techres.supplier.fragment.revenuemanagement.genusitems.genus.GenusItemsFragment"
+        android:label="fragment_genus_items"
+        tools:layout="@layout/fragment_genus_items" />
+    <fragment
+        android:id="@+id/receiptsFragment"
+        android:name="vn.techres.supplier.fragment.revenuemanagement.genusitems.receipts.ReceiptsFragment"
+        android:label="fragment_receipts"
+        tools:layout="@layout/fragment_receipts" />
+    <fragment
+        android:id="@+id/detailAdditionFeesFragment"
+        android:name="vn.techres.supplier.fragment.revenuemanagement.genusitems.receipts.DetailAdditionFeesFragment"
+        android:label="fragment_detail_addition_fees"
+        tools:layout="@layout/fragment_detail_addition_fees" />
+    <fragment
+        android:id="@+id/detailBillWareHouseFragment"
+        android:name="vn.techres.supplier.fragment.inventorymanagement.DetailBillWareHouseFragment"
+        android:label="fragment_detail_bill_ware_house"
+        tools:layout="@layout/fragment_detail_bill_ware_house" />
+    <fragment
+        android:id="@+id/cancelledFragment"
+        android:name="vn.techres.supplier.fragment.ordermanager.OrderReturnsFragment"
+        android:label="fragment_cancelled"
+        tools:layout="@layout/fragment_cancelled" />
+    <fragment
+        android:id="@+id/editMaterialFragment"
+        android:name="vn.techres.supplier.fragment.materialmanager.EditMaterialFragment"
+        android:label="fragment_edit_material"
+        tools:layout="@layout/fragment_edit_material" />
+    <fragment
+        android:id="@+id/reportCancelReturnFragment"
+        android:name="vn.techres.supplier.fragment.reportmanager.ReportCancelReturnFragment"
+        android:label="fragment_report_cancel_return"
+        tools:layout="@layout/fragment_report_cancel_return" />
+    <fragment
+        android:id="@+id/reportOrderAmountFragment"
+        android:name="vn.techres.supplier.fragment.reportmanager.ReportOrderAmountFragment"
+        android:label="fragment_report_order_amount"
+        tools:layout="@layout/fragment_report_order_amount" />
+    <fragment
+        android:id="@+id/detailDebtFragment"
+        android:name="vn.techres.supplier.fragment.debtmanager.DetailDebtFragment"
+        android:label="fragment_detail_debt"
+        tools:layout="@layout/fragment_detail_debt" />
+    <fragment
+        android:id="@+id/paymentRequestManagerFragment"
+        android:name="vn.techres.supplier.fragment.paymentrequest.PaymentRequestManagerFragment"
+        android:label="fragment_payment_request_manager"
+        tools:layout="@layout/fragment_payment_request_manager" />
+    <fragment
+        android:id="@+id/detailPaymentRequestFragment"
+        android:name="vn.techres.supplier.fragment.paymentrequest.DetailPaymentRequestFragment"
+        android:label="fragment_detail_payment_request"
+        tools:layout="@layout/fragment_detail_payment_request" />
+    <fragment
+        android:id="@+id/createPaymentRequestFragment"
+        android:name="vn.techres.supplier.fragment.paymentrequest.CreatePaymentRequestFragment"
+        android:label="fragment_create_payment_request"
+        tools:layout="@layout/fragment_create_payment_request" />
+    <fragment
+        android:id="@+id/updatePaymentRequestFragment"
+        android:name="vn.techres.supplier.fragment.paymentrequest.UpdatePaymentRequestFragment"
+        android:label="fragment_update_payment_request"
+        tools:layout="@layout/fragment_update_payment_request" />
+</navigation>

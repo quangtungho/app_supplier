@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_chat"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/item_header_chat" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="afterDescendants"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:listSelector="@android:color/transparent"
+                        android:scrollbars="none"
+                        android:transcriptMode="normal"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/tvUserView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:ellipsize="end"
+                    android:paddingStart="@dimen/margin_8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_time_chat"
+                    android:textSize="@dimen/dp15"
+                    tools:ignore="RtlSymmetry,SpUsage" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rclUserView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="@dimen/dp16"
+                    android:paddingTop="@dimen/margin_8dp"
+                    android:paddingEnd="@dimen/dp16"
+                    android:paddingBottom="@dimen/margin_8dp" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/tvUserReceived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:ellipsize="end"
+                    android:paddingStart="@dimen/margin_8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_time_chat"
+                    android:textSize="@dimen/text_size_15"
+                    tools:ignore="RtlSymmetry" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rclUserReceived"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="@dimen/dp16"
+                    android:paddingTop="@dimen/margin_8dp"
+                    android:paddingEnd="@dimen/dp16"
+                    android:paddingBottom="@dimen/margin_8dp" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>
+

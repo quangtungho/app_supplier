@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/new_message"
+            layout="@layout/item_new_message_header_chat" />
+
+        <include
+            android:id="@+id/time"
+            layout="@layout/item_time_header_message" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_8dp"
+            android:paddingBottom="@dimen/margin_8dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_marginRight="@dimen/margin_8dp"
+                android:background="@drawable/bg_input_message"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px4"
+                android:paddingTop="4dp"
+                android:paddingRight="@dimen/px4"
+                android:paddingBottom="4dp"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/lnAvatarOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingEnd="5dp"
+                    android:visibility="visible"
+                    tools:ignore="RtlSymmetry">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_avatarOne"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_circle_stroke_primary"
+                        android:padding="1dp"
+                        android:layout_marginStart="@dimen/px4"
+                        android:src="@drawable/decor_avatar_stranger"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnAvatarThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingEnd="4dp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_avatarOneThree"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="-4dp"
+                            android:background="@drawable/bg_circle_stroke_primary"
+
+                            android:padding="1dp"
+                            android:src="@drawable/decor_avatar_stranger"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imgAvatarTwoThree"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginEnd="-4dp"
+                                android:background="@drawable/bg_circle_stroke_primary"
+
+                                android:padding="1dp"
+                                android:src="@drawable/decor_avatar_stranger"
+                                android:visibility="visible" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/img_avatarThreeThree"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_toEndOf="@+id/imgAvatarTwoThree"
+                                android:background="@drawable/bg_circle_stroke_primary"
+
+                                android:padding="1dp"
+                                android:src="@drawable/decor_avatar_stranger"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnAvatarTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingEnd="4dp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_avatarOneTwo"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="-4dp"
+
+                        android:background="@drawable/bg_circle_stroke_primary"
+                        android:padding="1dp"
+                        android:src="@drawable/decor_avatar_stranger"
+                        android:visibility="visible" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_avatarTwoTwo"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_circle_stroke_primary"
+                        android:padding="1dp"
+                        android:src="@drawable/decor_avatar_stranger"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/textNotificationAddUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/color_text_chat"
+                    android:textColorLink="@color/color_text_chat"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,117 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrainLayoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:context=".fragment.debtmanager.DebtFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/lnSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/btnSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="@dimen/margin_12dp"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:layout_marginEnd="@dimen/margin_12dp"
+                        android:layout_marginBottom="@dimen/dp8"
+                        android:background="@drawable/shape_search_oder"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:theme="@style/SearchView"
+                        app:closeIcon="@drawable/stencils_ic_head_close_black"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@android:color/transparent"
+                        app:queryHint="Tìm kiếm đơn hàng..."
+                        app:searchIcon="@drawable/ic_loupe" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/grey_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/px4">
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        android:gravity="center"
+                        android:text="@string/list_of_month"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/btnDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_4dp"
+                        android:background="@drawable/bg_item_chat"
+                        android:backgroundTint="@color/white"
+                        android:drawableEnd="@drawable/ic_calendar"
+                        android:drawablePadding="@dimen/padding_8dp"
+                        android:gravity="center"
+                        android:padding="@dimen/dp5"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        tools:ignore="UselessParent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

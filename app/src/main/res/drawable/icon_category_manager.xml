@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <path
+        android:fillColor="#FFA233"
+        android:pathData="M256,256m-256,0a256,256 0,1 1,512 0a256,256 0,1 1,-512 0" />
+    <path
+        android:fillColor="#FFA233"
+        android:pathData="M512,256c0,-7.241 -0.317,-14.407 -0.906,-21.496L413,136.41l-240.406,19l-18.398,-19L99,191.605l37,36.797l-37,55.195l37,36.797L99,375.59l135.504,135.504C241.593,511.683 248.759,512 256,512C397.385,512 512,397.385 512,256z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M172.594,136.41v55.195H413V136.41H172.594z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M99,136.41v55.195h55.195V136.41H99z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M99,164.01h55.2v27.598h-55.2z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M172.59,164.01h240.41v27.598h-240.41z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M172.594,228.402v55.195H413v-55.195L172.594,228.402L172.594,228.402z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M99,228.402v55.195h55.195v-55.195L99,228.402L99,228.402z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M99,256h55.2v27.598h-55.2z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M172.59,256h240.41v27.598h-240.41z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M172.594,320.395v55.195H413v-55.195H172.594z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M99,320.395v55.195h55.195v-55.195H99z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M99,347.99h55.2v27.598h-55.2z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M172.59,347.99h240.41v27.598h-240.41z" />
+</vector>

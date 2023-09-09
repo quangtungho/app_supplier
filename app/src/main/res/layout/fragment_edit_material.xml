@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragment.materialmanager.EditMaterialFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dialog_bottom"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dp20"
+                android:paddingBottom="@dimen/dp100">
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/txt_name_material"
+                    android:textColor="@color/black_2" />
+
+                <EditText
+                    android:id="@+id/editTextNameMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_cardview"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:padding="@dimen/dp15"
+                    android:textSize="@dimen/text_size_14"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/txt_price"
+                    android:textColor="@color/black_2" />
+
+                <vn.techres.supplier.view.CurrencyEditText
+                    android:id="@+id/editTextCostPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_cardview"
+                    android:hint="@string/txt_price"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="@dimen/dp15"
+                    android:textSize="@dimen/text_size_14"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/txt_wholesale_price"
+                    android:textColor="@color/black_2" />
+
+                <vn.techres.supplier.view.CurrencyEditText
+                    android:id="@+id/editTextWholesalePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_cardview"
+                    android:hint="@string/txt_wholesale_price"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="@dimen/dp15"
+                    android:textSize="@dimen/text_size_14"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/txt_code_material"
+                    android:textColor="@color/black_2"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/editTextCodeMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_edittext_10dp"
+                    android:hint="@string/txt_code_material"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="@dimen/dp10"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="gone"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/txt_retail_price"
+                    android:textColor="@color/black_2" />
+
+                <vn.techres.supplier.view.CurrencyEditText
+                    android:id="@+id/editTextRetailPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_cardview"
+                    android:hint="@string/txt_retail_price"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="@dimen/dp15"
+                    android:textSize="@dimen/text_size_14"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/txt_number_wholesale_price"
+                    android:textColor="@color/black_2" />
+
+                <EditText
+                    android:id="@+id/editTextNumberWholesalePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_cardview"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:padding="@dimen/dp15"
+                    android:textSize="@dimen/text_size_14"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/txt_number_out_of_stock"
+                    android:textColor="@color/black_2" />
+
+                <EditText
+                    android:id="@+id/editTextNumberOutOfStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_cardview"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:padding="@dimen/dp15"
+                    android:textSize="@dimen/text_size_14"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="Số lượng hao hụt"
+                    android:textColor="@color/black_2"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/editTextAmountOfLoss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_cardview"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:padding="@dimen/dp15"
+                    android:textSize="@dimen/text_size_14"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/txt_category"
+                    android:textColor="@color/black_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_cardview"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/txtCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCategory"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="@dimen/dp40"
+                        android:prompt="@string/txt_please_choose"
+                        android:spinnerMode="dialog" />
+                </LinearLayout>
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/units"
+                    android:textColor="@color/black_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:background="@drawable/bg_cardview"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/txtUnits"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:id="@+id/spinnerUnits"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="@dimen/dp40"
+                        android:prompt="@string/txt_please_choose"
+                        android:spinnerMode="dialog" />
+                </LinearLayout>
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/txt_specifications"
+                    android:textColor="@color/black_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+
+                    android:background="@drawable/bg_cardview"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/txtSpecification"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:id="@+id/spinnerSpecification"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="@dimen/dp40"
+                        android:prompt="@string/txt_please_choose"
+                        android:spinnerMode="dialog" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/padding_8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayoutMain"
+            tools:ignore="MissingConstraints">
+
+
+            <com.kusu.loadingbutton.LoadingButton
+                android:id="@+id/btnEdit"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp24"
+                android:layout_marginEnd="@dimen/dp24"
+                android:background="@drawable/bg_radius_dp5"
+                android:backgroundTint="@color/blue"
+                android:gravity="center"
+                android:text="@string/btn_edit_order"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

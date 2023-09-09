@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/main_bg" />
+            <!-- A numeric value is specified in "radius" for demonstrative purposes only,
+                  it should be @dimen/val_name -->
+            <corners
+                android:radius="8dp"/>
+        </shape>
+
+    </item>
+    <item
+        android:start="32dp">
+
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomRightRadius="8dp"
+                android:topRightRadius="8dp" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

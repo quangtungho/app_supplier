@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp24"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/avatar"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="@dimen/dp100"
+                            android:background="@drawable/decor_avatar_stranger" />
+
+                        <ImageButton
+                            android:id="@+id/btnChoose"
+                            android:layout_width="@dimen/dp32"
+                            android:layout_height="@dimen/dp32"
+                            android:layout_alignEnd="@id/avatar"
+                            android:layout_alignBottom="@id/avatar"
+                            android:background="@drawable/shape_edit"
+                            android:src="@drawable/ic_camerachat"
+                            android:text="@string/choose_image"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:errorEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/name_staff"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_cardview"
+                                android:drawableEnd="@drawable/ic_edit_profile"
+                                android:hint="Tên nhân viên"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="@dimen/margin_12dp"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:errorEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/address_staff"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_cardview"
+                                android:drawableEnd="@drawable/ic_edit_profile"
+                                android:hint="@string/txt_adderr"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="@dimen/margin_12dp"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            app:errorEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/email_staff"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_cardview"
+                                android:drawableEnd="@drawable/ic_edit_profile"
+                                android:hint="@string/txt_email"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="@dimen/margin_12dp"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            app:errorEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/phone_staff"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_cardview"
+                                android:drawableEnd="@drawable/ic_edit_profile"
+                                android:hint="@string/txt_phone"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:padding="@dimen/margin_12dp"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp18"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linearSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_cardview"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/txtRoles"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp8"
+                                android:layout_weight="1"
+                                android:hint="@string/txt_please_choose_roles"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+                            <Spinner
+                                android:id="@+id/spinnerData"
+                                android:layout_width="@dimen/dp50"
+                                android:layout_height="@dimen/dp40"
+                                android:prompt="@string/txt_please_choose"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <com.kusu.loadingbutton.LoadingButton
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40"
+            android:layout_margin="@dimen/margin_14dp"
+            android:layout_marginTop="@dimen/dp24"
+            android:layout_marginHorizontal="@dimen/dp48"
+            android:backgroundTint="@color/main_bg"
+            android:background="@drawable/bg_radius_dp5_orange"
+            android:gravity="center"
+            android:text="@string/header_create_employee"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="normal"
+            app:lb_isCircular="true" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

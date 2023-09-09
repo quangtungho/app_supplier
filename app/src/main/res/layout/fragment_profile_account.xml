@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_main"
+        app:layoutDescription="@xml/fragment_profile_account_scene"
+        tools:context=".fragment.profile.ProfileAccountFragment">
+
+        <RelativeLayout
+            android:id="@+id/rlCardImageProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp150"
+            android:background="@drawable/bg_cardimage_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_dialog_avatar_profile"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedscrollHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlCardImageProfile">
+
+            <LinearLayout
+                android:id="@+id/linearHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/recyclerArticleProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_imgtitle_profile"
+                    android:backgroundTint="@color/white"
+                    android:elevation="@dimen/dp15"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_8dp"
+                            android:layout_marginBottom="@dimen/margin_20dp"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_8dp"
+                            tools:ignore="UselessParent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/avatarProfile"
+                                    android:layout_width="@dimen/size_70"
+                                    android:layout_height="@dimen/size_70"
+                                    android:background="@drawable/bg_edit_avatar_accountmenu"
+                                    android:padding="@dimen/padding_1dp">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        app:cardCornerRadius="@dimen/dp35"
+                                        tools:ignore="TooDeepLayout">
+
+                                        <ImageView
+                                            android:id="@+id/imgAccountDetail"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="centerCrop"
+                                            tools:ignore="ContentDescription,TooDeepLayout" />
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_30dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="@+id/avatarProfile"
+                                    app:layout_constraintStart_toEndOf="@+id/avatarProfile"
+                                    app:layout_constraintTop_toTopOf="@+id/avatarProfile">
+
+                                    <vn.techres.supplier.view.TechResTextView
+                                        android:id="@+id/txtNameUserProfile"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black_2"
+                                        android:textSize="@dimen/text_size_20" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_16dp"
+                                android:orientation="horizontal"
+                                tools:layout_editor_absoluteX="16dp">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp30"
+                                    android:layout_height="@dimen/dp30"
+                                    android:background="@drawable/bg_icon_profile"
+                                    android:padding="@dimen/padding_7dp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/icon_address_profile"
+                                        tools:ignore="ContentDescription" />
+                                </LinearLayout>
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:id="@+id/txtAddressProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="@dimen/margin_10dp"
+                                    android:ellipsize="marquee"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black_2"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                tools:layout_editor_absoluteX="16dp">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp30"
+                                    android:layout_height="@dimen/dp30"
+                                    android:background="@drawable/bg_icon_profile"
+                                    android:padding="@dimen/padding_7dp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/icon_email_profile"
+                                        tools:ignore="ContentDescription" />
+                                </LinearLayout>
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:id="@+id/txtEmailProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_10dp"
+                                    android:textColor="@color/black_2"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                tools:layout_editor_absoluteX="16dp">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp30"
+                                    android:layout_height="@dimen/dp30"
+                                    android:background="@drawable/bg_icon_profile"
+                                    android:padding="@dimen/padding_7dp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/icon_phone"
+                                        tools:ignore="ContentDescription" />
+                                </LinearLayout>
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:id="@+id/txtPhoneProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_10dp"
+                                    android:textColor="@color/black_2"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                tools:layout_editor_absoluteX="16dp">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp30"
+                                    android:layout_height="@dimen/dp30"
+                                    android:background="@drawable/bg_icon_profile"
+                                    android:padding="@dimen/padding_7dp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_roles"
+                                        tools:ignore="ContentDescription" />
+                                </LinearLayout>
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:id="@+id/txtRoles"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_10dp"
+                                    android:maxLines="1"
+                                    android:textColor="@color/black_2"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btnEditProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/margin_30dp"
+                        android:layout_marginEnd="@dimen/margin_16dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp30"
+                            android:layout_height="@dimen/dp30"
+                            android:background="@drawable/bg_icon_profile"
+                            android:padding="@dimen/padding_7dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_edit_profile"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dialog_btn_edit_detailorderbranch"
+                            android:textColor="@color/black_2"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/linearHeaderEnd"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:alpha="0"
+            android:background="@color/white"
+            android:elevation="@dimen/dp5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnBack2"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/ic_left_arrow_black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/avatarProfile2"
+                android:layout_width="@dimen/size_30"
+                android:layout_height="@dimen/size_30"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:background="@drawable/bg_edit_avatar_accountmenu"
+                android:padding="@dimen/padding_1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnBack">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="@dimen/dp15">
+
+                    <ImageView
+                        android:id="@+id/imgAccountDetail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/txtNameUserProfile2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="@color/black_2"
+                android:textSize="@dimen/text_size_16" />
+
+            <ImageButton
+                android:id="@+id/btnMoreProfile2"
+                android:layout_width="@dimen/margin_45dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:visibility="gone"
+                android:background="@drawable/bg_oval"
+                android:src="@drawable/icon_three_dots_black"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlHeaderIcon"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:src="@drawable/ic_left_arrow"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/btnMoreProfile"
+                android:layout_width="@dimen/margin_45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:background="@drawable/bg_oval"
+                android:src="@drawable/icon_three_dots_white"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

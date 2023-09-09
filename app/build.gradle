@@ -1,0 +1,241 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+}
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    ndkVersion '23.0.7196353'
+
+    defaultConfig {
+        applicationId "vn.techres.supplier"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.01.02"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release { //Thêm một khối debug nếu muốn
+            minifyEnabled true //Thu gọn code, false nếu không dùng
+            shrinkResources true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            useProguard false //Không làm rối code
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+            lintOptions {
+
+                checkReleaseBuilds false
+                abortOnError false
+            }
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = true
+    }
+    android {
+        buildFeatures {
+            viewBinding = true
+        }
+    }
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+            flatDir {
+                dirs 'libs'
+            }
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    packagingOptions {
+        exclude 'META-INF/library_release.kotlin_module'
+    }
+}
+
+dependencies {
+    implementation 'io.github.farshidroohi:lineGraph:1.0.2'
+    implementation 'com.github.kizitonwose:CalendarView:1.0.4'
+    implementation 'com.github.ibrahimsn98:android-particles:2.0'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.github.markomilos:paginate:1.0.0'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation 'fm.jiecao:jiecaovideoplayer:5.7'
+    implementation 'com.github.omegaes:Android-Link-Preview:1.0.2'
+    implementation 'com.google.android.exoplayer:exoplayer:2.10.4'
+    implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
+    implementation 'joda-time:joda-time:2.10.1'
+    implementation files('libs/autobanh.jar')
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.aurae.retrofit2:converter-logansquare:1.4.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'com.bluelinelabs:logansquare:1.3.7'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.11.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.11.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'it.emperor.animatedcheckbox:animatedcheckbox:1.0.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61"
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.2.0'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'org.jsoup:jsoup:1.11.3'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.room:room-runtime:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+    annotationProcessor 'com.bluelinelabs:logansquare-compiler:1.3.7'
+    implementation("androidx.percentlayout:percentlayout:1.0.0")
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    api(name: 'rcalenderlib_v2.6.0', ext: 'aar')
+    def kohiiVersion = '1.1.0.2011003'
+    def exoPlayerVersion = '2.11.3'
+    def nav_version = "2.0.0"
+
+    //lbl calendar
+    implementation 'com.github.kal72:RackMonthPicker:1.6.1'
+    //lbl item list bill
+    implementation 'ir.beigirad:ZigzagView:1.2.1'
+    //lbl Android-SpinKit
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    //lbl Button loading
+    implementation 'com.github.koushikcse:LoadingButton:1.7'
+    //noinspection GradleDependency
+    implementation "im.ene.kohii:kohii-core:${kohiiVersion}"
+    //noinspection GradleDependency
+    implementation "im.ene.kohii:kohii-exoplayer:${kohiiVersion}"
+    //noinspection GradleDependency
+    implementation "com.google.android.exoplayer:exoplayer:${exoPlayerVersion}"
+    //lbl Selection menu
+    implementation 'com.github.piruin:quickaction:2.4.3'
+    //lbl eventbus
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    //lbl Dialog _layout_report
+    implementation 'com.github.jiang111:IndicatorDialog:2.1.0'
+    //lbl van tay
+    implementation(group: 'com.an.biometric', name: 'biometric-auth', version: '0.1.0', ext: 'aar', classifier: '')
+    //lbl switcher Quan ly nha vien
+    implementation 'com.bitvale:switcher:1.1.1'
+    //lbl  oops no internet
+    implementation 'org.imaginativeworld.oopsnointernet:oopsnointernet:2.0.0'
+    //noinspection GradleDependency
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //lbl Swiperefresh Layout
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    //lbl CardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //lbl Firebase
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx:23.0.1'
+    implementation 'com.google.firebase:firebase-bom:27.0.0'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-auth:20.0.4'
+    implementation 'com.google.firebase:firebase-messaging-directboot:20.2.0'
+    //lbl RxJava libraries
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.3.4'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.17'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    //lbl Annotation
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
+    //Retrofit
+    implementation("com.squareup.okhttp3:okhttp:4.4.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.4.0")
+    //noinspection GradleDependency
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    //noinspection GradleDependency
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "io.socket:socket.io-client:2.0.1"
+    //noinspection GradleDependency
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation 'androidx.fragment:fragment-ktx:1.3.2'
+    implementation 'com.omjoonkim.library:skeleton-loading-view:0.1.3'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2-ktx'
+    implementation project(':libraries:imagepicker')
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation("io.coil-kt:coil:0.7.0")
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+    debugImplementation "com.github.chuckerteam.chucker:library:3.4.0"
+    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.4.0"
+    implementation 'org.greenrobot:eventbus:3.1.0'
+    implementation 'com.shawnlin:PreferencesManager:1.0.3'
+    implementation 'com.tencent:mmkv-static:1.2.7'
+    implementation 'com.getkeepsafe.relinker:relinker:1.3.1'
+    implementation 'com.f2prateek.rx.preferences2:rx-preferences:2.0.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.evrencoskun.library:tableview:0.8.9.4'
+    implementation 'com.github.Chrisvin:LiquidSwipe:1.3'
+    implementation 'com.airbnb.android:lottie:3.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+    implementation 'com.etebarian:meow-bottom-navigation:1.0.4'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.google.android.material:material:version'
+    implementation 'net.gotev:uploadservice:4.4.0'
+    implementation 'net.gotev:recycleradapter:2.8.1'
+    //lbl qr code
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    //lbl Chart Bao Cao
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.github.Armen101:AudioRecordView:1.0.5'
+    implementation 'com.devlomi:circularstatusview:1.0.1'
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+    //lbl Badged Tablayout
+    implementation 'com.github.rahimlis:badgedtablayout:v1.2'
+
+
+
+    // lbl AXEmojiView ( icon ban phim )
+    implementation project(':libraries:AXEmojiView')
+    implementation project(':libraries:LinkReview')
+    implementation project(':libraries:youtube-core')
+    implementation project(':libraries:datepicker')
+    implementation project(':libraries:media-slider')
+    implementation project(':libraries:swipeback')
+    implementation project(':libraries:picture_library')
+}

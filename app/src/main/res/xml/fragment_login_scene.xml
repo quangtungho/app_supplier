@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="25"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/imgHeader"
+                motion:percentX="0"
+                motion:percentY="0" />
+            <KeyPosition
+                motion:framePosition="55"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/imgHeader"
+                motion:percentX="0"
+                motion:percentY="0" />
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/linearHeader"
+                motion:percentX="0"
+                motion:percentY="0" />
+            <KeyPosition
+                motion:framePosition="85"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/linearHeader"
+                motion:percentX="1"
+                motion:percentY="1" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/rlHeader" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/textView2" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/btnLogin" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/btn_forget" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/btn_fingerprint" />
+            <KeyAttribute
+                android:alpha="-3"
+                motion:framePosition="0"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/btn_information" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/edtUsername" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/techResTextView" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/textInputLayout" />
+            <KeyPosition
+                motion:framePosition="91"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/btn_fingerprint" />
+            <KeyPosition
+                motion:framePosition="91"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/btn_information" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:alpha="0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/linearHeader" />
+        <Constraint
+            android:id="@+id/linearHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/rlHeader" />
+        <Constraint
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        <Constraint
+            android:id="@+id/btn_fingerprint"
+            android:layout_width="@dimen/size_150"
+            android:layout_height="32dp"
+            android:layout_marginTop="112dp"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        <Constraint
+            android:id="@+id/btn_forget"
+            android:layout_width="@dimen/size_150"
+            android:layout_height="32dp"
+            android:layout_marginTop="112dp"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_fingerprint" />
+        <Constraint
+            android:id="@+id/btn_information"
+            android:layout_width="@dimen/icon_size48_main"
+            android:layout_height="@dimen/icon_size40_main"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_forget" />
+        <Constraint
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <Constraint
+            android:id="@+id/techResTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:alpha="0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/edtUsername" />
+        <Constraint
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/techResTextView" />
+        <Constraint
+            android:id="@+id/imgHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            android:layout_marginTop="@dimen/margin_16dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/btn_Fingerprint"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/margin_25dp"
+            motion:layout_constraintBottom_toBottomOf="@id/btn_forget"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/btnLogin" />
+        <Constraint
+            android:id="@+id/btn_information"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/margin_25dp"
+            motion:layout_constraintBottom_toBottomOf="@id/btn_forget"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/btnLogin" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end"></ConstraintSet>
+</MotionScene>

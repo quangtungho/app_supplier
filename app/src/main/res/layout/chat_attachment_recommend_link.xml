@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlnLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="@dimen/margin_8dp"
+            android:paddingTop="@dimen/margin_8dp"
+            android:paddingEnd="@dimen/margin_8dp">
+
+            <LinearLayout
+                android:id="@+id/linkThumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/chat_attachment_link_delete"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/chat_attachment_link_photo"
+                    android:layout_width="@dimen/size_100"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/default_image"
+                    android:maxHeight="140dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:orientation="vertical">
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/chat_attachment_link_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/chat_attachment_link_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="4"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_16" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_200"
+                android:visibility="gone"
+                app:autoPlay="false"
+                app:enableAutomaticInitialization="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false" />
+
+            <ImageView
+                android:id="@+id/chat_attachment_link_delete"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:clickable="true"
+                android:contentDescription="@string/default_image"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_remove" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rlnLinkClip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8dp"
+            android:background="@drawable/border_white_5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/linkThumbClip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toStartOf="@+id/chat_attachment_link_deleteClip"
+                    android:padding="@dimen/margin_8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/size_100"
+                        android:layout_height="wrap_content"
+                        android:elevation="0dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/chat_attachment_link_photoClip"
+                            android:layout_width="@dimen/size_100"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/default_image"
+                            android:maxHeight="140dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/chat_attachment_link_titleClip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/chat_attachment_link_descriptionClip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="4"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_200"
+                    android:visibility="visible"
+                    app:autoPlay="false"
+                    android:padding="@dimen/margin_8dp"
+                    android:layout_toStartOf="@+id/chat_attachment_link_deleteClip"
+                    app:showFullScreenButton="true"
+                    app:showYouTubeButton="false" />
+
+                <ImageView
+                    android:id="@+id/chat_attachment_link_deleteClip"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="@dimen/margin_8dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/default_image"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/ic_remove" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="@dimen/margin_8dp"
+                android:background="@color/grey_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_8dp">
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/sendClip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minWidth="@dimen/size_40"
+                    android:text="@string/send_link_coppy"
+                    android:textColor="@color/blue_home_item"
+                    android:textSize="@dimen/text_size_17" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_8dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_12dp"
+                    android:visibility="gone"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size24_main"
+                        android:layout_height="@dimen/icon_size24_main"
+                        android:layout_marginEnd="@dimen/margin_8dp"
+                        android:src="@drawable/ic_debt"
+                        tools:ignore="ContentDescription" />
+
+                    <View
+                        android:layout_width="@dimen/px4"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey" />
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_4dp"
+                        android:paddingStart="@dimen/dp5"
+                        android:text="@string/debt"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blue_main"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="normal"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_marginStart="@dimen/margin_40dp"
+                    android:background="@color/grey_bg"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_8dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_8dp">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chartBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp240" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_cardview">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_radius_report"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_8dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_8dp">
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/txt_report_debty"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal" />
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/total_receivable_debt_amount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_8dp">
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/txt_report_debts"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal" />
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/total_to_pay_debt_amount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

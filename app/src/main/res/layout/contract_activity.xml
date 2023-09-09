@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50"
+                android:background="@color/main_bg">
+
+                <ImageView
+                    android:id="@+id/imvBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp"
+                    android:background="@drawable/ripple_animation_button_back_header"
+                    app:srcCompat="@drawable/stencils_ic_head_back_white"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp16"
+                    android:layout_toEndOf="@+id/imvBack"
+                    android:background="@drawable/bg_border_search"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:paddingStart="-8dp"
+                    android:theme="@style/SearchView"
+                    app:closeIcon="@drawable/stencils_ic_head_close_black"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="@string/search_contract"
+                    app:searchIcon="@null"
+                    app:showAsAction="always"
+                    tools:ignore="RtlSymmetry">
+
+                    <requestFocus />
+                </androidx.appcompat.widget.SearchView>
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutArchive"
+                style="@style/CustomTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorFullWidth="true"
+                app:tabIndicatorHeight="@dimen/dp3" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerArchive"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlAvatar"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginStart="@dimen/dp16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/size_50"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imvAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/default_image"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dp16"
+            android:layout_height="@dimen/dp16"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/default_image"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bg_online" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <vn.techres.supplier.view.TechResTextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/font_normal"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/tvRoleName"
+        app:layout_constraintEnd_toStartOf="@+id/tv_cancel_action"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ctlAvatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <vn.techres.supplier.view.TechResTextView
+        android:id="@+id/tvRoleName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:textColor="#8a8a8f"
+        android:textSize="@dimen/font_normal"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/tv_cancel_action"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ctlAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:ignore="UnknownIdInLayout" />
+
+    <it.emperor.animatedcheckbox.AnimatedCheckBox
+        android:id="@+id/imvCheckJoin"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginEnd="@dimen/margin_25dp"
+        android:visibility="gone"
+        app:acb_animation_duration="500"
+        app:acb_border_checked_color="@color/main_bg"
+        app:acb_border_checked_stroke_width="@dimen/dp2"
+        app:acb_border_not_checked_color="@color/grey_bg"
+        app:acb_circle_color="@color/main_bg"
+        app:acb_hook_color="@color/white"
+        app:acb_hook_stroke_width="2dp"
+        app:acb_padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ctlAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ctlAvatar" />
+
+    <ImageView
+        android:id="@+id/tvMemberJoined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_25dp"
+        android:background="@drawable/bg_radius_chat_sent"
+        android:clickable="true"
+        android:contentDescription="@string/default_image"
+        android:focusable="true"
+        android:paddingStart="@dimen/margin_16dp"
+        android:paddingTop="@dimen/margin_4dp"
+        android:paddingEnd="@dimen/margin_16dp"
+        android:paddingBottom="@dimen/margin_4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ctlAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ctlAvatar" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#80e8e9ee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

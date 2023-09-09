@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.slidewelcome.AdvSlideWelcomeFragment">
+
+        <com.jem.liquidswipe.LiquidSwipeViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginBottom="@dimen/margin_30dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_7dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.034"
+                    tools:ignore="UselessParent"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/dotsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_6dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/img_edit_slidewelcome"
+                        android:padding="@dimen/padding_2dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_nextstep"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.jem.liquidswipe.LiquidSwipeViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_7dp"
+                tools:ignore="DisableBaselineAlignment,MissingConstraints,UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_50"
+                        android:layout_height="@dimen/size_40"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_back_slidewelcome"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingEnd="@dimen/padding_5dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                    <TextView
+                        android:id="@+id/btnSkip"
+                        android:background="@drawable/bg_cardview"
+                        android:layout_width="@dimen/dp80"
+                        android:layout_height="@dimen/size_50"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:text="@string/title_skip_slidewelcome"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/text_size_14"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

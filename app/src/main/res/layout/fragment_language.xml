@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constrainLayoutMain"
+        android:layout_height="match_parent"
+        tools:context=".fragment.setting.LanguageFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp65"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/btnButtonVietnam"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp65"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/vietnamese"
+                    android:drawablePadding="@dimen/padding_12dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/padding_12dp"
+                    android:paddingEnd="@dimen/padding_7dp"
+                    android:text="@string/vietnamese"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageView
+                    android:id="@+id/imgTickVietnam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:src="@drawable/ic_baseline_check_24"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_button_accountname"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/btnButtonEngland"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_button_accountname"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/england"
+                    android:drawablePadding="@dimen/padding_12dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/padding_12dp"
+                    android:paddingEnd="@dimen/padding_7dp"
+                    android:text="@string/english"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageView
+                    android:id="@+id/imgTickEngland"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:src="@drawable/ic_baseline_check_24"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

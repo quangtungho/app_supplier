@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/lnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/click_menu_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:contentDescription="@string/default_image"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp16"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/txtGroupName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:gravity="center_vertical"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textSize="18sp" />
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/text_last_message"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <com.aghajari.emojiview.view.AXEmojiTextView
+                        android:id="@+id/message"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/margin_8dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="@string/no_message_group"
+                        android:textColor="@color/text_last_message"
+                        android:textSize="@dimen/font_normal"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/logTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/default_image"
+                        android:paddingStart="@dimen/dp2"
+                        android:paddingEnd="@dimen/dp2"
+                        android:src="@drawable/ic_mention_normal"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:id="@+id/imgOrder"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="@dimen/margin_8dp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="@dimen/size_40"
+                            android:layout_height="@dimen/size_40"
+                            android:layout_marginStart="@dimen/px4"
+                            android:contentDescription="@string/default_image"
+                            android:padding="@dimen/ayp_8dp"
+                            android:src="@drawable/ic_box_order" />
+
+                        <TextView
+                            android:layout_width="@dimen/dp10"
+                            android:layout_height="@dimen/dp10"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/bubble_counter_bkg"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            tools:ignore="RelativeOverlap,RtlHardcoded" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lnCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/count"
+                            style="@style/TvCaptionSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/primary_circle"
+                            android:gravity="center"
+                            android:paddingHorizontal="@dimen/dp2"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            tools:ignore="RtlHardcoded" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="80dp"
+            android:background="#ffe0e0e0" />
+    </LinearLayout>
+</layout>

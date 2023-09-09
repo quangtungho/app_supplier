@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="vn.techres.supplier.fragment.reportmanager.OrderReportByRestaurantFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/margin_4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_5dp"
+                            android:gravity="center"
+                            android:text="@string/from_date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal" />
+
+                        <Button
+                            android:id="@+id/from_data"
+                            style="?android:spinnerStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp40"
+                            android:layout_marginStart="@dimen/margin_14dp"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:layout_marginEnd="@dimen/margin_5dp"
+                            android:background="@drawable/bg_item_chat"
+                            android:padding="@dimen/padding_2dp"
+                            android:paddingStart="@dimen/padding_8dp"
+                            android:textColor="@color/black_text"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_margin="@dimen/margin_4dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/margin_5dp"
+                            android:text="@string/to_date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal" />
+
+                        <Button
+                            android:id="@+id/to_data"
+                            style="?android:spinnerStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp40"
+                            android:layout_margin="@dimen/margin_5dp"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@drawable/bg_item_chat"
+                            android:padding="@dimen/padding_2dp"
+                            android:paddingStart="@dimen/padding_8dp"
+                            android:textColor="@color/black_text"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/select_calendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_8dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/ic_calendar"
+                            android:layout_width="@dimen/dp30"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_marginStart="@dimen/padding_8dp"
+                            android:src="@drawable/logo_techres"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <TextView
+                                android:id="@+id/txtCalendar"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_10dp"
+                                android:layout_weight="1"
+                                android:text="@string/return_restaurant"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal"
+                                android:textStyle="normal" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/txt_please_choose"
+                                android:spinnerMode="dialog"
+                                android:src="@drawable/arrow_down_grey"
+                                android:contentDescription="@string/default_image" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp1"
+                        android:background="@color/grey_bg" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_12dp">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/pigChat"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp240"
+                            android:layout_marginTop="@dimen/margin_8dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recViewOrderReportByRestaurant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/item_order_cancel_return"
+                        android:padding="@dimen/padding_7dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraintLayoutMain"
+        tools:context=".fragment.collectionfragment.IntroduceFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/linearTmsAccountmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/click_menu_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_accountmenu_size"
+                    android:layout_height="@dimen/icon_accountmenu_size"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:src="@drawable/ic_tms"
+                    tools:ignore="ContentDescription" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+                    android:text="@string/app_TMS"
+                    android:textColor="@color/black_2"
+                    android:textSize="@dimen/font_normal" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/grey_main" />
+
+
+            <LinearLayout
+                android:id="@+id/linearAlolineAccountmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/click_menu_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_accountmenu_size"
+                    android:layout_height="@dimen/icon_accountmenu_size"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:src="@drawable/ic_aloline"
+                    tools:ignore="ContentDescription" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+                    android:text="@string/txt_aloline"
+                    android:textColor="@color/black_2"
+                    android:textSize="@dimen/font_normal" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/grey_main" />
+
+            <!--        <LinearLayout-->
+            <!--            android:id="@+id/linearYoutubeAccountmenu"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:background="@drawable/click_menu_white"-->
+            <!--            android:gravity="center_vertical"-->
+            <!--            android:orientation="horizontal"-->
+            <!--            android:padding="@dimen/padding_5dp">-->
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="@dimen/icon_accountmenu_size"-->
+            <!--                android:layout_height="@dimen/icon_accountmenu_size"-->
+            <!--                android:layout_margin="@dimen/margin_8dp"-->
+            <!--                android:src="@drawable/ic_youtube"-->
+            <!--                tools:ignore="ContentDescription" />-->
+
+            <!--            <vn.techres.supplier.view.TechResTextView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_margin="@dimen/margin_8dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:drawableEnd="@drawable/ic_baseline_navigate_next_24"-->
+            <!--                android:text="@string/txt_youtube"-->
+            <!--                android:textColor="@color/black_2"-->
+            <!--                android:textSize="@dimen/font_normal" />-->
+
+            <!--        </LinearLayout>-->
+
+            <!--        <View-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="@dimen/dp1"-->
+            <!--            android:background="@color/grey_main" />-->
+
+            <!--        <LinearLayout-->
+            <!--            android:id="@+id/linearGameAccountmenu"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:background="@drawable/click_menu_white"-->
+            <!--            android:gravity="center_vertical"-->
+            <!--            android:orientation="horizontal"-->
+            <!--            android:padding="@dimen/padding_5dp">-->
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="@dimen/icon_accountmenu_size"-->
+            <!--                android:layout_height="@dimen/icon_accountmenu_size"-->
+            <!--                android:layout_margin="@dimen/margin_8dp"-->
+            <!--                android:src="@drawable/ic_game"-->
+            <!--                tools:ignore="ContentDescription" />-->
+
+            <!--            <vn.techres.supplier.view.TechResTextView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_margin="@dimen/margin_8dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:drawableEnd="@drawable/ic_baseline_navigate_next_24"-->
+            <!--                android:text="@string/txt_game"-->
+            <!--                android:textColor="@color/black_2"-->
+            <!--                android:textSize="@dimen/font_normal" />-->
+
+            <!--        </LinearLayout>-->
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

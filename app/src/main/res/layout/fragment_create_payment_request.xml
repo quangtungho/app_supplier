@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreatePaymentRequestFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinnerListRestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:background="@color/grey" />
+
+            <Spinner
+                android:id="@+id/spinnerListBranchOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:background="@color/grey" />
+
+            <include
+                android:id="@+id/layoutDate"
+                layout="@layout/layout_date_time" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvListPaymentRequest"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_8dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/linearDataNull"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp100"
+                    android:contentDescription="@string/app_description"
+                    android:src="@drawable/img_data_null" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="@string/mess_data_employee_null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mRootButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_8dp"
+                android:visibility="visible">
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:background="@color/main_bg"
+                    android:gravity="center"
+                    android:text="@string/create_payment_request"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

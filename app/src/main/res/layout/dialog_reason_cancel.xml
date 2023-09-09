@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp350"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_chat"
+        android:backgroundTint="#f0eff2"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <vn.techres.supplier.view.TechResTextViewBold
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp8"
+            android:text="@string/reason_bill_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/main_bg"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/edtInputNote"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            android:layout_marginStart="@dimen/margin_12dp"
+            android:layout_marginEnd="@dimen/margin_12dp"
+            android:background="@drawable/bg_btn_chat"
+
+            android:backgroundTint="@color/grey_bg"
+            android:gravity="top"
+            android:hint="@string/reason"
+            android:padding="@dimen/dp8"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="normal"
+            android:visibility="visible"
+            tools:ignore="Autofill,TextFields" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_title_bg_bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp8">
+
+            <Button
+                android:id="@+id/no"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_weight="1"
+                android:text="@string/dialog_btn_cancel_detailorderbranch"
+                android:background="@drawable/bg_border_white_5dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/gray_main_icon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/yes"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_weight="1"
+                android:text="@string/btn_confirm_detailorderbranch"
+                android:backgroundTint="@color/green_1"
+                android:background="@drawable/bg_border_white_5dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

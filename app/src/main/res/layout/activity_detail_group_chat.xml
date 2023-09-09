@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/item_header" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/informationGroup"
+                    layout="@layout/group_info_header" />
+
+                <include
+                    android:id="@+id/actionGroup"
+                    layout="@layout/chat_detail_bottom" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchStaff"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:layout_marginEnd="12.0dip"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:background="@drawable/shape_search_oder"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:theme="@style/SearchView"
+                    android:visibility="gone"
+                    app:closeIcon="@drawable/stencils_ic_head_close_black"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Tìm kiếm nhân viên..."
+                    app:searchIcon="@drawable/ic_loupe" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcvMember"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/loading_data"
+                layout="@layout/loading" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

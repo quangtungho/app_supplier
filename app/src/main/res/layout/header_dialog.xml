@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/color_main"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_margin="@dimen/padding_3dp"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:contentDescription="@string/default_image" />
+    <vn.techres.supplier.view.TechResTextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:id="@+id/txtTitleDialog"
+        android:gravity="center"
+        android:textSize="@dimen/font_largexxx"/>
+    <ImageView
+        android:id="@+id/btnClear"
+        android:background="@drawable/ic_clear_black"
+        android:layout_margin="@dimen/px4"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:contentDescription="@string/default_image" />
+</LinearLayout>

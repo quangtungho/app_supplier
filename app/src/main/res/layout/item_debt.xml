@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/click_menu_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_8dp">
+
+        <LinearLayout
+            android:id="@+id/linearClickDebt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80"
+            android:background="@drawable/bg_cardview"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/debt" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/restaurant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:gravity="center"
+                    style="@style/AutoTextView"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/textDebt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/debt_chi"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/totailDebt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

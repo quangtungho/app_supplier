@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/time"
+            layout="@layout/item_time_header_message" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp16"
+            android:padding="@dimen/px4"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="RtlSymmetry,UselessParent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <RelativeLayout
+                    android:id="@+id/lnMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_20">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_chat_group_right_bubble"
+                            android:orientation="vertical">
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/tvStatusCall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:autoLink="web"
+                                android:clickable="false"
+                                android:imeOptions="flagNoExtractUi"
+                                android:inputType="textMultiLine"
+                                android:lineSpacingExtra="3.0dip"
+                                android:paddingLeft="@dimen/margin_8dp"
+                                android:paddingTop="@dimen/margin_8dp"
+                                android:singleLine="false"
+                                android:text="Bạn bị nhỡ"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/tvMessage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvStatusCall"
+                                android:autoLink="web"
+                                android:clickable="false"
+                                android:drawableLeft="@drawable/decor_csc_voicecall_out_small"
+                                android:drawablePadding="@dimen/px4"
+                                android:imeOptions="flagNoExtractUi"
+                                android:inputType="textMultiLine"
+                                android:lineSpacingExtra="3.0dip"
+                                android:maxWidth="260dp"
+                                android:minWidth="150dp"
+                                android:paddingLeft="@dimen/margin_8dp"
+                                android:paddingRight="@dimen/margin_8dp"
+                                android:paddingBottom="@dimen/px4"
+                                android:singleLine="false"
+                                android:text="Cuộc gọi thoại"
+                                android:textColor="@color/black"
+                                android:textColorLink="@color/colorLink"
+                                android:textSize="@dimen/text_size_15" />
+
+                            <LinearLayout
+                                android:id="@+id/lnVi"
+                                android:layout_width="150dp"
+                                android:layout_height="0.5dp"
+                                android:layout_below="@+id/tvMessage"
+                                android:background="#DAD9D9"
+                                android:orientation="horizontal" />
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/tvRecall"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/lnVi"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:imeOptions="flagNoExtractUi"
+                                android:inputType="textMultiLine"
+                                android:lineSpacingExtra="3.0dip"
+                                android:padding="@dimen/margin_8dp"
+                                android:singleLine="false"
+                                android:text="GỌI LẠI"
+                                android:textColor="@color/colorLink"
+                                android:textSize="@dimen/font_normal" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/lnText"
+                        android:layout_alignBottom="@+id/lnText"
+                        android:layout_marginBottom="-20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            style="@style/chat_time_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/time_text_bg"
+                            android:paddingStart="@dimen/margin_8dp"
+                            android:paddingEnd="@dimen/margin_8dp"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/lnText"
+                        android:layout_alignBottom="@+id/lnText"
+                        android:layout_marginBottom="-8dp">
+
+                        <include
+                            android:id="@+id/reaction"
+                            layout="@layout/item_reaction_icon_message" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/send"
+                    layout="@layout/item_send_message" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rclUserView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <LinearLayout
+                    android:id="@+id/lnUserView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:paddingStart="4dp"
+                    android:visibility="visible"
+                    tools:ignore="RtlSymmetry,UselessParent">
+
+                    <vn.techres.supplier.view.TechResTextView
+                        android:id="@+id/tvMoreView"
+                        style="@style/chat_time_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/user_view_bg"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="1dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="1dp"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,1277 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Techres - Supplier</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_accountmenu" translatable="false">Tài Khoản</string>
+    <string name="welcome_profile_accountmenu" translatable="false">Xin chào,</string>
+    <string name="btn_overview" translatable="false">Tổng quan</string>
+    <string name="tab_synthesise" translatable="false">Tổng hợp SL</string>
+    <string name="btn_report" translatable="false">Quản lý báo cáo</string>
+    <string name="text_otp_title_1" translatable="false">Mã xác nhận đã được gửi về số điện thoại</string>
+    <string name="text_otp_title_2" translatable="false">Vui lòng nhập mã để hoàn thành</string>
+    <string name="text_otp_title_3" translatable="false">Không nhận được mã?</string>
+    <string name="txt_resend" translatable="false">Gửi Lại</string>
+    <string name="icon_phone" translatable="false">Phone SMS</string>
+    <string name="back" translatable="false">back</string>
+    <string name="next" translatable="false">Tiếp Tục</string>
+    <string name="next_chat" translatable="false">Tiếp</string>
+    <string name="create_chat" translatable="false">Tạo</string>
+    <string name="txt_verification" translatable="false">Mã xác nhận sẽ gửi về số điện thoại mà bạn đăng ký</string>
+    <string name="txt_username" translatable="false">Tên Đăng Nhập</string>
+    <string name="input_username" translatable="false">Hãy nhập mã nhân viên của bạn</string>
+    <string name="txt_phone" translatable="false">Số Điện Thoại</string>
+    <string name="input_pin" translatable="false">Nhập mã xác nhận</string>
+    <string name="sum_report_order" translatable="false">Tổng cộng:</string>
+    <string name="txt_report_debts" translatable="false">Tổng tiền phải trả</string>
+    <string name="txt_report_debty" translatable="false">Tổng tiền phải thu</string>
+    <string name="submit" translatable="false">Xác nhận</string>
+    <string name="current_inventory" translatable="false">Tồn kho hiện tại</string>
+    <string name="input_phone" translatable="false">Hãy nhập số điện thoại đăng ký</string>
+    <string name="btn_ConfirmNext" translatable="false">Tiếp Tục</string>
+    <string name="btn_order" translatable="false">Quản lý đơn hàng</string>
+    <string name="btn_material" translatable="false">Quản lý nguyên liệu</string>
+    <string name="btn_employees" translatable="false">Quản lý nhân viên</string>
+    <string name="btn_liabilities" translatable="false">Quản lý công nợ khách hàng</string>
+    <string name="btn_payment_request" translatable="false">Quản lý phiếu y/c thanh toán</string>
+    <string name="btn_revenue_expenditure" translatable="false">Quản lý thu chi</string>
+    <string name="debt_manager" translatable="false">Quản lý công nợ</string>
+    <string name="btn_warehouse" translatable="false">Quản lý kho</string>
+    <string name="btn_customer" translatable="false">Quản lý khách hàng</string>
+    <string name="btn_setting" translatable="false">Cài đặt</string>
+    <string name="btn_AppReviews" translatable="false">Đánh giá ứng dụng</string>
+    <string name="btn_support" translatable="false">Góp ý nhà phát triển</string>
+    <string name="btn_info_product" translatable="false">Thông tin sản phẩm</string>
+    <string name="enter_employee_code" translatable="false">Tài khoản</string>
+    <string name="enter_supplier_name" translatable="false">Tên nhà cung cấp</string>
+    <string name="forgotpass_title" translatable="false">Quên Mật Khẩu</string>
+    <string name="title_skip_slidewelcome" translatable="false">Bỏ qua</string>
+    <string name="name_slidewelcome_1" translatable="false"><b>SUPPLIER</b></string>
+    <string name="content_slidewelcome_1" translatable="false">Trợ lý đắc lực cho nhà cung cấp 1</string>
+    <string name="text_setting_title" translatable="false">Cài đặt</string>
+    <string name="text_setting_nation" translatable="false">Quốc gia</string>
+    <string name="text_setting_language" translatable="false">Ngôn ngữ</string>
+    <string name="text_setting_notification" translatable="false">Thông báo</string>
+    <string name="text_setting_resetpass" translatable="false">Đổi mật khẩu</string>
+    <string name="btn_setting_logout" translatable="false">Đăng xuất</string>
+    <string name="txt_version" translatable="false">Phiên bản</string>
+    <string name="enter_pass" translatable="false">Mật khẩu</string>
+    <string name="login" translatable="false">Đăng nhập</string>
+    <string name="forgot_pass" translatable="false">Quên mật khẩu?</string>
+    <string name="text_hello" translatable="false">Xin chào,</string>
+    <string name="please_login" translatable="false">Mời bạn đăng nhập</string>
+    <string name="username" translatable="false">Tên đăng nhập</string>
+    <string name="pass" translatable="false">Mật khẩu</string>
+    <string name="search_hint" translatable="false">Nhập thông tin cần tìm</string>
+    <string name="search_hint_contacors" translatable="false">Nhập người liên hệ cần tìm</string>
+    <string name="mess_title_newpassword" translatable="false">Hãy đặt lại mật khẩu của bạn</string>
+    <string name="text_newpassword" translatable="false">Mật khẩu mới</string>
+    <string name="text_acceptnewpassword" translatable="false">Xác nhận mật khẩu</string>
+    <string name="hint_newpassword" translatable="false">Hãy nhập mật khẩu của bạn</string>
+    <string name="hint_acceptnewpassword" translatable="false">Hãy nhập lại mật khẩu của bạn</string>
+    <string name="btn_accept_newpassword" translatable="false">Xác nhận</string>
+    <string name="time" translatable="false">Thời Gian</string>
+    <string name="customer" translatable="false">Khách hàng</string>
+    <string name="chat" translatable="false">Chat</string>
+    <string name="chatWork" translatable="false">Công Việc</string>
+    <string name="chatPersonal" translatable="false">Cá Nhân </string>
+    <string name="chatCustomer" translatable="false">Khách hàng </string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="btn_detail" translatable="false">Chi Tiết</string>
+    <string name="address" translatable="false">Địa điểm giao</string>
+    <string name="txt_product" translatable="false">Sản phẩm:</string>
+    <string name="txt_total" translatable="false">Tổng đơn:</string>
+    <string name="txt_email" translatable="false">Email</string>
+    <string name="edit_search" translatable="false">Nhập thông tin cần tìm</string>
+    <string name="text_debt" translatable="false">Công Nợ</string>
+    <string name="text_idcode" translatable="false">Mã ID:</string>
+    <string name="text_user" translatable="false">Người liên hệ:</string>
+    <string name="text_contact" translatable="false">Người liên hệ</string>
+    <string name="text_total_detail" translatable="false">Tổng đơn:</string>
+    <string name="icon_company_detail" translatable="false">Icon company</string>
+    <string name="text_time_detailorder" translatable="false">Thời gian giao hàng:</string>
+    <string name="text_number_product_detailorder" translatable="false">Số sản phẩm:</string>
+    <string name="text_note_detailorder" translatable="false">Ghi Chú:</string>
+    <string name="text_confirm" translatable="false">Xác nhận</string>
+    <string name="text_edit" translatable="false">Chỉnh sửa</string>
+    <string name="survive_head" translatable="false">Tồn đầu</string>
+    <string name="text_trademark" translatable="false">Thương hiệu</string>
+    <string name="rename_category" translatable="false">Đổi tên danh mục</string>
+    <string name="enter_name_category" translatable="false">Hãy nhập tên danh mục</string>
+    <string name="cancel" translatable="false" tools:ignore="ButtonCase">Thoát</string>
+    <string name="done" translatable="false">OK</string>
+    <string name="title_cancel" translatable="false">Cancel</string>
+    <string name="notify_no_category" translatable="false">Bạn chưa có danh mục nào!</string>
+    <string name="notify_no_product" translatable="false">Bạn chưa có sản phẩm nào!</string>
+    <string name="notify_no_inventory" translatable="false">Tồn kho của bạn đã hết!</string>
+    <string name="name_slidewelcome_2" translatable="false"><b>TECHRES</b></string>
+    <string name="name_slidewelcome_3" translatable="false"><b>ALOLINE</b></string>
+    <string name="content_slidewelcome_2" translatable="false">Trợ lý đắc lực cho nhà cung cấp 2</string>
+    <string name="content_slidewelcome_3" translatable="false">Trợ lý đắc lực cho nhà cung cấp 3</string>
+    <string name="content_slidewelcome_4" translatable="false">Trợ lý đắc lực cho nhà cung cấp 4</string>
+    <string name="renamed_category" translatable="false">Đã đổi tên danh mục</string>
+    <string name="renamed_staff" translatable="false">Đã đổi tên nhân viên</string>
+    <string name="delete_category" translatable="false">Đã xóa danh mục</string>
+    <string name="text_phone" translatable="false">SĐT</string>
+    <string name="text_id_order" translatable="false">ID đơn hàng:</string>
+    <string name="text_detail" translatable="false">Chi tiết</string>
+    <string name="login_label_password_must_not_be_empty" translatable="false">Mật khẩu không được để trống</string>
+    <string name="login_label_password_must_not_be_password" translatable="false">Mật khẩu phải lớn hơn 4 ký tư</string>
+    <string name="login_label_user_must_not_be_empty" translatable="false">Tên đăng nhập không được để trống</string>
+    <string name="login_label_supplier_name_must_not_be_empty" translatable="false">Tên nhà cung cấp không được để trống</string>
+    <string name="mess_dialog_detailorderbranch" translatable="false">Vui lòng kiểm tra kỹ thông tin trước khi gửi</string>
+    <string name="dialog_btn_edit_detailorderbranch" translatable="false">Chỉnh sửa</string>
+    <string name="dialog_btn_cancel_detailorderbranch" translatable="false">Hủy bỏ</string>
+    <string name="textview_listproduct_detailorderbranch" translatable="false">DANH SÁCH SẢN PHẨM</string>
+    <string name="btn_edit_detailorderbranch" translatable="false">chỉnh sửa</string>
+    <string name="btn_confirm_detailorderbranch" translatable="false">Xác nhận</string>
+    <string name="btn_resend_detailorderbranch" translatable="false">lưu lại</string>
+    <string name="title_detailorderbranch" translatable="false">CHI TIẾT ĐƠN HÀNG</string>
+    <string name="api_error" translatable="false">Đã xảy ra lỗi!!! Vui lòng thử lại.</string>
+    <string name="dialog_title_logout" translatable="false">Đăng xuất</string>
+    <string name="dialog_title_logout_1" translatable="false">Đăng Xuất</string>
+    <string name="dialog_content_logout" translatable="false">Bạn có chắc muốn đăng xuất ?</string>
+    <string name="table_pagination_details" translatable="false">Page %s, showing items %s - %s.</string>
+    <string name="sort_ascending" translatable="false">Sort Ascending</string>
+    <string name="sort_descending" translatable="false">Sort Descending</string>
+    <string name="hiding_row_sample" translatable="false">Hiding 3. Row Sample</string>
+    <string name="showing_row_sample" translatable="false">Showing 3. Row Sample</string>
+    <string name="scroll_to_column_position" translatable="false">Scroll to 15. column position</string>
+    <string name="scroll_to_row_position" translatable="false">Scroll to 5. row position</string>
+    <string name="show_hide_the_column" translatable="false">Showing / Hiding 1. column</string>
+    <string name="hint_note_detailorderbranch" translatable="false">Nhập lời nhắn của bạn</string>
+    <string name="dash_detailorderbranch" translatable="false">-</string>
+    <string name="note_edit_detailorderbranch" translatable="false">Ghi chú:</string>
+    <string name="notify" translatable="false">Thông báo</string>
+    <string name="comfirm" translatable="false">Xác nhận</string>
+    <string name="invalid_phone_number" translatable="false">Số điện thoại không hợp lệ</string>
+    <string name="cofirm_bill_order" translatable="false">Đơn hàng đã được xác nhận</string>
+    <string name="updata_bill_order" translatable="false">Đơn hàng đã được cập nhật</string>
+
+    <string name="not_empty_phone_number" translatable="false">Số điện thoại không được để trống</string>
+    <string name="change_password" translatable="false">Nhập mật khẩu mới</string>
+    <string name="confirm_change_password" translatable="false">Nhập lại mật khẩu mới</string>
+    <string name="title_change_password" translatable="false">Đổi mật khẩu</string>
+    <string name="text_emailAccount" translatable="false">Email</string>
+    <string name="text_phoneAccount" translatable="false">SĐT:</string>
+    <string name="text_addressAccount" translatable="false">Địa Chỉ</string>
+    <string name="old_password" translatable="false">Nhập mật khẩu cũ</string>
+    <string name="save" translatable="false">Lưu thông tin</string>
+    <string name="save_note" translatable="false">Lưu ghi chú</string>
+    <string name="back_detailorderbranch" translatable="false">Quay lại</string>
+    <string name="saved" translatable="false">Saved</string>
+    <string name="loading" translatable="false">Submitting</string>
+    <string name="loading_data" translatable="false">Đang xử lý</string>
+    <string name="send_file" translatable="false">send_file</string>
+    <string name="Authorization" translatable="false">Authorization</string>
+    <string name="text_update" translatable="false">Cập nhật</string>
+    <string name="sender" translatable="false">Người Gửi<b> *</b> </string>
+    <string name="telephone" translatable="false">Điện Thoại<b> *</b> </string>
+    <string name="support" translatable="false">Đóng góp ý kiến</string>
+    <string name="send" translatable="false">Gửi</string>
+    <string name="text_support" translatable="false">Nội dung ý kiến</string>
+    <string name="text_note" translatable="false">Nội dung ghi chú</string>
+    <string name="headsupport" translatable="false">Hỗ Trợ</string>
+    <string name="mes" translatable="false">Chính</string>
+    <string name="hide_password_otp" translatable="false">**** *** ***</string>
+    <string name="hear_add_member" translatable="false">Thêm người tham gia</string>
+    <string name="vietnamese" translatable="false">Tiếng Việt</string>
+    <string name="english" translatable="false">Tiếng Anh</string>
+    <string name="overview" translatable="false">Tổng quan</string>
+    <string name="debt" translatable="false">Công nợ</string>
+    <string name="txt_reportcategory" translatable="false">Báo cáo theo danh mục</string>
+    <string name="cart" translatable="false">Đơn hàng</string>
+    <string name="account" translatable="false">Tài khoản</string>
+    <string name="hint_search_home" translatable="false">Tìm nhanh báo cáo, đơn hàng…</string>
+    <string name="dashboard" translatable="false"><b>Dashboard</b></string>
+    <string name="btn_rpcart" translatable="false">Báo cáo đơn hàng</string>
+    <string name="btn_rpdebt" translatable="false">Báo cáo công nợ</string>
+    <string name="btn_rpcustomer" translatable="false">Báo cáo khách hàng</string>
+    <string name="btn_rpwarehouse" translatable="false">Báo cáo tồn kho</string>
+    <string name="btn_rpemployees" translatable="false">Báo cáo nhân viên</string>
+    <string name="update_avatar" translatable="false">Sửa avatar</string>
+    <string name="toast_outapp" translatable="false">Nhấn 1 lần nữa để thoát</string>
+    <string name="vietnam" translatable="false">Việt Nam</string>
+    <string name="code_dh_1" translatable="false">Mã đơn hàng</string>
+    <string name="nation" translatable="false">Quốc gia</string>
+    <string name="txt_category" translatable="false">Danh mục</string>
+    <string name="editcategory" translatable="false">Sửa nguyên liệu</string>
+    <string name="dialog_avatar_profile" translatable="false"><b>Ảnh đại diện</b></string>
+    <string name="dialog_viewavatar_profile" translatable="false">Xem ảnh đại diện</string>
+    <string name="dialog_takepic_profile" translatable="false">Chụp ảnh mới</string>
+    <string name="dialog_newpicdevice_profile" translatable="false">Chọn ảnh từ thiết bị</string>
+    <string name="dialog_newpicprofile_profile" translatable="false">Chọn ảnh đại diện có sẵn</string>
+    <string name="addpic_profile" translatable="false">Thêm ảnh</string>
+    <string name="posts_profile" translatable="false">Bài viết</string>
+    <string name="note_posts_profile" translatable="false">Xem những bài viết đã đăng</string>
+    <string name="pics_profile" translatable="false">Ảnh</string>
+    <string name="note_pics_profile" translatable="false">Xem tất cả hình ảnh đã đăng</string>
+    <string name="comment_profile" translatable="false">Bình luận</string>
+    <string name="note_comment_profile" translatable="false">Xem những bình luận đánh giá sản phẩm</string>
+    <string name="hint_post_profile" translatable="false">Bạn muốn đăng gì…?</string>
+    <string name="btn_posts_profile" translatable="false">Đăng bài</string>
+    <string name="btn_more_info_profile" translatable="false">Thông tin</string>
+    <string name="btn_more_newavatar_profile" translatable="false">Đổi ảnh đại diện</string>
+    <string name="btn_more_editinfo_profile" translatable="false">Cập nhật thông tin cá nhân</string>
+    <string name="name_infoprofile" translatable="false">Tên</string>
+    <string name="all_year" translatable="false">Tất cả thời gian</string>
+    <string name="othername_infoprofile" translatable="false">Tên khác:</string>
+    <string name="phone_infoprofile" translatable="false">Điện thoại</string>
+    <string name="email_infoprofile" translatable="false">Email:</string>
+    <string name="roles_infoprofile" translatable="false">Chức vụ:</string>
+    <string name="address_infoprofile" translatable="false">Địa chỉ:</string>
+    <string name="btn_update_infoprofile" translatable="false">Thay đổi thông tin</string>
+    <string name="title_editprofile" translatable="false">Thay đổi thông tin</string>
+    <string name="text_sup_1" translatable="false">Chức năng này chỉ để gửi nhanh các phản hồi TECHERS.VN.Nếu trong quá trình sử dụng phần mền, bạn cần biết thêm thông tin và có nhu cầu được tư vấn, xin vui lòng liên hệ với TECHRES.VN qua các cách sau đây.</string>
+    <string name="text_sup_2" translatable="false">Lưu ý:Khi gọi điện đến tổng đài 0904 010 143, bạn sẽ trả cước phí điện thoại theo quy định của nhà cung cấp dịch vụ viễn thông.</string>
+    <string name="text_sup_3" translatable="false">Mọi ý kiến đóng góp, phản hồi của bạn sẽ là rất quý giá để TECHRES.VN có thể nâng cap chất lượng dịch vụ để phục vụ bạn ngày càng tốt hơn.Xin trân trọng cảm ơn.</string>
+    <string name="sup_1" translatable="false">1</string>
+    <string name="sup_2" translatable="false">Gửi nội dung cần được tư vấn hỗ trợ khách hàng</string>
+    <string name="sup_3" translatable="false">support@techres.vn</string>
+    <string name="sup_4" translatable="false">2</string>
+    <string name="sup_5" translatable="false">Gọi điện đến tổng đài tư vấn và hỗ trợ khách hàng</string>
+    <string name="sup_6" translatable="false">0904 010 143</string>
+    <string name="sup_7" translatable="false">3</string>
+    <string name="sup_8" translatable="false">Trao đổi tại website TECHRES.VN</string>
+    <string name="sup_9" translatable="false">http://techres.vn/</string>
+    <string name="search_nv" translatable="false">Nhập nhân viên cần tìm</string>
+    <string name="search_All" translatable="false">Nhập nội dung cần tìm</string>
+    <string name="search_note" translatable="false">Nhập ghi chú cần tìm</string>
+    <string name="no_notification" translatable="false">Không có thông báo</string>
+    <string name="no_notification_developing" translatable="false">Chức năng đang phát triển</string>
+    <string name="update_editprofile" translatable="false">Cập nhật thông tin</string>
+    <string name="dialog_cardimage_profile" translatable="false"><b>Ảnh bìa</b></string>
+    <string name="dialog_view_cardimage_profile" translatable="false">Xem ảnh bìa</string>
+    <string name="hintsearch_customer" translatable="false">Tìm kiếm nhà hàng</string>
+    <string name="textview_list_customer" translatable="false"><b>DANH SÁCH NHÀ HÀNG</b></string>
+    <string name="total_customer" translatable="false">Tổng số nhà hàng:</string>
+    <string name="title_customer" translatable="false">QUẢN LÝ KHÁCH HÀNG</string>
+    <string name="phone_customer" translatable="false">Số điện thoại</string>
+    <string name="number_branch_customer" translatable="false">Số chi nhánh</string>
+    <string name="total_branch_customer" translatable="false">Tổng số chi nhánh:</string>
+    <string name="follow" translatable="false">Theo dõi</string>
+    <string name="view_profile" translatable="false">Xem trang cá nhân</string>
+    <string name="txt_Password_New" translatable="false">Mật khẩu không được để trống</string>
+    <string name="txt_Password_NewCofim" translatable="false">Mật khẩu xác nhận không được để trống</string>
+    <string name="txt_Password_Faill" translatable="false"> Đặt mật khẩu  không trùng khớp</string>
+    <string name="txt_Password_Newcofim" translatable="false">Đổi mật khẩu thành công</string>
+    <string name="txt_Order_Management" translatable="false"> Quản Lý Nhà Hàng</string>
+    <string name="txt_EmployeeManagement" translatable="false"> Danh Sách Nhân Viên</string>
+    <string name="txt_Inventory" translatable="false"> Danh Sách Kho</string>
+    <string name="txt_NewGroup" translatable="false"> Tạo Nhóm Mới</string>
+    <string name="txt_qr_code" translatable="false"> Quét mã</string>
+    <string name="txt_Language" translatable="false">Ngôn Ngữ</string>
+    <string name="txt_header_material" translatable="false">Chỉnh sửa nguyên liệu</string>
+    <string name="txt_detail_group" translatable="false">Thông tin nhóm</string>
+    <string name="call_video" translatable="false">Gọi video </string>
+    <string name="create_name_group" translatable="false">Đặt tên nhóm</string>
+    <string name="report_manager_fragment" translatable="false">Quản lý báo cáo</string>
+    <string name="report_order_fragment" translatable="false">Báo cáo đơn hàng</string>
+    <string name="report_order_time_fragment" translatable="false">Báo cáo đơn hàng vận chuyển</string>
+    <string name="report_overview_ware_house_fragment" translatable="false">Báo cáo kho</string>
+    <string name="txt_Nation" translatable="false">Quốc Gia</string>
+    <string name="txt_ware_house_report" translatable="false">Báo Cáo Kho</string>
+    <string name="txt_materialreport" translatable="false">Báo Cáo Nguyên Liệu</string>
+    <string name="txt_cancel_return" translatable="false">Báo Cáo Hủy &amp; Trả Hàng</string>
+    <string name="txt_Notification" translatable="false">Thông Báo</string>
+    <string name="txt_report_category" translatable="false">Thống kê báo cáo theo danh mục</string>
+    <string name="txt_notificationSetting" translatable="false">Thiết lập</string>
+    <string name="txt_fingerprintSetting" translatable="false">Thiết lập vân tay</string>
+    <string name="txt_FuelManagement" translatable="false"> Sản Phẩm</string>
+    <string name="txt_tb_product" translatable="false"> Sản phẩm</string>
+    <string name="txt_tb_inventory" translatable="false">Tồn kho</string>
+    <string name="sp_Title_1" translatable="false">Nâng cấp, cải thiện</string>
+    <string name="sp_Title_2" translatable="false">Góp ý phát triển</string>
+    <string name="sp_Title_3" translatable="false">Báo lỗi</string>
+    <string name="toast_Cancel" translatable="false">Đã hủy bỏ</string>
+    <string name="title_staffOn" translatable="false">Đang hoạt động</string>
+    <string name="title_staffOff" translatable="false">Tạm ngưng</string>
+    <string name="title_warehouse" translatable="false">Nhập kho</string>
+    <string name="title_wexport" translatable="false">Xuất kho</string>
+    <string name="toast_edit_success" translatable="false">Cập nhật thành công</string>
+    <string name="toast_import_note" translatable="false">Bạn chưa nhập ghi chú</string>
+    <string name="toast_unsuccessful" translatable="false">Không thành công!</string>
+    <string name="toast_successful" translatable="false">Thành công!</string>
+    <string name="toast_delete_unsuccessful" translatable="false">Xóa không thành công!</string>
+    <string name="toast_delete_successful" translatable="false">Xóa thành công!</string>
+    <string name="welcome_login_success" translatable="false">Xin chào, </string>
+    <string name="followed" translatable="false">Đã theo dõi</string>
+    <string name="message" translatable="false">Nhắn tin</string>
+    <string name="messenger" translatable="false">Tin nhắn</string>
+    <string name="groupchat" translatable="false">Chung</string>
+    <string name="title_messenger" translatable="false">Tin Nhắn</string>
+    <string name="title_mess" translatable="false">Tôi</string>
+    <string name="create_articles" translatable="false">Tạo bài viết</string>
+    <string name="hint_question_post_articles" translatable="false">Bạn đang nghĩ gì?</string>
+    <string name="remove_post_articles" translatable="false">Hủy bỏ bài viết</string>
+    <string name="continue_edit" translatable="false">Tiếp tục chỉnh sửa</string>
+    <string name="question_finish_articles" translatable="false">Hoàn thành bài viết của bạn?</string>
+    <string name="content_question_finish_articles" translatable="false">Hủy bỏ bài viết hoặc tiếp tục chỉnh sửa bài viết của bạn</string>
+    <string name="text_branch" translatable="false">Chi nhánh</string>
+    <string name="picture_single" translatable="false">Chọn 1 bức ảnh của bạn</string>
+    <string name="file_provider" translatable="false">vn.techres.supplier</string>
+    <string name="watchingStaff" translatable="false">Đang theo dõi</string>
+    <string name="chat_staff" translatable="false">Chat</string>
+    <string name="call_staff" translatable="false">Gọi điện</string>
+    <string name="follows" translatable="false" tools:ignore="DuplicateDefinition">Theo dõi</string>
+    <string name="telephoneStaff" translatable="false">Số điện thoại:</string>
+    <string name="followers" translatable="false">Người theo dõi</string>
+    <string name="emailStaff" translatable="false">Email :</string>
+    <string name="profileStaff" translatable="false">Thông tin nhân viên</string>
+    <string name="title_update_avatar" translatable="false">Cập nhật ảnh đại diện</string>
+    <string name="select_new_photo" translatable="false">Chọn lại ảnh khác</string>
+    <string name="toast_unselect_avatar" translatable="false"> Bạn chưa chọn ảnh đại diện</string>
+    <string name="id_product" translatable="false">Mã sản phẩm</string>
+    <string name="detailproduct" translatable="false">Chi Tiết Sản Phẩm</string>
+    <string name="name_product" translatable="false">Tên sản phẩm</string>
+    <string name="description_product" translatable="false">Loại sản phẩm</string>
+    <string name="btn_unit_manager" translatable="false">Quản lý đơn vị</string>
+    <string name="title_units_manager" translatable="false">Quản lý đơn vị</string>
+    <string name="tab_status_active" translatable="false">Đang hoạt động</string>
+    <string name="tab_status_pause" translatable="false">Tạm ngưng</string>
+    <string name="txt_total_units_active" translatable="false">Tổng đơn vị đang hoạt động:</string>
+    <string name="txt_total_units_pause" translatable="false">Tổng đơn vị tạm ngưng:</string>
+    <string name="btn_add_new" translatable="false">Tạo mới</string>
+    <string name="delete" translatable="false">Xóa</string>
+    <string name="number_count" translatable="false">STT</string>
+    <string name="number_count_order" translatable="false">Số thứ tự phiếu</string>
+    <string name="txt_name_units" translatable="false">Đơn vị</string>
+    <string name="txt_specifications" translatable="false">Quy cách</string>
+    <string name="txt_describe" translatable="false">Mô tả</string>
+    <string name="txt_function" translatable="false">Chức năng</string>
+    <string name="image" translatable="false">Chọn hình</string>
+    <string name="btnExit" translatable="false">Đóng</string>
+    <string name="btn_Save" translatable="false">Lưu lại</string>
+    <string name="txt_hint_editEmloyee" translatable="false">Hãy nhập tên nhân viên</string>
+    <string name="txt_Emloyee" translatable="false">Chỉnh sửa nhân viên</string>
+    <string name="txt_new_emloyee" translatable="false">Nhân Viên Mới</string>
+    <string name="choose_image" translatable="false">Chọn hình</string>
+    <string name="txt_name_emloyee" translatable="false">Tên Nhân viên</string>
+    <string name="txt_adderr" translatable="false">Địa chỉ</string>
+    <string name="txt_id_product" translatable="false">Mã nguyên liệu</string>
+    <string name="txt_name_fuell" translatable="false">Tên nhiên liệu</string>
+    <string name="txt_price" translatable="false">Giá tiền</string>
+    <string name="txt_quantity_wholesale_price" translatable="false">Giá bán buôn số lượng</string>
+    <string name="txt_out_stock_alert_quantity" translatable="false">Số lượng cảnh báo hết hàng</string>
+    <string name="txt_update_employee" translatable="false">Chỉnh sửa nhân viên</string>
+    <string name="txtCompanyInformation" translatable="false">Thông tin công ty</string>
+    <string name="ddmmyyyy" translatable="false">dd/MM/yyyy</string>
+    <string name="mmyyyy" translatable="false">MM/yyyy</string>
+    <string name="add_suss" translatable="false">Tạo nhân viên thành công</string>
+    <string name="error" translatable="false">Không thành công</string>
+    <string name="txt_material_unit_specification_id" translatable="false">Đơn vị</string>
+    <string name="txt_all_category" translatable="false">Tất cả danh mục</string>
+    <string name="txt_chat" translatable="false">Trò Chuyện</string>
+    <string name="txt_call" translatable="false">Gọi điện</string>
+    <string name="txt_follow" translatable="false">Theo dõi</string>
+    <string name="txt_detail_emloyee" translatable="false">Xem thông tin chi tiết</string>
+    <string name="txt_detail" translatable="false">Chi tiết</string>
+    <string name="txt_id_catogery" translatable="false">Mã nhiên liệu</string>
+    <string name="title_specification_manager" translatable="false">Quản lý quy cách</string>
+    <string name="txt_name_specification" translatable="false">Quy cách</string>
+    <string name="txt_value_exchange" translatable="false">Giá trị QĐ</string>
+    <string name="txt_units_exchange" translatable="false">Đơn vị QĐ</string>
+    <string name="toast_change_status_success" translatable="false">Thay đổi trạng thái thành công</string>
+    <string name="toast_change_success" translatable="false">Ẩn thành công</string>
+    <string name="txt_total_exchange_active" translatable="false">Tổng quy cách đang hoạt động:</string>
+    <string name="txt_total_exchange_pause" translatable="false">Tổng quy cách tạm ngưng:</string>
+    <string name="btn_specification_manager" translatable="false">Quản lý quy cách</string>
+    <string name="txt_create_new_specification" translatable="false">Tạo mới quy cách</string>
+    <string name="txt_create_new_genus_items" translatable="false">Tạo mới chi phí</string>
+    <string name="txt_edit_specification" translatable="false">Chỉnh sửa quy cách</string>
+    <string name="txt_close" translatable="false">Đóng</string>
+
+    <string name="dialog_notify_title" translatable="false">Thông báo</string>
+    <string name="dialog_notify_content_change_status" translatable="false">Bạn muốn đổi trạng thái hoạt động?</string>
+    <string name="dialog_notify_content" translatable="false">Bạn muốn ẩn  hoạt động?</string>
+    <string name="remove_member" translatable="false">Bạn muốn xóa nhân viên ra khỏi nhóm không?</string>
+    <string name="dialog_notify_bill_order_change_status" translatable="false">Bạn muốn đổi trạng thái đơn hàng?</string>
+    <string name="dialog_notify_cancelled_bill_order_change_status" translatable="false">Bạn có muốn hủy phiếu này không?</string>
+    <string name="dialog_notify_cancelled_order_change_status" translatable="false">Bạn có muốn hủy đơn này không?</string>
+    <string name="dialog_notify__bill_order_change_status" translatable="false">Bạn có muốn duyệt đơn trả này không?</string>
+    <string name="dialog_notify_remove_group_chat" translatable="false" vh12translatable="false">Bạn muốn xóa nhóm chat này không?</string>
+    <string name="dialog_notify_content_delete" translatable="false">Bạn có muốn xóa người liên hệ này không?</string>
+    <string name="txt_create_new_units" translatable="false">Tạo mới đơn vị</string>
+    <string name="txt_edit_units" translatable="false">Chỉnh sửa đơn vị</string>
+    <string name="txt_please_choose" translatable="false">- Vui lòng chọn -</string>
+    <string name="txt_please_choose_roles" translatable="false">- Chọn chức vụ -</string>
+    <string name="txt_please_choose_category" translatable="false">Chọn danh mục</string>
+    <string name="txt_please_choose_calender" translatable="false">Chọn lịch</string>
+    <string name="hint_search" translatable="false">Tìm kiếm…</string>
+    <string name="hint_search_order" translatable="false">Tìm kiếm đơn hàng</string>
+    <string name="txt_id_materialunit" translatable="false">Quy Cách</string>
+    <string name="txt_messegegroup" translatable="false">Tin nhắn chung của bạn</string>
+    <string name="txt_from" translatable="false">Tới:</string>
+    <string name="hint_from_messenge_header" translatable="false">Tạo nhóm chat</string>
+    <string name="hint_text_new_group" translatable="false">Đặt tên cho nhóm</string>
+    <string name="txt_otp" translatable="false">**** *** *** </string>
+    <string name="txt_dark_mode" translatable="false">Chế độ tối</string>
+    <string name="txt_map" translatable="false">Map nhà hàng gần đây</string>
+    <string name="txt_recent_contact" translatable="false">Liên lạc gần đây</string>
+    <string name="txt_notifications_sounds" translatable="false"><![CDATA[Thông báo & âm thanh]]></string>
+    <string name="txt_status" translatable="false">Trạng thái hoạt động</string>
+    <string name="txt_photo_media" translatable="false"><![CDATA[Ảnh & phương tiện]]></string>
+    <string name="txt_support" translatable="false">Trợ giúp</string>
+    <string name="txt_all_emloyee" translatable="false">Tổng nhân viên</string>
+    <string name="txt_Branch" translatable="false">Chi Nhánh</string>
+    <string name="txt_Information" translatable="false">Phần mềm quản trị doanh nghiệp hiệu quả nhất dành cho Nhà cung cấp(Supplier)</string>
+    <string name="toast_create_specification_name_error" translatable="false">Tên quy cách đã tồn tại!!!</string>
+    <string name="toast_create_success" translatable="false">Tạo thành công</string>
+    <string name="toast_add_success" translatable="false">Thêm thành công</string>
+    <string name="toast_add_group_success" translatable="false">Tạo nhóm thành công</string>
+    <string name="toast_name_specification_empty" translatable="false">Tên quy tắc không được để trống</string>
+    <string name="toast_amount_empty" translatable="false">Tổng tiền không được để trống</string>
+    <string name="toast_name_genusitems_empty" translatable="false">Tên lý do không được để trống</string>
+    <string name="toast_value_exchange_specification_empty" translatable="false">Giá trị quy đổi không được để trống</string>
+    <string name="toast_note_exchange_empty" translatable="false">Ghi chú không được để trống</string>
+    <string name="toast_description_genusitems_empty" translatable="false">Mô tả không được để trống</string>
+    <string name="branch_customer" translatable="false">Chi Nhánh</string>
+    <string name="Contact" translatable="false">liên hệ</string>
+    <string name="company_information" translatable="false">Thông tin công ty</string>
+    <string name="note" translatable="false">Ghi chú</string>
+    <string name="event" translatable="false">Sự kiện</string>
+    <string name="txtHeaderRestaurantContactors" translatable="false">Người liên hệ nhà hàng</string>
+    <string name="name_contact" translatable="false">Người liên hệ</string>
+    <string name="txt_roles" translatable="false">Chức vụ</string>
+    <string name="txt_branch" translatable="false">Chi Nhánh</string>
+    <string name="txt_newContact" translatable="false">Tạo người liên hệ</string>
+    <string name="txt_decentralization" translatable="false">Phân quyền</string>
+    <string name="txt_primary_contact_person" translatable="false">Người liên hệ chính</string>
+    <string name="txt_Email" translatable="false">Email</string>
+    <string name="txt_name" translatable="false">Họ và tên</string>
+    <string name="txt_cancel" translatable="false">Cancel</string>
+    <string name="txt_addsuccess" translatable="false"> Tạo thành công</string>
+    <string name="txt_detailContactors" translatable="false">Chi tiết người liên hệ</string>
+    <string name="btn_save" translatable="false">Lưu thay đổi</string>
+    <string name="txt_primarycontactperson" translatable="false">Người liên hệ chính</string>
+    <string name="txt_restaurants_information" translatable="false">Thông tin nhà hàng</string>
+    <string name="txt_contactors" translatable="false">Liên hệ</string>
+    <string name="txt_Owner" translatable="false">Chủ sở hửu</string>
+    <string name="txt_taxcode" translatable="false">Mã số thuế</string>
+    <string name="txt_cb_primarycontactperson" translatable="false">Liên hệ chính</string>
+
+    <string name="toast_name_units_empty" translatable="false">Tên đơn vị không được để trống</string>
+    <string name="toast_specification_units_empty" translatable="false">Hãy chọn quy tắc</string>
+    <string name="toast_description_units_empty" translatable="false">Mô tả không được để trống</string>
+    <string name="toast_units_exchange_empty" translatable="false">Hãy chọn đơn vị quy đổi</string>
+    <string name="toast_receipts_exchange_empty" translatable="false">Hãy chọn lý do thu</string>
+    <string name="toast_genusitems_exchange_empty" translatable="false">Hãy chọn loại phiếu</string>
+    <string name="toast_roles_exchange_empty" translatable="false">Hãy chọn chức vụ</string>
+    <string name="toast_brand_exchange_empty" translatable="false">Hãy chọn chi nhánh</string>
+    <string name="addSuccess" translatable="false">Tạo nhân viên thành công</string>
+    <string name="supplier_link" translatable="false">https://play.google.com/store/apps/details?id=vn.techres.supplier</string>
+    <string name="supplier_link_app" translatable="false">https://play.google.com/store/apps/details?id=vn.techres.supplier</string>
+    <string name="app_tms" translatable="false">https://play.google.com/store/apps/details?id=techres.vn.tms</string>
+    <string name="supplier_link_youtube" translatable="false">http://youtube.vn</string>
+    <string name="supplier_link_aloline" translatable="false">https://play.google.com/store/apps/details?id=vn.techres.line</string>
+    <string name="id_food" translatable="false">ID món</string>
+    <string name="name" translatable="false">Tên</string>
+    <string name="number" translatable="false">Số lượng</string>
+    <string name="number_wholesale" translatable="false">Số lượng giá sỉ</string>
+    <string name="units" translatable="false">Đơn vị</string>
+    <string name="price" translatable="false">Đơn giá</string>
+    <string name="total_price" translatable="false">Đơn giá</string>
+    <string name="title_overview_fragment" translatable="false">Tổng quan hoạt động</string>
+    <string name="txt_order_in_day" translatable="false">Đơn hàng ngày</string>
+    <string name="txt_delivered" translatable="false">Đã giao</string>
+    <string name="txt_not_delivery" translatable="false">Chưa giao</string>
+    <string name="txt_revenue" translatable="false">Doanh thu</string>
+    <string name="txt_revenue1" translatable="false">Doanh thu trong ngày</string>
+    <string name="txt_warehouse" translatable="false">Kho hàng</string>
+    <string name="title_debt" translatable="false">Công nợ</string>
+    <string name="title_material" translatable="false">Nguyên liệu</string>
+    <string name="txt_collected" translatable="false">Đã thu</string>
+    <string name="txt_debt" translatable="false">Công nợ</string>
+    <string name="txt_today" translatable="false">Hôm nay</string>
+    <string name="txt_lastday" translatable="false">Hôm qua</string>
+    <string name="txt_revenue_this_week" translatable="false">Doanh thu tuần này &amp; tuần trước</string>
+    <string name="txt_revenue_this_month" translatable="false">Doanh thu 30 ngày</string>
+    <string name="txt_revenue_three_months" translatable="false">3 tháng gần nhất</string>
+    <string name="txt_revenue_three_months_nearest" translatable="false">Doanh thu 3 tháng gần nhất</string>
+    <string name="txt_revenue_this_year" translatable="false">Doanh thu năm nay</string>
+    <string name="txt_revenue_last_year" translatable="false">Doanh thu năm trước</string>
+    <string name="btn_Edit" translatable="false">Chỉnhời  sửa thông tin</string>
+    <string name="txt_warehouse_overview" translatable="false">Báo cáo tổng kho hàng</string>
+    <string name="txt_status_cf" translatable="false">Phiếu chờ xác nhận</string>
+    <string name="txt_status_order" translatable="false">Phiếu chờ NH xác nhận </string>
+    <string name="txt_status_wait" translatable="false">Chờ NH xác nhận</string>
+    <string name="txt_status_delivering" translatable="false">Đang giao hàng</string>
+    <string name="panding" translatable="false">Đơn hàng đang chuẩn bị</string>
+    <string name="toast_create_category_success" translatable="false">Tạo danh mục thành công</string>
+    <string name="code" translatable="false">Mã phiếu</string>
+    <string name="list_inventory" translatable="false">Danh sách phiếu nhập kho</string>
+    <string name="name_create" translatable="false">Người tạo phiếu</string>
+    <string name="name_create_two_dots" translatable="false">Người tạo phiếu</string>
+    <string name="price_inventory" translatable="false">Tiền nhập nguyên liệu</string>
+    <string name="sale" translatable="false">Giảm giá</string>
+    <string name="vat" translatable="false">VAT</string>
+    <string name="vat_two_dots" translatable="false">VAT</string>
+    <string name="total" translatable="false">Tổng tiền</string>
+    <string name="input_new_pass_again" translatable="false">Nhập lại mật khẩu mới</string>
+    <string name="status" translatable="false">Trạng thái</string>
+    <string name="status_two_dots" translatable="false">Trạng thái</string>
+    <string name="default_image" translatable="false">Hình mặc định</string>
+    <string name="fun" translatable="false">Chức năng</string>
+    <string name="stt" translatable="false">STT</string>
+    <string name="add_new_warehouse" translatable="false">Tạo mới phiếu nhập kho</string>
+    <string name="selection_category" translatable="false">Chọn nguyên liệu</string>
+    <string name="toast_error_upload_image" translatable="false">Tải ảnh lên không thành công</string>
+    <string name="toast_error_get_link" translatable="false">Lấy liên kết ảnh không thành công</string>
+    <string name="txt_total_category_active" translatable="false">Tổng danh mục đang hoạt động:</string>
+    <string name="txt_total_inventory" translatable="false">Tổng đơn nhập kho :</string>
+    <string name="txt_total_category_pause" translatable="false">Tổng danh mục tạm ngưng:</string>
+    <string name="txt_name_category" translatable="false">Tên danh mục</string>
+    <string name="txt_category_manager" translatable="false">Quản lý danh mục</string>
+    <string name="tab_status_material_active" translatable="false">Đang cung cấp</string>
+    <string name="tab_status_material_pause" translatable="false">Ngưng cung cấp</string>
+    <string name="txt_total_material_active" translatable="false">Tổng nguyên liệu đang cung cấp:</string>
+    <string name="txt_total_material_pause" translatable="false">Tổng nguyên liệu ngưng cung cấp:</string>
+    <string name="txt_name_material" translatable="false">Tên nguyên liệu</string>
+    <string name="txt_retail_price" translatable="false">Giá lẻ</string>
+    <string name="txt_wholesale_price" translatable="false">Giá sỉ</string>
+    <string name="txt_code_material" translatable="false">Mã nguyên liệu</string>
+    <string name="txt_number_wholesale_price" translatable="false">Số lượng để thành giá sỉ</string>
+    <string name="txt_number_out_of_stock" translatable="false">Số lượng để báo sắp hết hàng</string>
+    <string name="txt_create_material" translatable="false">Tạo mới nguyên liệu</string>
+    <string name="txt_edit_material" translatable="false">Chỉnh sửa nguyên liệu</string>
+    <string name="toast_name_material_empty" translatable="false">Tên nguyên liệu không được để trống</string>
+    <string name="toast_code_material_empty" translatable="false">Tên nguyên liệu không được để trống</string>
+    <string name="toast_cost_price_empty" translatable="false">Giá cả không được để trống</string>
+    <string name="toast_retail_price_empty" translatable="false">Giá lẻ không được để trống</string>
+    <string name="toast_wholesake_price_empty" translatable="false">Giá sỉ không được để trống</string>
+    <string name="toast_number_wholesake_price_empty" translatable="false">Số lượng để thành giá sỉ không được để trống</string>
+    <string name="toast_number_out_of_stock_empty" translatable="false">Số lượng để báo sắp hết hàng không được để trống</string>
+    <string name="toast_number_wastage_rate" translatable="false">Số lượng hao hụt không được để trống</string>
+    <string name="single_number" translatable="false">Số đơn</string>
+
+    <string name="toast_img_staff_empty" translatable="false">Vui lòng chọn hình</string>
+    <string name="toast_name_staff_empty" translatable="false">Tên  không được để trống</string>
+    <string name="toast_image_staff_empty" translatable="false">Vui lòng chọn hình</string>
+    <string name="toast_address_staff_empty" translatable="false">Địa chỉ  không được để trống</string>
+    <string name="toast_email_staff_empty" translatable="false">Email không được để trống</string>
+    <string name="toast_phones_staff_empty" translatable="false">Số điện thoại không được để trống</string>
+    <string name="toast_post_empty" translatable="false">Chức vụ không được để trtống</string>
+    <string name="toast_click_status_off" translatable="false">Trạng thái đã được  tắt</string>
+    <string name="toast__click_status_on" translatable="false">Trạng thái đã được  bật</string>
+    <string name="txt_notify" translatable="false">Thông báo</string>
+    <string name="off_notify_chat" translatable="false">Tắt thông báo chat</string>
+    <string name="off_notify_system" translatable="false">Tắt thông báo hệ thống</string>
+    <string name="btn_edit" translatable="false">Chỉnh sửa</string>
+    <string name="date_create" translatable="false">Ngày tạo phiếu</string>
+    <string name="monetary_material" translatable="false">Tiền nhập nguyên liệu</string>
+    <string name="price_warehouse" translatable="false">Giảm giá</string>
+    <string name="totail" translatable="false">Tổng tiền</string>
+    <string name="txt_contact" translatable="false">Ngườil liên hệ</string>
+    <string name="view_day" translatable="false">Xem theo ngày</string>
+    <string name="view_month" translatable="false">Xem theo tháng</string>
+    <string name="from_date" translatable="false">Từ ngày</string>
+    <string name="selectdate" translatable="false">Chọn ngày</string>
+    <string name="selction_warehouse" translatable="false">Chọn phiếu nhập kho</string>
+    <string name="to_date" translatable="false">Đến ngày</string>
+    <string name="to_dates" translatable="false">Chọn ngày</string>
+    <string name="details_text" translatable="false">Chi tiết sự kiện</string>
+    <string name="title_text" translatable="false">Event Title</string>
+    <string name="txt_totail_inventory" translatable="false">Tổng số đơn</string>
+    <string name="txt_exit" translatable="false">Hủy</string>
+    <string name="txt_status_tatol_warehouse" translatable="false">Tổng số phiếu nhập kho:</string>
+    <string name="txt_status_tatol_export" translatable="false">Tổng số phiếu xuất kho:</string>
+    <string name="title_setting_fingerprint1" translatable="false">Đăng nhập bằng vân tay</string>
+    <string name="title_setting_fingerprint2" translatable="false">Sử dụng vân tay thay cho mật khẩu đăng nhập</string>
+    <string name="txt_entertainment" translatable="false">Ứng dụng liên quan</string>
+    <string name="txt_update_profile" translatable="false">Cập nhật hồ sơ</string>
+    <string name="txt_game" translatable="false">Game</string>
+    <string name="txt_aloline" translatable="false">AloLine</string>
+    <string name="txt_youtube" translatable="false">Youtbe</string>
+    <string name="app_TMS" translatable="false">TMS</string>
+    <string name="time_monday" translatable="false">Thứ 2</string>
+    <string name="time_tuesday" translatable="false">Thứ 3</string>
+    <string name="time_wednesday" translatable="false">Thứ 4</string>
+    <string name="time_thursday" translatable="false">Thứ 5</string>
+    <string name="time_friday" translatable="false">Thứ 6</string>
+    <string name="time_saturday" translatable="false">Thứ 7</string>
+    <string name="time_sunday" translatable="false">C.Nhật</string>
+
+    <string name="biometric_title" translatable="false">Đăng nhâp</string>
+    <string name="selection_check" translatable="false">Vui lòng chọn lý do</string>
+    <string name="biometric_subtitle" translatable="false">Đăng nhập vào tài khoản của bạn</string>
+    <string name="biometric_description" translatable="false">Đặt ngón tay của bạn trên nút trang chủ của thiết bị để xác minh danh tính của bạn</string>
+    <string name="biometric_negative_button_text" translatable="false">Hủy</string>
+    <string name="biometric_error_sdk_not_supported" translatable="false">Phiên bản Sdk không được hỗ trợ</string>
+    <string name="biometric_error_hardware_not_supported" translatable="false">Thiết bị không hỗ trợ xác thực sinh trắc học</string>
+    <string name="biometric_error_fingerprint_not_available" translatable="false">Vân tay không được đăng ký trong thiết bị</string>
+    <string name="biometric_error_permission_not_granted" translatable="false">Quyền không được cấp bởi người dùng</string>
+    <string name="biometric_failure" translatable="false">Đăng nhập không thành công!</string>
+    <string name="biometric_cancelled" translatable="false">Người dùng đã hủy xác thực</string>
+    <string name="biometric_success" translatable="false">Đăng nhập thành công</string>
+    <string name="txt_item_debt" translatable="false">Công nợ phải thu </string>
+    <string name="txt_item_done" translatable="false">Công nợ phải trả </string>
+    <string name="btn_bill" translatable="false">Hóa đơn</string>
+    <string name="mess_data_order_null" translatable="false">Chưa có đơn hàng</string>
+    <string name="mess_data_material_order_null" translatable="false">Chưa có nguyên liệu đặt hàng</string>
+    <string name="mess_data_null" translatable="false">Không có tin nhắn</string>
+    <string name="mess_data_null_file" translatable="false">Không có dữ liệu</string>
+    <string name="txt_dialog_status2" translatable="false">không ?</string>
+    <string name="txt_dialog_status1" translatable="false">Bạn có muốn tắt nhân viên</string>
+    <string name="txt_dialog_status" translatable="false">Thay đổi trạng thái</string>
+    <string name="create" translatable="false">Tạo nhân viên</string>
+    <string name="create_payment_request" translatable="false">Tạo phiếu</string>
+    <string name="edit_staff" translatable="false">Chỉnh sửa nhân viên</string>
+    <string name="edit_contactors" translatable="false">Chỉnh sửa người liên hệ</string>
+    <string name="call_message" translatable="false">Gọi thoại</string>
+    <string name="add_member" translatable="false">Thêm thành viên</string>
+    <string name="member" translatable="false"> thành viên</string>
+    <string name="txt_following" translatable="false">Theo dõi</string>
+    <string name="btn_event" translatable="false">Tạo sự kiện</string>
+    <string name="txt_vnd" translatable="false"> VNĐ</string>
+    <string name="new_message_no_rep" translatable="false">Tin nhắn chưa đọc.</string>
+    <string name="txt_note" translatable="false">Ghi chú bạn thêm sẽ xuất hiện tại đây</string>
+    <string name="sum_order" translatable="false">Tổng đơn hàng</string>
+    <string name="name_restaurant" translatable="false">Tên nhà hàng</string>
+    <string name="txt_is_inclide_vat" translatable="false">Áp dụng thuế:</string>
+    <string name="txt_discount_amount" translatable="false">Tiền giảm giá</string>
+    <string name="txt_yes" translatable="false">Có</string>
+    <string name="txt_no" translatable="false">Không</string>
+    <string name="txt_delivery_date" translatable="false">Ngày giao</string>
+    <string name="txt_material" translatable="false">Nguyên liệu</string>
+    <string name="txt_employee_on_off" translatable="false">Thay đổi trạng thái NV</string>
+    <string name="empty_pin" translatable="false">Vui lòng nhập mã xác nhận</string>
+    <string name="empty_old" translatable="false">Vui lòng nhập mật khẩu cũ</string>
+    <string name="empty_pass" translatable="false">Vui lòng nhập mật khẩu</string>
+    <string name="empty_pass_new" translatable="false">Vui lòng nhập mật khẩu mới</string>
+    <string name="txt_group_chat" translatable="false">Group Order Hàng</string>
+    <string name="txt_add_material" translatable="false">Thêm nguyên liệu</string>
+    <string name="txt_add_member" translatable="false">Thêm nhân viên</string>
+    <string name="txt_type_discount" translatable="false">Loại giảm giá</string>
+    <string name="txt_percent_discount" translatable="false">Phần trăm giảm giá</string>
+    <string name="prices" translatable="false">Giá</string>
+    <string name="empty_pass_again" translatable="false">Vui lòng xác nhận mật khẩu mới</string>
+    <string name="unmatch_pass" translatable="false">Mật khẩu không khớp, vui lòng nhập lại</string>
+    <string name="txt_data_material_warehouse_null" translatable="false">Chưa có nguyên liệu</string>
+    <string name="txt_add" translatable="false">Thêm</string>
+    <string name="code_material" translatable="false">Mã NL</string>
+    <string name="toast_number_undecent" translatable="false">Số lượng không hợp lệ</string>
+    <string name="toast_price_undecent" translatable="false">Giá không hợp lệ</string>
+    <string name="delivery_date" translatable="false">Ngày giao hàng</string>
+    <string name="delivery_date_two_dots" translatable="false">Ngày giao hàng</string>
+    <string name="toast_list_material_warehouse_null" translatable="false">Bạn chưa thêm "Nguyên liệu"</string>
+    <string name="toast_radio_checked_vat_null" translatable="false">Bạn chưa chọn "Áp dụng thuế"</string>
+    <string name="toast_text_input_discount_null" translatable="false">Bạn chưa nhập chiết khấu"</string>
+    <string name="toast_edittext_discount_amount_null" translatable="false">Bạn chưa nhập "Tiền giảm giá"</string>
+    <string name="toast_edittext_discount_percent_null" translatable="false">Bạn chưa nhập "Phần trăm giảm giá"</string>
+    <string name="toast_edittext_discount_null" translatable="false">Bạn chưa nhập chiết khẩu</string>
+    <string name="toast_edittext_vat_null" translatable="false">Bạn chưa nhập thuế VAT</string>
+    <string name="toast_edittext_discount_percent_undecent" translatable="false">Số chiết khẩu phải nhỏ hơn hoặc bằng 100%</string>
+    <string name="toast_edittext_vat_undecent" translatable="false">Thuế VAT phải nhỏ hơn hoặc bằng 100%</string>
+    <string name="toast_delivery_date_null" translatable="false">Bạn chưa chọn "Ngày giao"</string>
+    <string name="return_restaurant" translatable="false">Nguyên liệu NH trả lại</string>
+    <string name="today" translatable="false">Hôm Nay</string>
+    <string name="Week" translatable="false">Tuần trước</string>
+    <string name="ByWeak" translatable="false">Tuần Này</string>
+    <string name="ByMonth" translatable="false">Tháng Này</string>
+    <string name="sMonth" translatable="false">Tháng</string>
+    <string name="By3Month" translatable="false">3 Tháng Gần Đây</string>
+    <string name="ByYear" translatable="false">Năm Này</string>
+    <string name="By3Year" translatable="false">3 Năm </string>
+    <string name="ByAllYear" translatable="false">Tất cả các năm</string>
+    <string name="total_order" translatable="false">Tổng đơn hàng</string>
+    <string name="total_vat" translatable="false">Tổng VAT</string>
+    <string name="total_discount" translatable="false">Tổng giảm giá</string>
+    <string name="total_amount" translatable="false">Tổng số tiền</string>
+    <string name="time_order_report" translatable="false">Thời gian</string>
+    <string name="txt_setting_messenger" translatable="false">Cài đặt chat</string>
+    <string name="new_chat" translatable="false">Tạo tin nhắn</string>
+    <string name="new_group_chat" translatable="false">Tạo nhóm mới</string>
+    <string name="all_chat" translatable="false">Chọn tất cả</string>
+    <string name="status_chat" translatable="false">Online</string>
+    <string name="txt_title_chat" translatable="false">Nhập nội dung chat…</string>
+    <string name="txt_person" translatable="false">Chủ nhà hàng</string>
+    <string name="btn_delete" translatable="false">Xóa</string>
+    <string name="spinner_contactors" translatable="false">- Vui lòng chọn người liên hệ -</string>
+    <string name="spinner_restaurant" translatable="false">- Vui lòng chọn nhà hàng -</string>
+    <string name="spinner_branch" translatable="false">- Vui lòng chọn chi nhánh -</string>
+    <string name="total_import" translatable="false">Tổng nhập </string>
+    <string name="total_export" translatable="false">Tổng xuất </string>
+    <string name="txt_add_member_from_detail_group" translatable="false">Chọn nhân viên  </string>
+    <string name="quantity_import" translatable="false">Số lượng nhập  </string>
+    <string name="quantity_export" translatable="false">Số lượng xuất </string>
+    <string name="total_remaining" translatable="false">Tổng số lượng còn lại</string>
+    <string name="quantity_remaining" translatable="false">Số lượng còn lại</string>
+    <string name="ByThisMonth" translatable="false">Tháng này</string>
+    <string name="ByLastMonth" translatable="false">Tháng trước</string>
+    <string name="ByThisYear" translatable="false">Năm này</string>
+    <string name="ByLastYear" translatable="false">Năm trước</string>
+    <string name="report_category" translatable="false">Báo cáo theo danh mục</string>
+    <string name="txt_total_material_warehouse" translatable="false">Số nguyên liệu nhập</string>
+    <string name="txt_total_material" translatable="false">Số nguyên liệu </string>
+    <string name="report_order" translatable="false">Báo cáo đơn hàng</string>
+    <string name="report_order_by_restaurant" translatable="false">Báo cáo đơn hàng theo nhà hàng</string>
+    <string name="report_order_by_branch" translatable="false">Báo cáo đơn hàng theo chi nhánh</string>
+    <string name="report_order_time" translatable="false">Báo cáo đơn hàng vận chuyển </string>
+    <string name="report_order_cancel_return" translatable="false">Báo cáo trả &amp; hủy đơn hàng </string>
+    <string name="report_order_amount" translatable="false">Báo cáo tổng tiền đơn hàng </string>
+    <string name="total_delivery_completed" translatable="false">Tổng đơn hoàn thành</string>
+    <string name="total_unfinished_delivery" translatable="false">Tổng đơn chưa hoàn thành</string>
+    <string name="txt_manager" translatable="false">Quản lý</string>
+    <string name="txt_support_setting" translatable="false">Trợ giúp</string>
+    <string name="txt_setting_account_menu" translatable="false">Hệ thống</string>
+    <string name="txt_report" translatable="false">Báo cáo thống kê</string>
+    <string name="txt_report_restaurant" translatable="false">Báo cáo khách hàng</string>
+    <string name="txt_report_warehouse" translatable="false">Báo cáo kho</string>
+    <string name="txt_report_debt" translatable="false">Báo cáo công nợ</string>
+    <string name="txt_report_material" translatable="false">Báo cáo nguyên liệu</string>
+    <string name="total_order_number" translatable="false">Số đơn hàng</string>
+    <string name="txtSearchHome" translatable="false">Tìm thống kê, quản lý … </string>
+    <string name="txtDetailCustomer" translatable="false">Thông tin khách hàng</string>
+    <string name="total_inventory" translatable="false">Tổng tồn kho</string>
+    <string name="version" translatable="false">Phiên bản</string>
+    <string name="not_data" translatable="false">0</string>
+    <string name="video_call" translatable="false">Video Call</string>
+    <string name="audio_call" translatable="false"> Call</string>
+    <string name="profile" translatable="false">Trang cá nhân</string>
+    <string name="profit" translatable="false">Lợi nhuận</string>
+    <string name="profit_rate" translatable="false">Tỉ lệ lợi nhuận</string>
+    <string name="block" translatable="false">Chặn</string>
+    <string name="online" translatable="false">Online</string>
+    <string name="theme_chat" translatable="false">Chủ đề</string>
+    <string name="brand_name_chat" translatable="false">Biệt hiệu</string>
+    <string name="detail_group_chat" translatable="false">Xem thành viên nhóm</string>
+    <string name="view_photos_videos_chat" translatable="false">Xem ảnh và video</string>
+    <string name="seach_chat" translatable="false">Tìm kiếm trong cuộc trò chuyện</string>
+    <string name="notifications_sounds" translatable="false">Thông báo và âm thanh</string>
+    <string name="detail_group" translatable="false">Thông tin nhóm</string>
+    <string name="other_action" translatable="false">Hành động khác</string>
+    <string name="privacy" translatable="false">Quyền riêng tư</string>
+    <string name="block_members" translatable="false">Chặn thành viên</string>
+    <string name="leave_group" translatable="false">Rời khỏi nhóm</string>
+    <string name="error_chat" translatable="false">Báo lỗi</string>
+    <string name="remove_group" translatable="false">Xóa nhóm</string>
+    <string name="txt_create_group" translatable="false">Nhóm mới</string>
+    <string name="rename_group_chat" translatable="false">Chỉnh sửa tên nhóm</string>
+    <string name="total_employee_manager" translatable="false">Tổng số nhân viên: </string>
+    <string name="john_group" translatable="false">Đã tham gia</string>
+    <string name="cancel_upload" translatable="false">Hủy</string>
+    <string name="uploading" translatable="false">Tiến trình - [[PROGRESS]]</string>
+    <string name="upload_success" translatable="false">Tải lên thành công trong [[ELAPSED_TIME]]</string>
+    <string name="upload_error" translatable="false">Lỗi xảy ra khi tải lên</string>
+    <string name="upload_cancelled" translatable="false">Trình tải lên đã hủy</string>
+    <string name="multipart_upload" translatable="false">Tải lên Server</string>
+    <string name="background_choose" translatable="false">Chọn hình nền</string>
+    <string name="common_label_done" translatable="false">Xong</string>
+    <string name="downloading_message" translatable="false">Đang tải...</string>
+    <string name="header_title_chat" translatable="false">Giờ đây bạn có thể</string>
+    <string name="footer_text_chat" translatable="false">thảo luận và trò chuyện với bạn bè</string>
+    <string name="send_link_and_copy" translatable="false">Gửi link vừa copy</string>
+    <string name="time_default" translatable="false">0:00</string>
+    <string name="unpin" translatable="false">Gỡ ghim</string>
+    <string name="list_pinned" translatable="false">Danh sách ghim</string>
+    <string name="dot" translatable="false">•</string>
+    <string name="zero_member" translatable="false">0</string>
+    <string name="location" translatable="false">Vị trí</string>
+    <string name="document" translatable="false">Tài liệu</string>
+    <string name="repeat" translatable="false">Nhắc hẹn</string>
+    <string name="business_card" translatable="false">Danh thiếp</string>
+    <string name="vote" translatable="false">Bình chọn</string>
+    <string name="title_Barcode" translatable="false" />
+    <string name="txt_create_new_warehouse" translatable="false">Tạo mới phiếu kho</string>
+    <string name="txt_done_debt" translatable="false">Đã thanh toán</string>
+    <string name="done_order" translatable="false">Thanh toán</string>
+    //ordermanager
+    <string name="order_bill" translatable="false">Phiếu đặt hàng</string>
+    <string name="wait_for_payment" translatable="false">Chờ thành toán</string>
+    <string name="waiting" translatable="false">Chờ xử lý</string>
+    <string name="waitrestaurantconfirm" translatable="false">Chờ nhà hàng xác nhận</string>
+    <string name="waitting_delivery" translatable="false">Chờ giao hàng</string>
+    <string name="delivery" translatable="false">Đang giao</string>
+    <string name="completed" translatable="false">Hoàn tất</string>
+    <string name="canceled" translatable="false">Đã hủy</string>
+    <string name="customername" translatable="false">Tên khách hàng</string>
+    <string name="branchname" translatable="false">Tên chi nhánh</string>
+    <string name="totalmaterial" translatable="false">Tổng nguyên liệu</string>
+    <string name="total_number_material" translatable="false">Số NL</string>
+    <string name="txt_confirm_order" translatable="false">Xác nhận phiều yêu cầu</string>
+    <string name="txt_update_order" translatable="false">Cập nhật phiều yêu cầu</string>
+    <string name="txt_list_material_order" translatable="false">Danh sách nguyên liệu đặt hàng</string>
+    <string name="number_of_orders" translatable="false">Số lượng đặt hàng</string>
+    <string name="meet_the_quantity" translatable="false">Số lượng giao</string>
+    <string name="initial_quantity" translatable="false">Số lượng ban đầu</string>
+    <string name="price_order" translatable="false">Thành tiền</string>
+    <string name="date_created" translatable="false">Thời gian tạo</string>
+    <string name="unit_price" translatable="false">Đơn giá</string>
+    <string name="discounts" translatable="false">Chiết khấu</string>
+    <string name="discounts_two_dots" translatable="false">Chiết khấu</string>
+    <string name="tax" translatable="false">Thuế VAT</string>
+    <string name="vat_order" translatable="false">VAT 10%</string>
+    <string name="detail_order" translatable="false">Thông tin đặt hàng</string>
+    <string name="name_brand" translatable="false">Thương hiệu</string>
+    <string name="name_branch" translatable="false">Chi nhánh</string>
+    <string name="totail_bill_order" translatable="false">Tổng thành tiền</string>
+    <string name="expected_date" translatable="false">Ngày dự kiến</string>
+    <string name="confirm_return_order" translatable="false"> Chờ xác nhận trả hàng</string>
+    <string name="confirm_return" translatable="false"> Chờ XN trả hàng</string>
+    <string name="prince" translatable="false">Đơn giá</string>
+    <string name="totail_price" translatable="false">Thành tiền</string>
+    <string name="unit_discounts" translatable="false">%</string>
+    <string name="txt_detail_order" translatable="false">Chi tiết đơn hàng</string>
+    <string name="txt_detail_addition_fees" translatable="false">Chi tiết thu</string>
+    <string name="txt_detail_addition_fees1" translatable="false">Chi tiết chi</string>
+    <string name="txt_list_material" translatable="false">Danh sách nguyên liệu</string>
+    <string name="txt_returns_order" translatable="false">Trả hàng</string>
+    <string name="detail_bill_order" translatable="false">Chi tiết phiếu yêu cầu</string>
+    <string name="number_of_responses" translatable="false">Số lượng đáp ứng	</string>
+    <string name="list_of_month" translatable="false">Danh sách của tháng</string>
+    <string name="btn_cofirm_order" translatable="false">Xác nhận</string>
+    <string name="btn_delete_order" translatable="false">Hủy </string>
+    <string name="btn_delete_order1" translatable="false">Hủy</string>
+    <string name="btn_cofirm_return_order" translatable="false">Duyệt trả &amp; huỷ hàng</string>
+    <string name="btn_cofirm_return_order_wahouse" translatable="false">Duyệt trả &amp; nhập kho</string>
+    <string name="btn_edit_order" translatable="false">Cập nhật </string>
+    <string name="txt_cancels" translatable="false">Hủy hàng</string>
+    <string name="btn_detail_order" translatable="false">Chi tiết </string>
+    <string name="create_ware_house_in" translatable="false">Tạo phiếu nhập kho</string>
+    <string name="create_ware_house_out" translatable="false">Tạo phiếu Xuất kho</string>
+    <string name="manager_ware_house" translatable="false">Quản lý kho</string>
+    <string name="wait_for_approval" translatable="false">Chờ duyệt</string>
+    <string name="status_completed" translatable="false">Hoàn tất</string>
+    <string name="status_wait_restaurant" translatable="false">Chỉnh sửa</string>
+    <string name="order_details" translatable="false">Chi Tiết Phiếu Đặt Hàng</string>
+    <string name="txt_processing" translatable="false">Đang xử lý</string>
+    <string name="txt_processing_order" translatable="false">Xử lý</string>
+    <string name="txt_completed" translatable="false">Đã hoàn tất</string>
+    <string name="txt_completed_order" translatable="false">Hoàn tất</string>
+    <string name="txt_unit_order" translatable="false">đơn</string>
+    <string name="header_create_employee" translatable="false">Tạọ nhân viên</string>
+    <string name="detail_inventory" translatable="false">Chi tiết phiếu kho</string>
+    <string name="txt_monday" translatable="false">Thứ 2</string>
+    <string name="txt_tuesday" translatable="false">Thứ 3</string>
+    <string name="txt_wednesday" translatable="false">Thứ 4</string>
+    <string name="txt_thursday" translatable="false">Thứ 5</string>
+    <string name="txt_friday" translatable="false">Thứ 6</string>
+    <string name="txt_saturday" translatable="false">Thứ 7</string>
+    <string name="txt_sunday" translatable="false">CN</string>
+    <string name="onError" translatable="false">Đã xảy ra lỗi!!! Vui lòng thử lại.</string>
+    <string name="no_message_group" translatable="false">Không có tin nhắn</string>
+    <string name="chat_order_supplier" translatable="false">Đã gửi 1 đơn hàng</string>
+    <string name="txt_user_typing_without_name" translatable="false">Đang soạn tin</string>
+    <string name="new_message" translatable="false">Tin nhắn mới</string>
+    <string name="remove_pinned" translatable="false">Bỏ ghim</string>
+    <string name="txt_messenger_discuss" translatable="false">và thảo luận về công việc của bạn</string>
+    <string name="txt_discuss" translatable="false">Hãy bắt đầu trao đổi</string>
+    <string name="hint_chat_edittext" translatable="false">Tin nhắn, @</string>
+    <string name="cancel_record" translatable="false">Trượt để hủy</string>
+    <string name="time_started_record" translatable="false">0:00</string>
+    <string name="received" translatable="false">Đã nhận</string>
+    <string name="open" translatable="false">MỞ</string>
+    <string name="search_message" translatable="false">Tìm tin nhắn</string>
+    <string name="search_employee" translatable="false">Tìm nhân viên</string>
+    <string name="archive" translatable="false">Kho lưu trữ</string>
+    <string name="text_start_1" translatable="false">Hãy bắt đầu trao đổi</string>
+    <string name="text_start_2" translatable="false">và thảo luận về công việc của bạn</string>
+    <string name="send_now" translatable="false">GỬI NGAY</string>
+    <string name="send_link_coppy" translatable="false">Gửi link vừa copy</string>
+    <string name="tag_all_member" translatable="false">Báo cho cả nhóm   @All</string>
+    <string name="to_day" translatable="false">Hôm nay</string>
+    <string name="revoke_message" translatable="false">Tin nhắn đã thu hồi</string>
+    <string name="message_type_image" translatable="false">[Hình ảnh]</string>
+    <string name="message_type_video" translatable="false">[Video]</string>
+    <string name="message_type_sticker" translatable="false">[Nhãn dán]</string>
+    <string name="str_people_name_3s" translatable="false">%s, %s, %s và %d người khác đã tham gia nhóm</string>
+    <string name="str_kick_name_3s" translatable="false">%s, %s, %s và %d mời ra khỏi nhóm</string>
+    <string name="str_people_name_3" translatable="false">%s, %s, và %s đã được %s tham gia nhóm</string>
+    <string name="str_people_name_2" translatable="false">%s và %s đã tham gia nhóm</string>
+    <string name="str_kick_name_2" translatable="false">%s và %s mời ra khỏi nhóm</string>
+    <string name="str_people_name_1" translatable="false">%s đã được %s mời tham gia nhóm</string>
+    <string name="str_kick_name_1" translatable="false">%s đã rời khỏi nhóm</string>
+    <string name="dow_is" translatable="false">Đang tải xuống</string>
+    <string name="link_youtube_1" translatable="false">youtu.be/</string>
+    <string name="link_youtube_2" translatable="false">youtube.com/</string>
+    <string name="link_youtube_4" translatable="false">youtube.com/watch?v=</string>
+    <string name="link_youtube_3" translatable="false">youtube.com/shorts/</string>
+    <string name="link_erorr" translatable="false">Liên kết không hợp lệ</string>
+    <string name="call_away" translatable="false">Cuộc gọi thoại đi</string>
+    <string name="you_canceled" translatable="false">Bạn đã hủy</string>
+    <string name="voice_calls" translatable="false">Cuộc gọi thoại</string>
+    <string name="the_recipient_did_not_respond" translatable="false">Người nhận không trả lời</string>
+    <string name="recipients_reject" translatable="false">Người nhận từ chối</string>
+    <string name="go_video_call" translatable="false">Cuộc gọi video đi</string>
+    <string name="video_calls" translatable="false">Cuộc gọi video</string>
+    <string name="incoming_voice_calls" translatable="false">Cuộc gọi thoại đến</string>
+    <string name="you_missed" translatable="false">Bạn bị nhỡ</string>
+    <string name="you_refused" translatable="false">Bạn đã từ chối</string>
+    <string name="incoming_video_call" translatable="false"> "Cuộc gọi video đến"</string>
+    <string name="speech_prompt" translatable="false">Hãy nói điều gì đó...</string>
+    <string name="speech_not_supported" translatable="false">Sorry! Your device doesn\'t support speech input</string>
+    <string name="font_tag_name_start" translatable="false">&lt;font color=&quot;#198be3&quot;&gt;</string>
+    <string name="pinned_image" translatable="false">[Hình ảnh]</string>
+    <string name="pinned_video" translatable="false">[Video]</string>
+    <string name="pinned_sticker" translatable="false">[Sticker]</string>
+    <string name="members" translatable="false">thành viên</string>
+    <string name="reply" translatable="false">Trả lời</string>
+    <string name="share_my_chat" translatable="false">Chuyển tiếp</string>
+    <string name="revoke_my_chat" translatable="false">Thu hồi</string>
+    <string name="pin_my_chat" translatable="false">Ghim tin nhắn</string>
+    <string name="information" translatable="false">Thông tin</string>
+    <string name="copy_my_chat" translatable="false">Sao chép</string>
+    <string name="download" translatable="false">Tải xuống</string>
+    <string name="copy_chat" translatable="false">Tin nhắn được sao chép</string>
+    <string name="no_internet" translatable="false">Không có mạng</string>
+    <string name="check_internet" translatable="false">Kiểm tra kết nối Internet của bạn và thử lại.</string>
+    <string name="please_turn_on" translatable="false">Vui lòng bật</string>
+    <string name="wifi" translatable="false">Wifi</string>
+    <string name="mobile_data" translatable="false">Dữ liệu di động</string>
+    <string name="on_the_airplance" translatable="false">Bạn đã bật chế độ trên máy bay.</string>
+    <string name="please_turn_off" translatable="false">Vui lòng tẳt</string>
+    <string name="airplane_mode" translatable="false">Chế độ máy bay</string>
+    <string name="no_data_yet" translatable="false">Chưa có dữ liệu</string>
+
+    <string name="day" translatable="false">Ngày</string>
+    <string name="month" translatable="false">Tháng</string>
+    <string name="year" translatable="false">Năm</string>
+    <string name="choose_date" translatable="false">Chọn ngày</string>
+    <string name="input_quantity" translatable="false">Nhập số lượng</string>
+    <string name="input_note" translatable="false">Nhập nội dung</string>
+    <string name="input_price" translatable="false">Nhập số tiền</string>
+    <string name="input_content_note" translatable="false">Nhập nội dung ghi chú...</string>
+    <string name="media_group" translatable="false">Ảnh</string>
+    <string name="video_group" translatable="false">Videos</string>
+    <string name="link" translatable="false">Links</string>
+    <string name="file" translatable="false">Files</string>
+    <string name="seach_order" translatable="false">Nhập tên đơn hàng hoặc giá tiền</string>
+    <string name="seach_contact_order" translatable="false">Nhập tên nhân viên cần liên hệ</string>
+    <string name="search_home" translatable="false">Tìm nhanh, công việc, chat...</string>
+    <string name="search_contract" translatable="false">Tìm danh bạ, nhật ký cuộc gọi...</string>
+    <string name="no_result_member" translatable="false">Không tìm được kết quả nào phù hợp</string>
+    <string name="business_card_chat" translatable="false">Danh Thiếp</string>
+    <string name="document_chat" translatable="false">Tài liệu</string>
+    <string name="order_chat" translatable="false">Đơn hàng</string>
+    <string name="share" translatable="false">Chia sẻ</string>
+    <string name="txt_remove" translatable="false">Mời rời khỏi nhóm</string>
+    <string name="tips_not_wifi" translatable="false">Bạn đang sử dụng dữ liệu mạng di động, trình phát tiếp tục sẽ gây tiêu tốn dung lượng.</string>
+    <string name="tips_not_wifi_confirm" translatable="false">Tiếp tục</string>
+    <string name="tips_not_wifi_cancel" translatable="false">Dừng lại</string>
+    <string name="replay" translatable="false">Xem lại</string>
+    <string name="mess_data_debt_null" translatable="false">Không có công nợ</string>
+    <string name="mess_data_notify_null" translatable="false">Không có thông báo</string>
+    <string name="mess_data_employee_null" translatable="false">Không có nhân viên</string>
+
+
+    <!--    VideoCall-->
+    <string name="settings_name" translatable="false">AppRTC Settings</string>
+    <string name="disconnect_call" translatable="false">Disconnect Call</string>
+    <string name="room_description" translatable="false">
+        Please enter a room name. Room names are shared with everyone, so think
+        of something unique and send it to a friend.
+    </string>
+    <string name="favorites" translatable="false">Favorites</string>
+    <string name="no_favorites" translatable="false">No favorites</string>
+    <string name="invalid_url_title" translatable="false">Invalid URL</string>
+    <string name="invalid_url_text" translatable="false">The URL or room name you entered resulted in an invalid URL: %1$s
+    </string>
+    <string name="channel_error_title" translatable="false">Connection error</string>
+    <string name="connecting_to" translatable="false">Connecting to: %1$s</string>
+    <string name="missing_url" translatable="false">FATAL ERROR: Missing URL to connect to.</string>
+    <string name="camera2_texture_only_error" translatable="false">Camera2 only supports capturing to texture. Either disable Camera2 or enable capturing to texture in the options.</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="switch_camera" translatable="false">Switch front/back camera</string>
+    <string name="capture_format_change_text" translatable="false">Slide to change capture format</string>
+    <string name="muted" translatable="false">Muted</string>
+    <string name="toggle_debug" translatable="false">Toggle debug view</string>
+    <string name="toggle_mic" translatable="false">Toggle microphone on/off</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="action_loopback" translatable="false">Loopback connection</string>
+    <string name="connect_description" translatable="false">Connect to the room</string>
+    <string name="add_favorite_description" translatable="false">Add favorite</string>
+    <string name="format_description" translatable="false">%1$dx%2$d @ %3$d fps</string>
+    <string name="missing_permissions_try_again" translatable="false">The application is missing permissions. It might not work correctly. Do you want to try again?</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="no" translatable="false">No</string>
+
+    <!-- Settings strings. -->
+    <string name="pref_room_key" translatable="false">room_preference</string>
+    <string name="pref_room_list_key" translatable="false">room_list_preference</string>
+
+    <string name="pref_videosettings_key" translatable="false">video_settings_key</string>
+    <string name="pref_videosettings_title" translatable="false">WebRTC video settings.</string>
+
+    <string name="pref_videocall_key" translatable="false">videocall_preference</string>
+    <string name="pref_videocall_title" translatable="false">Video call.</string>
+    <string name="pref_videocall_dlg" translatable="false">Enable video in a call.</string>
+    <string name="pref_videocall_default" translatable="false">true</string>
+
+    <string name="pref_screencapture_key" translatable="false">screencapture_preference</string>
+    <string name="pref_screencapture_title" translatable="false">Use screencapture.</string>
+    <string name="pref_screencapture_default" translatable="false">false</string>
+
+    <string name="pref_camera2_key" translatable="false">camera2_preference</string>
+    <string name="pref_camera2_title" translatable="false">Use Camera2.</string>
+    <string name="pref_camera2_default" translatable="false">true</string>
+    <string name="pref_camera2_not_supported" translatable="false">Not supported on this device.</string>
+
+    <string name="pref_resolution_key" translatable="false">resolution_preference</string>
+    <string name="pref_resolution_title" translatable="false">Video resolution.</string>
+    <string name="pref_resolution_dlg" translatable="false">Enter AppRTC local video resolution.</string>
+    <string name="pref_resolution_default" translatable="false">Default</string>
+
+    <string name="pref_fps_key" translatable="false">fps_preference</string>
+    <string name="pref_fps_title" translatable="false">Camera fps.</string>
+    <string name="pref_fps_dlg" translatable="false">Enter local camera fps.</string>
+    <string name="pref_fps_default" translatable="false">Default</string>
+
+    <string name="pref_capturequalityslider_key" translatable="false">capturequalityslider_preference</string>
+    <string name="pref_capturequalityslider_title" translatable="false">Capture quality slider.</string>
+    <string name="pref_capturequalityslider_dlg" translatable="false">Enable slider for changing capture quality.</string>
+    <string name="pref_capturequalityslider_default" translatable="false">false</string>
+
+    <string name="pref_maxvideobitrate_key" translatable="false">maxvideobitrate_preference</string>
+    <string name="pref_maxvideobitrate_title" translatable="false">Maximum video bitrate setting.</string>
+    <string name="pref_maxvideobitrate_dlg" translatable="false">Maximum video bitrate setting.</string>
+    <string name="pref_maxvideobitrate_default" translatable="false">Default</string>
+
+    <string name="pref_maxvideobitratevalue_key" translatable="false">maxvideobitratevalue_preference</string>
+    <string name="pref_maxvideobitratevalue_title" translatable="false">Video encoder maximum bitrate.</string>
+    <string name="pref_maxvideobitratevalue_dlg" translatable="false">Enter video encoder maximum bitrate in kbps.</string>
+    <string name="pref_maxvideobitratevalue_default" translatable="false">1700</string>
+
+    <string name="pref_videocodec_key" translatable="false">videocodec_preference</string>
+    <string name="pref_videocodec_title" translatable="false">Default video codec.</string>
+    <string name="pref_videocodec_dlg" translatable="false">Select default video codec.</string>
+    <string name="pref_videocodec_default" translatable="false">VP8</string>
+
+    <string name="pref_hwcodec_key" translatable="false">hwcodec_preference</string>
+    <string name="pref_hwcodec_title" translatable="false">Video codec hardware acceleration.</string>
+    <string name="pref_hwcodec_dlg" translatable="false">Use hardware accelerated video codec (if available).</string>
+    <string name="pref_hwcodec_default" translatable="false">true</string>
+
+    <string name="pref_capturetotexture_key" translatable="false">capturetotexture_preference</string>
+    <string name="pref_capturetotexture_title" translatable="false">Video capture to surface texture.</string>
+    <string name="pref_capturetotexture_dlg" translatable="false">Capture video to textures (if available).</string>
+    <string name="pref_capturetotexture_default" translatable="false">true</string>
+
+    <string name="pref_flexfec_key" translatable="false">flexfec_preference</string>
+    <string name="pref_flexfec_title" translatable="false">Codec-agnostic Flexible FEC.</string>
+    <string name="pref_flexfec_dlg" translatable="false">Enable FlexFEC.</string>
+    <string name="pref_flexfec_default" translatable="false">false</string>
+
+    <string name="pref_value_enabled" translatable="false">Enabled</string>
+    <string name="pref_value_disabled" translatable="false">Disabled</string>
+
+    <string name="pref_audiosettings_key" translatable="false">audio_settings_key</string>
+    <string name="pref_audiosettings_title" translatable="false"> WebRTC audio settings.</string>
+
+    <string name="pref_startaudiobitrate_key" translatable="false">startaudiobitrate_preference</string>
+    <string name="pref_startaudiobitrate_title" translatable="false">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_dlg" translatable="false">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_default" translatable="false">Default</string>
+
+    <string name="pref_startaudiobitratevalue_key" translatable="false">startaudiobitratevalue_preference</string>
+    <string name="pref_startaudiobitratevalue_title" translatable="false">Audio codec bitrate.</string>
+    <string name="pref_startaudiobitratevalue_dlg" translatable="false">Enter audio codec bitrate in kbps.</string>
+    <string name="pref_startaudiobitratevalue_default" translatable="false">32</string>
+
+    <string name="pref_audiocodec_key" translatable="false">audiocodec_preference</string>
+    <string name="pref_audiocodec_title" translatable="false">Default audio codec.</string>
+    <string name="pref_audiocodec_dlg" translatable="false">Select default audio codec.</string>
+    <string name="pref_audiocodec_default" translatable="false">OPUS</string>
+
+    <string name="pref_noaudioprocessing_key" translatable="false">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title" translatable="false">Disable audio processing.</string>
+    <string name="pref_noaudioprocessing_dlg" translatable="false">Disable audio processing pipeline.</string>
+    <string name="pref_noaudioprocessing_default" translatable="false">false</string>
+
+    <string name="pref_aecdump_key" translatable="false">aecdump_preference</string>
+    <string name="pref_aecdump_title" translatable="false">Create aecdump.</string>
+    <string name="pref_aecdump_dlg" translatable="false">Enable diagnostic audio recordings.</string>
+    <string name="pref_aecdump_default" translatable="false">false</string>
+
+    <string name="pref_enable_save_input_audio_to_file_key" translatable="false">enable_key</string>
+    <string name="pref_enable_save_input_audio_to_file_title" translatable="false">Save input audio to file.</string>
+    <string name="pref_enable_save_input_audio_to_file_dlg" translatable="false">Save input audio to file.</string>
+    <string name="pref_enable_save_input_audio_to_file_default" translatable="false">false</string>
+
+    <string name="pref_opensles_key" translatable="false">opensles_preference</string>
+    <string name="pref_opensles_title" translatable="false">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_dlg" translatable="false">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_default" translatable="false">false</string>
+
+    <string name="pref_disable_built_in_aec_key" translatable="false">disable_built_in_aec_preference</string>
+    <string name="pref_disable_built_in_aec_title" translatable="false">Disable hardware AEC.</string>
+    <string name="pref_disable_built_in_aec_dlg" translatable="false">Disable hardware AEC.</string>
+    <string name="pref_disable_built_in_aec_default" translatable="false">false</string>
+    <string name="pref_built_in_aec_not_available" translatable="false">Hardware AEC is not available</string>
+
+    <string name="pref_disable_built_in_agc_key" translatable="false">disable_built_in_agc_preference</string>
+    <string name="pref_disable_built_in_agc_title" translatable="false">Disable hardware AGC.</string>
+    <string name="pref_disable_built_in_agc_dlg" translatable="false">Disable hardware AGC.</string>
+    <string name="pref_disable_built_in_agc_default" translatable="false">false</string>
+    <string name="pref_built_in_agc_not_available" translatable="false">Hardware AGC is not available</string>
+
+    <string name="pref_disable_built_in_ns_key" translatable="false">disable_built_in_ns_preference</string>
+    <string name="pref_disable_built_in_ns_title" translatable="false">Disable hardware NS.</string>
+    <string name="pref_disable_built_in_ns_dlg" translatable="false">Disable hardware NS.</string>
+    <string name="pref_disable_built_in_ns_default" translatable="false">false</string>
+    <string name="pref_built_in_ns_not_available" translatable="false">Hardware NS is not available</string>
+
+    <string name="pref_disable_webrtc_agc_and_hpf_key" translatable="false">disable_webrtc_agc_and_hpf_preference</string>
+    <string name="pref_disable_webrtc_agc_and_hpf_title" translatable="false">Disable WebRTC AGC and HPF.</string>
+    <string name="pref_disable_webrtc_agc_default" translatable="false">false</string>
+
+    <string name="pref_speakerphone_key" translatable="false">speakerphone_preference</string>
+    <string name="pref_speakerphone_title" translatable="false">Speakerphone.</string>
+    <string name="pref_speakerphone_dlg" translatable="false">Speakerphone.</string>
+    <string name="pref_speakerphone_default" translatable="false">auto</string>
+
+    <string name="pref_datasettings_key" translatable="false">data_settings_key</string>
+    <string name="pref_datasettings_title" translatable="false">WebRTC data channel settings.</string>
+
+    <string name="pref_enable_datachannel_key" translatable="false">enable_datachannel_preference</string>
+    <string name="pref_enable_datachannel_title" translatable="false">Enable datachannel.</string>
+    <string name="pref_enable_datachannel_default" translatable="false">true</string>
+
+    <string name="pref_ordered_key" translatable="false">ordered_preference</string>
+    <string name="pref_ordered_title" translatable="false">Order messages.</string>
+    <string name="pref_ordered_default" translatable="false">true</string>
+
+    <string name="pref_data_protocol_key" translatable="false">Subprotocol</string>
+    <string name="pref_data_protocol_title" translatable="false">Subprotocol.</string>
+    <string name="pref_data_protocol_dlg" translatable="false">Enter subprotocol.</string>
+    <string name="pref_data_protocol_default" translatable="false" />
+
+    <string name="pref_negotiated_key" translatable="false">negotiated_preference</string>
+    <string name="pref_negotiated_title" translatable="false">Negotiated.</string>
+    <string name="pref_negotiated_default" translatable="false">false</string>
+
+    <string name="pref_max_retransmit_time_ms_key" translatable="false">max_retransmit_time_ms_preference</string>
+    <string name="pref_max_retransmit_time_ms_title" translatable="false">Max delay to retransmit.</string>
+    <string name="pref_max_retransmit_time_ms_dlg" translatable="false">Enter max delay to retransmit (in ms).</string>
+    <string name="pref_max_retransmit_time_ms_default" translatable="false">-1</string>
+
+    <string name="pref_max_retransmits_key" translatable="false">max_retransmits_preference</string>
+    <string name="pref_max_retransmits_title" translatable="false">Max attempts to retransmit.</string>
+    <string name="pref_max_retransmits_dlg" translatable="false">Enter max attempts to retransmit.</string>
+    <string name="pref_max_retransmits_default" translatable="false">-1</string>
+
+    <string name="pref_data_id_key" translatable="false">data_id_preference</string>
+    <string name="pref_data_id_title" translatable="false">Data id.</string>
+    <string name="pref_data_id_dlg" translatable="false">Enter data channel id.</string>
+    <string name="pref_data_id_default" translatable="false">-1</string>
+
+    <string name="pref_miscsettings_key" translatable="false">misc_settings_key</string>
+    <string name="pref_miscsettings_title" translatable="false">Miscellaneous settings.</string>
+
+    <string name="pref_room_server_url_key" translatable="false">room_server_url_preference</string>
+    <string name="pref_room_server_url_title" translatable="false">Room server URL.</string>
+    <string name="pref_room_server_url_dlg" translatable="false">Enter a room server URL.</string>
+    <string name="pref_room_server_url_default" translatable="false">https://appr.tc</string>
+
+    <string name="pref_displayhud_key" translatable="false">displayhud_preference</string>
+    <string name="pref_displayhud_title" translatable="false">Display call statistics.</string>
+    <string name="pref_displayhud_dlg" translatable="false">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+
+    <string name="pref_tracing_key" translatable="false">tracing_preference</string>
+    <string name="pref_tracing_title" translatable="false">Debug performance tracing.</string>
+    <string name="pref_tracing_dlg" translatable="false">Debug performance tracing.</string>
+    <string name="pref_tracing_default" translatable="false">false</string>
+
+    <string name="pref_enable_rtceventlog_key" translatable="false">enable_rtceventlog_key</string>
+    <string name="pref_enable_rtceventlog_title" translatable="false">Enable RtcEventLog.</string>
+    <string name="pref_enable_rtceventlog_default" translatable="false">false</string>
+    <string name="no_data_chart" translatable="false">Không có dữ liệu</string>
+    <string name="phonebook" translatable="false">Danh bạ</string>
+    <string name="call_logs" translatable="false">Nhật ký cuộc gọi</string>
+    <string name="code_order" translatable="false">Mã ĐH:</string>
+    <string name="code_dh" translatable="false">Mã ĐH</string>
+    <string name="money_order" translatable="false">Giá:</string>
+    <string name="create_order" translatable="false">Ngày tạo:</string>
+    <string name="out_of_stock" translatable="false">Hết hàng</string>
+    <string name="yes_return" translatable="false">có trả hàng</string>
+    <string name="logout" translatable="false">Bạn đã đăng xuất</string>
+    <string name="reason_bill_cancel" translatable="false">Lý do hủy</string>
+    <string name="reason" translatable="false">Nhập lý do hủy phiếu</string>
+    <string name="reason_success" translatable="false">Hủy phiếu thành công</string>
+    <string name="titile_wecome" translatable="false">Xin chào,</string>
+    <string name="txt_items" translatable="false">Mặt hàng</string>
+    <string name="warehouse_null" translatable="false">Danh sách phiếu nhập kho đang trống.</string>
+    <string name="check_null" translatable="false">Danh sách phiếu đang trống.</string>
+    <string name="export_warehouse_null" translatable="false">Danh sách phiếu xuất kho đang trống.</string>
+    <string name="detail_ware_house_in" translatable="false">Chi tiết phiếu nhập kho</string>
+    <string name="detail_ware_house_out" translatable="false">Chi tiết phiếu xuất kho</string>
+    <string name="add_user_group_chat" translatable="false">Thêm thành viên thành công </string>
+    <string name="brand_order" translatable="false">CN nhận hàng</string>
+    <string name="number_of_rows" translatable="false">Số mặt hàng</string>
+    <string name="deliver" translatable="false">Người giao hàng</string>
+    <string name="receiver" translatable="false">Người nhận hàng</string>
+    <string name="null_order" translatable="false">...</string>
+    <string name="unit_value" translatable="false">Đơn giá thực</string>
+    <string name="deliveryQuantity" translatable="false">SL giao</string>
+    <string name="reliveryQuantity" translatable="false">SL nhận</string>
+    <string name="returnQuantity" translatable="false">SL trả</string>
+    <string name="orderQuantity" translatable="false">SL đặt</string>
+    <string name="txtWaitRestaurant" translatable="false">Đơn hàng chờ XN</string>
+    <string name="txt_no_data_chart" translatable="false">Dữ liệu đang cập nhật</string>
+    <string name="force_version_title_sub_title" translatable="false">Nâng cấp ngay để sử dụng các tính năng cải tiến mới nhất. Chi tiết tại đây</string>
+    <string name="force_version_title_new_version" translatable="false">Đã có phiên bản mới TECHRES</string>
+    <string name="force_version_btn_update_now" translatable="false">NÂNG CẤP NGAY</string>
+    <string name="take_a_picture" translatable="false">Sao Chép</string>
+    <string name="un_take_a_picture" translatable="false"> Đã Sao Chép</string>
+    <string name="list_bill_order" translatable="false">Danh sách phiếu đặt hàng</string>
+    <string name="list_order" translatable="false">Danh sách đơn hàng</string>
+    <string name="debtReceivableFragment" translatable="false">Khoản thu</string>
+    <string name="debtToPayFragment" translatable="false">Khoản chi</string>
+    <string name="genus_items" translatable="false">Lý do thu chi</string>
+    <string name="receipts_items" translatable="false">Phiếu thu</string>
+    <string name="check_items" translatable="false">Phiếu chi</string>
+    <string name="cost_name" translatable="false">Tên phí chi</string>
+    <string name="cost" translatable="false">Phí chi</string>
+    <string name="description_type" translatable="false">Mô tả </string>
+    <string name="coupon_type" translatable="false">Loại phiếu </string>
+    <string name="category_type" translatable="false">Hạng mục</string>
+    <string name="type_bill" translatable="false">Loại phiếu </string>
+    <string name="collection_from_orders" translatable="false">Thu tự động từ đơn hàng</string>
+    <string name="check_from_order" translatable="false">Chi phiếu từ đơn hàng</string>
+    <string name="other_checks" translatable="false">Chi phiếu khác</string>
+    <string name="edit_genus_item" translatable="false">Chỉnh sửa lý do thu chi</string>
+    <string name="total_genus_items" translatable="false">Tổng lý do thu chi:</string>
+    <string name="select_bill" translatable="false">Chọn loại phiếu:</string>
+    <string name="rececipts_bill" translatable="false">Tạo phiếu thu</string>
+    <string name="check_bill" translatable="false">Tạo phiếu chi</string>
+    <string name="txtTotalStatus_receipts" translatable="false">Tổng số phiếu thu</string>
+    <string name="txtTotalStatus_check" translatable="false">Tổng số phiếu chi</string>
+    <string name="txt_reason" translatable="false">Lý do thu </string>
+    <string name="txt_reason_check" translatable="false">Lý do chi </string>
+    <string name="monthT" translatable="false">T</string>
+    <string name="hhmmss" translatable="false">hh:mm:ss</string>
+    <string name="tonhientai" translatable="false">Tồn hiện tại</string>
+    <string name="detail_debt" translatable="false">Chi tiết công nợ</string>
+    <string name="chiPhiKhac" translatable="false">Chi phí khác</string>
+    <string name="create_genus" translatable="false">Tạo lý do thu chi</string>
+    <string name="create_receips" translatable="false">Chon lý do thu</string>
+    <string name="totail_bill" translatable="false">Tổng số phiếu</string>
+    <string name="totail_warehouse" translatable="false">Tổng phiếu nhập kho</string>
+    <string name="status_pay" translatable="false">Trạng thái thanh toán</string>
+    <string name="textchat1" translatable="false">Hiện tại chưa có nhóm</string>
+    <string name="textchat2" translatable="false">Hãy tạo nhóm để trải nghiệm tính năng</string>
+    <string name="edit_info" translatable="false">Chỉnh sửa thông tin</string>
+    <string name="txt_unit" translatable="false">ĐV</string>
+    <string name="txt_sp" translatable="false">QC</string>
+    <string name="txt_sl_gs" translatable="false">SL giá sỉ</string>
+    <string name="debt_chi" translatable="false">Công nợ chi</string>
+    <string name="code_receipts" translatable="false">Mã phiếu thu</string>
+    <string name="phi_thang" translatable="false">Phí tháng</string>
+    <string name="so_tien_thu" translatable="false">Số tiền thu</string>
+    <string name="ly_do_thu" translatable="false">Lý do thu</string>
+    <string name="doi_tuong" translatable="false">Đối tượng</string>
+    <string name="dia_chi_nha_hang" translatable="false">Địa chỉ nhà hàng</string>
+    <string name="so_luong_dat_hang" translatable="false">SL ĐH</string>
+    <string name="so_luong_hao_hut" translatable="false">SL HH</string>
+    <string name="tong_tien" translatable="false">Tổng tiền</string>
+    <string name="tong_tien_tuan_truoc" translatable="false">Tuần trước</string>
+    <string name="tong_tien_tuan_nay" translatable="false">Tuần này</string>
+    <string name="tong_order" translatable="false">Tổng order</string>
+    <string name="order_da_giao" translatable="false">Order đã giao</string>
+    <string name="order_dang_xu_ly" translatable="false">Order xử lý</string>
+    <string name="aa" translatable="false">Lợi nhuận</string>
+    <string name="revenue_month" translatable="false">Doanh thu trong tháng</string>
+    <string name="text_for_login_all_supplier" translatable="false">Dành cho nhà cung cấp </string>
+    <string name="supplier_name" translatable="false">Tên NCC</string>
+    <string name="user_name" translatable="false">Tài khoản</string>
+
+</resources>

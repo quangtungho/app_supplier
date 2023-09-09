@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <merge>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/lnReaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_reactions"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:visibility="visible"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/imgReactionOne"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginStart="1dip"
+                    android:contentDescription="@string/default_image"
+                    android:padding="1dp" />
+
+                <ImageView
+                    android:id="@+id/imgReactionTwo"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:contentDescription="@string/default_image"
+                    android:padding="1dp" />
+
+                <ImageView
+                    android:id="@+id/imgReactionThree"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:contentDescription="@string/default_image"
+                    android:padding="1dp" />
+
+                <TextView
+                    android:id="@+id/tvReactionCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnReactionMine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_reactions"
+                android:padding="3dp">
+
+                <ImageView
+                    android:id="@+id/imgReactionMe"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/default_image"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_heart_line_24"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </merge>
+</layout>

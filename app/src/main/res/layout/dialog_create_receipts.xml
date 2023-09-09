@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <vn.techres.supplier.view.TechResTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_title_bg"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dp15"
+            android:textColor="@color/black_2"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_bottom"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dp20"
+            android:paddingBottom="@dimen/dp20">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px4"
+                android:layout_marginHorizontal="@dimen/dp30"
+                android:background="@color/grey" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:text="@string/txt_reason"
+                android:textColor="@color/black_2" />
+
+            <LinearLayout
+                android:id="@+id/linearSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:background="@drawable/bg_cardview"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:id="@+id/txtReceiptsExchange"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:text="@string/create_receips" />
+
+                <Spinner
+                    android:id="@+id/spinnerData"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp40"
+                    android:prompt="@string/txt_please_choose"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <vn.techres.supplier.view.TechResTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:text="@string/total"
+                android:textColor="@color/black_2" />
+
+            <vn.techres.supplier.view.CurrencyEditText
+                android:id="@+id/editAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:background="@drawable/bg_cardview"
+                android:hint="@string/total"
+                android:inputType="number"
+                android:maxLength="18"
+                android:padding="@dimen/dp15"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="normal"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+
+            <vn.techres.supplier.view.TechResTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:text="@string/note"
+                android:textColor="@color/black_2" />
+
+            <EditText
+                android:id="@+id/editNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:background="@drawable/bg_cardview"
+                android:hint="@string/note"
+                android:padding="@dimen/dp15"
+                android:textSize="@dimen/text_size_14"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnNo"
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:background="@drawable/bg_radius_dp15"
+                    android:backgroundTint="@color/grey_main"
+                    android:text="@string/txt_close"
+                    android:textAllCaps="false"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnYes"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp40"
+                    android:background="@drawable/bg_radius_dp15"
+                    android:backgroundTint="@color/color_main"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

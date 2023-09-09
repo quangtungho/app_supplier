@@ -1,0 +1,306 @@
+{
+  "project_info": {
+    "project_number": "507549433713",
+    "firebase_url": "https://techres-tms.firebaseio.com",
+    "project_id": "techres-tms",
+    "storage_bucket": "techres-tms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507549433713:android:ee5cc60211fb76f85540d0",
+        "android_client_info": {
+          "package_name": "techres.vn.tms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507549433713-62222jdq2r4l3bpshjfb31hracierbi9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techres.vn.tms",
+            "certificate_hash": "987e73544c754abda418323a34e8980e1a539b80"
+          }
+        },
+        {
+          "client_id": "507549433713-7jfmqutivom3vveauj78nq3ms1mui13q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techres.vn.tms",
+            "certificate_hash": "2bdfa16388fb91869ccea40fef0ea5078aa9867c"
+          }
+        },
+        {
+          "client_id": "507549433713-e875iommm328v0g30jeksr8nc54o954d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techres.vn.tms",
+            "certificate_hash": "761975e1f3c639e56eb67ba3259aed659efd5219"
+          }
+        },
+        {
+          "client_id": "507549433713-etr8dr1rsc53d59mnv8mcvn4c3auu5jf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techres.vn.tms",
+            "certificate_hash": "2b3334d331cda3dcedaac8354c15eb0df2e6d62d"
+          }
+        },
+        {
+          "client_id": "507549433713-g800549v4fe7klf3lvkasuikm54h3j8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techres.vn.tms",
+            "certificate_hash": "431793d73fd63bbd0bdc6fd648c9dc81da58021d"
+          }
+        },
+        {
+          "client_id": "507549433713-u9v41moi33c5kq1u6s8b911pa9ik7k4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techres.vn.tms",
+            "certificate_hash": "7c7278c417ccf18f8a16ca0ae3006ec418ff1909"
+          }
+        },
+        {
+          "client_id": "507549433713-7h1io6n1c0ogkrrprvtf4ff6knkcrfuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuvHPFFg_565fy_qmZe2qYEHipuUPgK0k"
+        },
+        {
+          "current_key": "AIzaSyAb0g6pk_Ae-QIfRMkN3e2cyFPeiU_geuk"
+        },
+        {
+          "current_key": "AIzaSyDnDQDgNhFH_RDPRMXOVs8jjbPc5WwhMXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115606782119994232916",
+              "client_type": 3
+            },
+            {
+              "client_id": "507549433713-4lk0iff2a97e44vff5gptjm448b6fsk0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.techres.sale",
+                "app_store_id": "1468724786"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507549433713:android:4a9a6e1b6954720f5540d0",
+        "android_client_info": {
+          "package_name": "vn.aloapp.sale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507549433713-884lvmbi03j54ptr2lprk2l8e81j5of1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.aloapp.sale",
+            "certificate_hash": "f6affc6922bed931ff5aae30c91ca94a2b2a5887"
+          }
+        },
+        {
+          "client_id": "507549433713-7h1io6n1c0ogkrrprvtf4ff6knkcrfuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuvHPFFg_565fy_qmZe2qYEHipuUPgK0k"
+        },
+        {
+          "current_key": "AIzaSyAb0g6pk_Ae-QIfRMkN3e2cyFPeiU_geuk"
+        },
+        {
+          "current_key": "AIzaSyDnDQDgNhFH_RDPRMXOVs8jjbPc5WwhMXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115606782119994232916",
+              "client_type": 3
+            },
+            {
+              "client_id": "507549433713-4lk0iff2a97e44vff5gptjm448b6fsk0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.techres.sale",
+                "app_store_id": "1468724786"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507549433713:android:873aa810f2b0eefb5540d0",
+        "android_client_info": {
+          "package_name": "vn.techres.line"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507549433713-1h0hbar799cjje76ht00kvfnlmojj6fq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.techres.line",
+            "certificate_hash": "431793d73fd63bbd0bdc6fd648c9dc81da58021d"
+          }
+        },
+        {
+          "client_id": "507549433713-1l6ifu0d3jms5h2p6abumjdkfo0rc53p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.techres.line",
+            "certificate_hash": "0afdda4a50d83bd71aa139d48588c6d5129af0d7"
+          }
+        },
+        {
+          "client_id": "507549433713-3pg55t5kar481hep12nuj8oqvuj6tern.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.techres.line",
+            "certificate_hash": "987e73544c754abda418323a34e8980e1a539b80"
+          }
+        },
+        {
+          "client_id": "507549433713-72clnf532e9uj6ps9fg97keda1ga2kif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.techres.line",
+            "certificate_hash": "91c69fb15759d5ad7f2d1b9b0b4421e2ffad8980"
+          }
+        },
+        {
+          "client_id": "507549433713-mhb23qif113212q0bkgivp8almtp92mf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.techres.line",
+            "certificate_hash": "cab05c8e4357a08e4aeada5fc5cff2eac95de44f"
+          }
+        },
+        {
+          "client_id": "507549433713-7h1io6n1c0ogkrrprvtf4ff6knkcrfuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuvHPFFg_565fy_qmZe2qYEHipuUPgK0k"
+        },
+        {
+          "current_key": "AIzaSyAb0g6pk_Ae-QIfRMkN3e2cyFPeiU_geuk"
+        },
+        {
+          "current_key": "AIzaSyDnDQDgNhFH_RDPRMXOVs8jjbPc5WwhMXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115606782119994232916",
+              "client_type": 3
+            },
+            {
+              "client_id": "507549433713-4lk0iff2a97e44vff5gptjm448b6fsk0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.techres.sale",
+                "app_store_id": "1468724786"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507549433713:android:3178d850d6e8fbdf5540d0",
+        "android_client_info": {
+          "package_name": "vn.techres.supplier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507549433713-cgp4e89raj64c0u0vmmf3n7f50t8dlid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.techres.supplier",
+            "certificate_hash": "431793d73fd63bbd0bdc6fd648c9dc81da58021d"
+          }
+        },
+        {
+          "client_id": "507549433713-l3uils7nt3uum9tgfin842ehufs3mjv9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.techres.supplier",
+            "certificate_hash": "eef6738a77a820b3d60c2c7cae7109c41ee60ebb"
+          }
+        },
+        {
+          "client_id": "507549433713-q63brtugs6s85mprs0c77fplsbdmj0bi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.techres.supplier",
+            "certificate_hash": "69ce4454beb5d74065a28b842e3ad908865e0db8"
+          }
+        },
+        {
+          "client_id": "507549433713-7h1io6n1c0ogkrrprvtf4ff6knkcrfuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuvHPFFg_565fy_qmZe2qYEHipuUPgK0k"
+        },
+        {
+          "current_key": "AIzaSyAb0g6pk_Ae-QIfRMkN3e2cyFPeiU_geuk"
+        },
+        {
+          "current_key": "AIzaSyDnDQDgNhFH_RDPRMXOVs8jjbPc5WwhMXA"
+        },
+        {
+          "current_key": "AIzaSyCpEYoWYKCGpmps8IcwJdnKWFQ-R901JLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115606782119994232916",
+              "client_type": 3
+            },
+            {
+              "client_id": "507549433713-4lk0iff2a97e44vff5gptjm448b6fsk0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.techres.sale",
+                "app_store_id": "1468724786"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

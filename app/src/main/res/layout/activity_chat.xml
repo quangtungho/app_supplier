@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <include
+                    android:id="@+id/header"
+                    layout="@layout/item_header_chat" />
+
+
+                <LinearLayout
+                    android:id="@+id/countMessSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/backSearch"
+                        android:layout_width="@dimen/size_50"
+                        android:layout_height="@dimen/size_50"
+                        android:contentDescription="@string/default_image"
+                        android:padding="@dimen/margin_12dp"
+                        android:src="@drawable/stencils_ic_head_back_black" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/ayp_8dp"
+                        android:layout_weight="1"
+                        android:autoLink="none"
+                        android:background="@color/transparent"
+                        android:hint="@string/search_message"
+                        android:inputType="none|text|textCapSentences|textAutoCorrect|textMultiLine"
+                        android:maxLength="120"
+                        android:scrollbars="none"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_text_title"
+                        android:textCursorDrawable="@drawable/chat_bar_text_cursor"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/layoutMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_chat" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/clone_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/heart_image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_heart"
+                android:visibility="gone"
+                android:contentDescription="@string/default_image" />
+
+            <vn.techres.supplier.helper.DotsView
+                android:id="@+id/vDotsView"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tvClapCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0"
+                android:background="@drawable/ic_circle_solid_36"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_8dp">
+
+    <View
+        android:id="@+id/viewStatus"
+        android:layout_width="@dimen/dp15"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_order_request_bill" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_click_bill_oder"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_8dp"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_calendar_bill_orser" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/text_total_detail"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_order_customer_name" />
+
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/price_order"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_branch_bill" />
+
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/wait_for_payment"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_bill" />
+
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/txt_done_debt"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/default_image"
+                    android:src="@drawable/ic_bill" />
+
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/canceled"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/text_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/wait_for_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/txt_done_debt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_8dp"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+
+            <vn.techres.supplier.view.TechResTextView
+                android:id="@+id/txt_canceled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_8dp"
+            android:contentDescription="@string/default_image"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="normal" />
+    </LinearLayout>
+</LinearLayout>

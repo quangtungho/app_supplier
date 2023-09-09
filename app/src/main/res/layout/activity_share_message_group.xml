@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50"
+            android:background="@color/main_bg">
+
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_marginRight="@dimen/margin_8dp"
+                android:background="@drawable/ripple_animation_button_back_header"
+                app:srcCompat="@drawable/stencils_ic_head_back_white"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_35"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_toEndOf="@+id/imvBack"
+                android:background="@drawable/bg_border_search"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingStart="-8dp"
+                android:theme="@style/SearchView"
+                app:closeIcon="@drawable/stencils_ic_head_close_black"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="@string/search_home"
+                app:searchIcon="@null"
+                app:showAsAction="always"
+                tools:ignore="RtlSymmetry">
+
+                <requestFocus />
+            </androidx.appcompat.widget.SearchView>
+        </RelativeLayout>
+
+        <include android:id="@+id/message_view" layout="@layout/chat_attachment_reply" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcvGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:overScrollMode="never" />
+
+                    </LinearLayout>
+
+
+                </androidx.core.widget.NestedScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/noSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/image_search_empty"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/default_image"
+                        android:src="@drawable/ic_search_remove" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_search_empty"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center"
+                        android:text="@string/no_result_member"
+                        android:textColor="@color/colorText" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingBottom="8dp"
+                app:layout_anchor="@+id/relativeLayout2"
+                app:layout_anchorGravity="center" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</layout>

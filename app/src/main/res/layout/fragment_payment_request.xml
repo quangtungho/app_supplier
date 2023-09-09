@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.employeemanager.TabEmployeeOnFragment">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/lnDate"
+                layout="@layout/layout_date_time" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/txtSearchHome"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:layout_marginEnd="12.0dip"
+                android:background="@drawable/shape_search_oder"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:theme="@style/SearchView"
+                app:closeIcon="@drawable/stencils_ic_head_close_black"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="Tìm kiếm ..."
+                app:searchIcon="@drawable/ic_loupe" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rclPaymentRequest"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_8dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/linearDataNull"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp100"
+                    android:contentDescription="@string/app_description"
+                    android:src="@drawable/img_data_null" />
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="@string/no_data_chart" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mRootButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_8dp"
+                android:visibility="visible">
+
+                <vn.techres.supplier.view.TechResTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:background="@color/main_bg"
+                    android:gravity="center"
+                    android:text="@string/create_payment_request"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

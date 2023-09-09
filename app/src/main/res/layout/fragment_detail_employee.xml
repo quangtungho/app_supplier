@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fragment.employeemanager.DetailEmployeeFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_bg"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp250"
+                        android:background="@drawable/gradientbackgroundtab"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgStaff"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dp32"
+                            android:background="@drawable/bg_view_avatar"
+                            android:src="@drawable/bg_view_avatar" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_12dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/nameStaff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_18"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingStart="@dimen/px4"
+                                android:paddingBottom="@dimen/dp8"
+                                android:src="@drawable/ic_tick"
+                                android:visibility="gone"
+                                tools:ignore="ContentDescription,RtlSymmetry" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/dp350"
+                        android:layout_height="@dimen/dp80"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp222"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp250"
+                            android:layout_height="@dimen/dp80"
+                            android:layout_gravity="center"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="8dp"
+                                    android:text="@string/not_data"
+                                    android:textColor="@color/main_bg"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="bold" />
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txt_following"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="8dp"
+                                    android:textColor="@color/main_bg"
+                                    android:textSize="@dimen/font_normal"
+                                    android:textStyle="bold" />
+
+                                <vn.techres.supplier.view.TechResTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/followers"
+                                    android:textSize="@dimen/font_normal" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp48"
+                    android:layout_marginTop="@dimen/dp48"
+                    android:layout_marginEnd="@dimen/dp48"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_8dp"
+                        tools:ignore="RtlSymmetry,UseCompoundDrawables">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp32"
+                            android:layout_height="@dimen/dp32"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_icon_profile"
+                            android:gravity="center"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_email_profile"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/email_staff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/dp18"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_8dp"
+                        tools:ignore="RtlSymmetry,UseCompoundDrawables">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp32"
+                            android:layout_height="@dimen/dp32"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_icon_profile"
+                            android:gravity="center"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_phone"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/telephone_staff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="@dimen/dp24"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_8dp"
+                        tools:ignore="RtlSymmetry,UseCompoundDrawables">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp32"
+                            android:layout_height="@dimen/dp32"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_icon_profile"
+                            android:gravity="center"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_address_profile"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/addresStaff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="@dimen/dp24"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_8dp"
+                        tools:ignore="RtlSymmetry,UseCompoundDrawables">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp32"
+                            android:layout_height="@dimen/dp32"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_icon_profile"
+                            android:gravity="center"
+                            android:padding="@dimen/dp8">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_roles"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <vn.techres.supplier.view.TechResTextView
+                            android:id="@+id/roleStaff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="@dimen/dp24"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_12dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_8dp">
+
+                    <Button
+                        android:id="@+id/btnEditStaff"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/margin_60dp"
+                        android:layout_marginTop="@dimen/margin_16dp"
+                        android:background="@drawable/bg_btn_infoprofile"
+                        android:backgroundTint="@color/color_main"
+                        android:text="@string/update_editprofile"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

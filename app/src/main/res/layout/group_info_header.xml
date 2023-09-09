@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <merge>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:id="@id/ctlAvatar"
+                        android:layout_width="90.0dip"
+                        android:layout_height="90.0dip">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/chat_contact_image"
+                            android:layout_width="90.0dip"
+                            android:layout_height="90.0dip"
+                            android:contentDescription="@string/default_image"
+                            android:src="@drawable/ic_user_placeholder" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dp16"
+                        android:paddingRight="@dimen/dp16">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <vn.techres.supplier.view.TechResTextView
+                                android:id="@+id/chat_contact_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:paddingLeft="@dimen/dp32"
+                                android:paddingRight="@dimen/dp32"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/text_last_message"
+                                android:textSize="@dimen/text_size_17" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </merge>
+</layout>

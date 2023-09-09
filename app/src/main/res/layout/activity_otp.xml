@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/lnConstrainLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".activity.OtpActivity"
+        tools:viewBindingIgnore="true">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints,UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_80"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dp32"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/techres_sologan_main_blue_color"
+                    android:contentDescription="@string/default_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp32"
+
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_cardview"
+                        android:drawableStart="@drawable/ic_call_numpad_normal"
+                        android:drawablePadding="@dimen/dp16"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_pin"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:padding="@dimen/margin_14dp"
+                        android:paddingStart="@dimen/dp16"
+                        android:paddingEnd="@dimen/dp16"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_normal"
+                        tools:ignore="RtlSymmetry" />
+
+                    <vn.techres.supplier.helper.CountdownView
+                        android:id="@+id/cv_password_forget_countdown"
+                        style="@style/CountdownViewStyle"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        tools:ignore="MissingClass" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:background="@drawable/bg_cardview"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        android:contentDescription="@string/default_image"
+                        android:src="@drawable/ic_password" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp40"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:background="@color/transparent"
+                            android:hint="@string/input_new_pass_again"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal"
+                            tools:ignore="Autofill" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:background="@drawable/bg_cardview"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        android:contentDescription="@string/default_image"
+                        android:src="@drawable/ic_password" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_8dp"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtConfirmPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp40"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:background="@color/transparent"
+                            android:hint="@string/confirm_change_password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="normal"
+                            tools:ignore="Autofill" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.kusu.loadingbutton.LoadingButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp32"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:background="@drawable/bg_btn_orange"
+                    android:backgroundTint="@color/main_bg"
+                    android:text="@string/text_confirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="normal"
+                    app:lb_isCircular="true" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/loading"
+                layout="@layout/layout_loading_data" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

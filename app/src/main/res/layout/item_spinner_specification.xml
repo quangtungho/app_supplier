@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp100"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginVertical="@dimen/margin_8dp"
+        android:background="@drawable/bg_radius_dp10"
+        android:backgroundTint="@color/blue_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_8dp">
+
+        <vn.techres.supplier.view.TechResTextView
+            android:id="@+id/txtSpinnerData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_12"
+            android:layout_marginStart="@dimen/margin_4dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/btnRemove"
+            android:layout_width="@dimen/dp16"
+            android:layout_height="@dimen/dp16"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:src="@drawable/icon_remove_bg_red"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</layout>
